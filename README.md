@@ -4,6 +4,19 @@
 
 ## 版本更新日志
 
+### v2.4.5(116) — 包名修改
+
+- **更新时间**：2026-11-02
+- **APK 版本**：v2.4.5(116)
+- **包名**：`com.moxidx.app`（原 `com.wsw.cospa`）
+- **应用名**：沫兮动漫
+- **更新内容**：
+  - 包名由 `com.wsw.cospa` 修改为 `com.moxidx.app`
+  - FileProvider authorities 同步修改
+  - 类名（android:name）保持不变，确保组件正常加载
+  - versionCode: 115 → 116
+  - versionName: 2.4.4 → 2.4.5
+
 ### v2.4.4(115) — 沫兮动漫
 
 - **更新时间**：2026-11-02
@@ -54,8 +67,8 @@ Yiciyuan-Apk/
 | 项目 | 内容 |
 |------|------|
 | 应用名称 | 沫兮动漫 |
-| 包名 | com.wsw.cospa |
-| 版本号 | v2.4.4(115) |
+| 包名 | com.moxidx.app |
+| 版本号 | v2.4.5(116) |
 | 反编译 Java 文件数 | 10870 |
 | smali 文件数 | 23450 |
 
@@ -97,7 +110,7 @@ com.wsw.cospa
 2. zipalign 对齐
 3. apksigner 签名（使用仓库 Secrets 中配置的固定签名密钥）
 
-构建产物在 Actions 页面的 Artifacts 中下载，文件名格式：`沫兮动漫.v2.4.4_YYYYMMDDHHMM.apk`
+构建产物在 Actions 页面的 Artifacts 中下载，文件名格式：`沫兮动漫.v2.4.5_YYYYMMDDHHMM.apk`
 
 也可在仓库 Actions 页面手动触发 `Build APK` 工作流。
 

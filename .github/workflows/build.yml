@@ -47,7 +47,7 @@ jobs:
 
           # 生成时间戳 文件名: 沫兮动漫.v2.4.4_YYYYMMDDHHMM.apk
           TIMESTAMP=$(date +%Y%m%d%H%M)
-          APK_NAME="沫兮动漫.v2.4.4_${TIMESTAMP}.apk"
+          APK_NAME="沫兮动漫.v2.4.5_${TIMESTAMP}.apk"
 
           # 签名
           "$BUILD_TOOLS/apksigner" sign \

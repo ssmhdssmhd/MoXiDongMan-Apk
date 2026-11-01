@@ -781,7 +781,7 @@
     .line 3
     invoke-virtual {v0, v1}, Landroid/content/Intent;->setFlags(I)Landroid/content/Intent;
 
-    const-string v1, "com.wsw.cospa.fileprovider"
+    const-string v1, "com.moxidx.app.fileprovider"
 
     .line 4
     invoke-static {p0, v1, p1}, Landroidx/core/content/FileProvider;->getUriForFile(Landroid/content/Context;Ljava/lang/String;Ljava/io/File;)Landroid/net/Uri;
