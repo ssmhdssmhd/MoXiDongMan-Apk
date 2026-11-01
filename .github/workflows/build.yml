@@ -28,9 +28,6 @@ jobs:
           java -jar apktool.jar b . -o app-unsigned.apk
           ls -la app-unsigned.apk
 
-      - name: Setup Android SDK (build-tools)
-        uses: android-actions/setup-android@v3
-
       - name: Sign APK
         env:
           KEYSTORE_BASE64: ${{ secrets.KEYSTORE_BASE64 }}
@@ -41,8 +38,11 @@ jobs:
           # 恢复签名密钥
           echo "$KEYSTORE_BASE64" | base64 -d > moxi.keystore
 
+          # 使用预装的 Android build-tools
+          BUILD_TOOLS=$(ls -d ${ANDROID_HOME:-/usr/local/lib/android/sdk}/build-tools/* 2>/dev/null | sort -V | tail -1)
+          echo "使用 build-tools: $BUILD_TOOLS"
+
           # 对齐
-          BUILD_TOOLS=$(ls -d $ANDROID_HOME/build-tools/* | head -1)
           "$BUILD_TOOLS/zipalign" -f -p 4 app-unsigned.apk app-aligned.apk
 
           # 生成时间戳 文件名: 沫兮动漫.v2.4.4_YYYYMMDDHHMM.apk
