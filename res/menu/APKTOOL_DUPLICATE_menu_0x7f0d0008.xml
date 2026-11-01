@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:icon="@drawable/APKTOOL_DUPLICATE_drawable_0x7f0800f7" android:id="@id/APKTOOL_DUPLICATE_id_0x7f09007b" android:visible="false" android:title="@string/APKTOOL_DUPLICATE_string_0x7f1100de" app:APKTOOL_DUPLICATE_attr_0x7f040546="APKTOOL_DUPLICATE_id_0x7f09008d" />
+    <group android:checkableBehavior="single">
+        <item android:id="@id/APKTOOL_DUPLICATE_id_0x7f09022e" android:checked="true" android:title="@string/APKTOOL_DUPLICATE_string_0x7f1100e2" app:APKTOOL_DUPLICATE_attr_0x7f040546="APKTOOL_DUPLICATE_id_0x7f0902f8" />
+        <item android:id="@id/APKTOOL_DUPLICATE_id_0x7f09022f" android:title="@string/APKTOOL_DUPLICATE_string_0x7f1100e3" app:APKTOOL_DUPLICATE_attr_0x7f040546="APKTOOL_DUPLICATE_id_0x7f0902f8" />
+        <item android:id="@id/APKTOOL_DUPLICATE_id_0x7f09022a" android:title="@string/APKTOOL_DUPLICATE_string_0x7f1100e0" app:APKTOOL_DUPLICATE_attr_0x7f040546="APKTOOL_DUPLICATE_id_0x7f0902f8" />
+        <item android:id="@id/APKTOOL_DUPLICATE_id_0x7f09022b" android:title="@string/APKTOOL_DUPLICATE_string_0x7f1100e1" app:APKTOOL_DUPLICATE_attr_0x7f040546="APKTOOL_DUPLICATE_id_0x7f0902f8" />
+        <item android:id="@id/APKTOOL_DUPLICATE_id_0x7f09022c" android:title="@string/APKTOOL_DUPLICATE_string_0x7f1100e4" app:APKTOOL_DUPLICATE_attr_0x7f040546="APKTOOL_DUPLICATE_id_0x7f0902f8" />
+        <item android:id="@id/APKTOOL_DUPLICATE_id_0x7f09022d" android:title="@string/APKTOOL_DUPLICATE_string_0x7f1100e5" app:APKTOOL_DUPLICATE_attr_0x7f040546="APKTOOL_DUPLICATE_id_0x7f0902f8" />
+    </group>
+</menu>

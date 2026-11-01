@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple android:color="@color/APKTOOL_DUPLICATE_color_0x7f0600b6"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@android:id/mask">
+        <inset android:insetLeft="@dimen/APKTOOL_DUPLICATE_dimen_0x7f07005a" android:insetRight="@dimen/APKTOOL_DUPLICATE_dimen_0x7f07005a" android:insetTop="@dimen/APKTOOL_DUPLICATE_dimen_0x7f07005b" android:insetBottom="@dimen/APKTOOL_DUPLICATE_dimen_0x7f07005b"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+            <shape android:shape="rectangle">
+                <corners android:radius="@dimen/APKTOOL_DUPLICATE_dimen_0x7f07005e" />
+                <solid android:color="@android:color/white" />
+                <padding android:left="@dimen/APKTOOL_DUPLICATE_dimen_0x7f07005c" android:top="@dimen/APKTOOL_DUPLICATE_dimen_0x7f07005d" android:right="@dimen/APKTOOL_DUPLICATE_dimen_0x7f07005c" android:bottom="@dimen/APKTOOL_DUPLICATE_dimen_0x7f07005d" />
+            </shape>
+        </inset>
+    </item>
+</ripple>

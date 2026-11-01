@@ -1,0 +1,93 @@
+package org.bouncycastle.asn1.nsri;
+
+import androidx.exifinterface.media.ExifInterface;
+import fi.iki.elonen.Cdo;
+import org.bouncycastle.asn1.Ccatch;
+
+/* loaded from: classes3.dex */
+public interface NSRIObjectIdentifiers {
+    public static final Ccatch id_algorithm;
+    public static final Ccatch id_aria128_cbc;
+    public static final Ccatch id_aria128_ccm;
+    public static final Ccatch id_aria128_cfb;
+    public static final Ccatch id_aria128_cmac;
+    public static final Ccatch id_aria128_ctr;
+    public static final Ccatch id_aria128_ecb;
+    public static final Ccatch id_aria128_gcm;
+    public static final Ccatch id_aria128_kw;
+    public static final Ccatch id_aria128_kwp;
+    public static final Ccatch id_aria128_ocb2;
+    public static final Ccatch id_aria128_ofb;
+    public static final Ccatch id_aria192_cbc;
+    public static final Ccatch id_aria192_ccm;
+    public static final Ccatch id_aria192_cfb;
+    public static final Ccatch id_aria192_cmac;
+    public static final Ccatch id_aria192_ctr;
+    public static final Ccatch id_aria192_ecb;
+    public static final Ccatch id_aria192_gcm;
+    public static final Ccatch id_aria192_kw;
+    public static final Ccatch id_aria192_kwp;
+    public static final Ccatch id_aria192_ocb2;
+    public static final Ccatch id_aria192_ofb;
+    public static final Ccatch id_aria256_cbc;
+    public static final Ccatch id_aria256_ccm;
+    public static final Ccatch id_aria256_cfb;
+    public static final Ccatch id_aria256_cmac;
+    public static final Ccatch id_aria256_ctr;
+    public static final Ccatch id_aria256_ecb;
+    public static final Ccatch id_aria256_gcm;
+    public static final Ccatch id_aria256_kw;
+    public static final Ccatch id_aria256_kwp;
+    public static final Ccatch id_aria256_ocb2;
+    public static final Ccatch id_aria256_ofb;
+    public static final Ccatch id_pad;
+    public static final Ccatch id_pad_1;
+    public static final Ccatch id_pad_null;
+    public static final Ccatch id_sea;
+    public static final Ccatch nsri;
+
+    static {
+        Ccatch ccatch = new Ccatch("1.2.410.200046");
+        nsri = ccatch;
+        Ccatch ccatchM32792catch = ccatch.m32792catch("1");
+        id_algorithm = ccatchM32792catch;
+        Ccatch ccatchM32792catch2 = ccatchM32792catch.m32792catch("1");
+        id_sea = ccatchM32792catch2;
+        id_pad = ccatchM32792catch.m32792catch(ExifInterface.GPS_MEASUREMENT_2D);
+        id_pad_null = ccatchM32792catch.m32792catch("0");
+        id_pad_1 = ccatchM32792catch.m32792catch("1");
+        id_aria128_ecb = ccatchM32792catch2.m32792catch("1");
+        id_aria128_cbc = ccatchM32792catch2.m32792catch(ExifInterface.GPS_MEASUREMENT_2D);
+        id_aria128_cfb = ccatchM32792catch2.m32792catch(ExifInterface.GPS_MEASUREMENT_3D);
+        id_aria128_ofb = ccatchM32792catch2.m32792catch("4");
+        id_aria128_ctr = ccatchM32792catch2.m32792catch("5");
+        id_aria192_ecb = ccatchM32792catch2.m32792catch("6");
+        id_aria192_cbc = ccatchM32792catch2.m32792catch("7");
+        id_aria192_cfb = ccatchM32792catch2.m32792catch("8");
+        id_aria192_ofb = ccatchM32792catch2.m32792catch("9");
+        id_aria192_ctr = ccatchM32792catch2.m32792catch("10");
+        id_aria256_ecb = ccatchM32792catch2.m32792catch("11");
+        id_aria256_cbc = ccatchM32792catch2.m32792catch("12");
+        id_aria256_cfb = ccatchM32792catch2.m32792catch(Cdo.HEADER_WEBSOCKET_VERSION_VALUE);
+        id_aria256_ofb = ccatchM32792catch2.m32792catch("14");
+        id_aria256_ctr = ccatchM32792catch2.m32792catch("15");
+        id_aria128_cmac = ccatchM32792catch2.m32792catch("21");
+        id_aria192_cmac = ccatchM32792catch2.m32792catch("22");
+        id_aria256_cmac = ccatchM32792catch2.m32792catch("23");
+        id_aria128_ocb2 = ccatchM32792catch2.m32792catch("31");
+        id_aria192_ocb2 = ccatchM32792catch2.m32792catch("32");
+        id_aria256_ocb2 = ccatchM32792catch2.m32792catch("33");
+        id_aria128_gcm = ccatchM32792catch2.m32792catch("34");
+        id_aria192_gcm = ccatchM32792catch2.m32792catch("35");
+        id_aria256_gcm = ccatchM32792catch2.m32792catch("36");
+        id_aria128_ccm = ccatchM32792catch2.m32792catch("37");
+        id_aria192_ccm = ccatchM32792catch2.m32792catch("38");
+        id_aria256_ccm = ccatchM32792catch2.m32792catch("39");
+        id_aria128_kw = ccatchM32792catch2.m32792catch("40");
+        id_aria192_kw = ccatchM32792catch2.m32792catch("41");
+        id_aria256_kw = ccatchM32792catch2.m32792catch("42");
+        id_aria128_kwp = ccatchM32792catch2.m32792catch("43");
+        id_aria192_kwp = ccatchM32792catch2.m32792catch("44");
+        id_aria256_kwp = ccatchM32792catch2.m32792catch("45");
+    }
+}

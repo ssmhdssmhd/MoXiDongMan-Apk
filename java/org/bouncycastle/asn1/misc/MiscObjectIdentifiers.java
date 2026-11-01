@@ -1,0 +1,95 @@
+package org.bouncycastle.asn1.misc;
+
+import androidx.exifinterface.media.ExifInterface;
+import fi.iki.elonen.Cdo;
+import org.bouncycastle.asn1.Ccatch;
+
+/* loaded from: classes3.dex */
+public interface MiscObjectIdentifiers {
+    public static final Ccatch as_sys_sec_alg_ideaCBC;
+    public static final Ccatch blake2;
+    public static final Ccatch cast5CBC;
+    public static final Ccatch cryptlib;
+    public static final Ccatch cryptlib_algorithm;
+    public static final Ccatch cryptlib_algorithm_blowfish_CBC;
+    public static final Ccatch cryptlib_algorithm_blowfish_CFB;
+    public static final Ccatch cryptlib_algorithm_blowfish_ECB;
+    public static final Ccatch cryptlib_algorithm_blowfish_OFB;
+    public static final Ccatch entrust;
+    public static final Ccatch entrustVersionExtension;
+    public static final Ccatch id_blake2b160;
+    public static final Ccatch id_blake2b256;
+    public static final Ccatch id_blake2b384;
+    public static final Ccatch id_blake2b512;
+    public static final Ccatch id_blake2s128;
+    public static final Ccatch id_blake2s160;
+    public static final Ccatch id_blake2s224;
+    public static final Ccatch id_blake2s256;
+    public static final Ccatch id_scrypt;
+    public static final Ccatch netscape;
+    public static final Ccatch netscapeBaseURL;
+    public static final Ccatch netscapeCARevocationURL;
+    public static final Ccatch netscapeCApolicyURL;
+    public static final Ccatch netscapeCertComment;
+    public static final Ccatch netscapeCertType;
+    public static final Ccatch netscapeRenewalURL;
+    public static final Ccatch netscapeRevocationURL;
+    public static final Ccatch netscapeSSLServerName;
+    public static final Ccatch novell;
+    public static final Ccatch novellSecurityAttribs;
+    public static final Ccatch verisign;
+    public static final Ccatch verisignBitString_6_13;
+    public static final Ccatch verisignCzagExtension;
+    public static final Ccatch verisignDnbDunsNumber;
+    public static final Ccatch verisignIssStrongCrypto;
+    public static final Ccatch verisignOnSiteJurisdictionHash;
+    public static final Ccatch verisignPrivate_6_9;
+
+    static {
+        Ccatch ccatch = new Ccatch("2.16.840.1.113730.1");
+        netscape = ccatch;
+        netscapeCertType = ccatch.m32792catch("1");
+        netscapeBaseURL = ccatch.m32792catch(ExifInterface.GPS_MEASUREMENT_2D);
+        netscapeRevocationURL = ccatch.m32792catch(ExifInterface.GPS_MEASUREMENT_3D);
+        netscapeCARevocationURL = ccatch.m32792catch("4");
+        netscapeRenewalURL = ccatch.m32792catch("7");
+        netscapeCApolicyURL = ccatch.m32792catch("8");
+        netscapeSSLServerName = ccatch.m32792catch("12");
+        netscapeCertComment = ccatch.m32792catch(Cdo.HEADER_WEBSOCKET_VERSION_VALUE);
+        Ccatch ccatch2 = new Ccatch("2.16.840.1.113733.1");
+        verisign = ccatch2;
+        verisignCzagExtension = ccatch2.m32792catch("6.3");
+        verisignPrivate_6_9 = ccatch2.m32792catch("6.9");
+        verisignOnSiteJurisdictionHash = ccatch2.m32792catch("6.11");
+        verisignBitString_6_13 = ccatch2.m32792catch("6.13");
+        verisignDnbDunsNumber = ccatch2.m32792catch("6.15");
+        verisignIssStrongCrypto = ccatch2.m32792catch("8.1");
+        Ccatch ccatch3 = new Ccatch("2.16.840.1.113719");
+        novell = ccatch3;
+        novellSecurityAttribs = ccatch3.m32792catch("1.9.4.1");
+        Ccatch ccatch4 = new Ccatch("1.2.840.113533.7");
+        entrust = ccatch4;
+        entrustVersionExtension = ccatch4.m32792catch("65.0");
+        cast5CBC = ccatch4.m32792catch("66.10");
+        as_sys_sec_alg_ideaCBC = new Ccatch("1.3.6.1.4.1.188.7.1.1.2");
+        Ccatch ccatch5 = new Ccatch("1.3.6.1.4.1.3029");
+        cryptlib = ccatch5;
+        Ccatch ccatchM32792catch = ccatch5.m32792catch("1");
+        cryptlib_algorithm = ccatchM32792catch;
+        cryptlib_algorithm_blowfish_ECB = ccatchM32792catch.m32792catch("1.1");
+        cryptlib_algorithm_blowfish_CBC = ccatchM32792catch.m32792catch("1.2");
+        cryptlib_algorithm_blowfish_CFB = ccatchM32792catch.m32792catch("1.3");
+        cryptlib_algorithm_blowfish_OFB = ccatchM32792catch.m32792catch("1.4");
+        Ccatch ccatch6 = new Ccatch("1.3.6.1.4.1.1722.12.2");
+        blake2 = ccatch6;
+        id_blake2b160 = ccatch6.m32792catch("1.5");
+        id_blake2b256 = ccatch6.m32792catch("1.8");
+        id_blake2b384 = ccatch6.m32792catch("1.12");
+        id_blake2b512 = ccatch6.m32792catch("1.16");
+        id_blake2s128 = ccatch6.m32792catch("2.4");
+        id_blake2s160 = ccatch6.m32792catch("2.5");
+        id_blake2s224 = ccatch6.m32792catch("2.7");
+        id_blake2s256 = ccatch6.m32792catch("2.8");
+        id_scrypt = new Ccatch("1.3.6.1.4.1.11591.4.11");
+    }
+}

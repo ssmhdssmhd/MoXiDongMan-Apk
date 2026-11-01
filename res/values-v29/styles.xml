@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="APKTOOL_DUPLICATE_style_0x7f120015" parent="@style/APKTOOL_DUPLICATE_style_0x7f12014c">
+        <item name="android:textColorPrimary">@color/APKTOOL_DUPLICATE_color_0x7f060114</item>
+        <item name="android:textColorSecondary">@color/APKTOOL_DUPLICATE_color_0x7f060116</item>
+        <item name="android:windowAnimationStyle">@style/APKTOOL_DUPLICATE_style_0x7f120005</item>
+        <item name="android:itemTextAppearance">@style/APKTOOL_DUPLICATE_style_0x7f120127</item>
+        <item name="android:itemBackground">@color/APKTOOL_DUPLICATE_color_0x7f0600c0</item>
+        <item name="android:listDivider">@drawable/APKTOOL_DUPLICATE_drawable_0x7f08006f</item>
+        <item name="android:splitMotionEvents">false</item>
+        <item name="android:textColorAlertDialogListItem">@color/APKTOOL_DUPLICATE_color_0x7f060114</item>
+        <item name="android:windowEnableSplitTouch">false</item>
+        <item name="android:actionBarDivider">@color/APKTOOL_DUPLICATE_color_0x7f060339</item>
+        <item name="android:forceDarkAllowed">true</item>
+        <item name="APKTOOL_DUPLICATE_attr_0x7f04000f">@color/APKTOOL_DUPLICATE_color_0x7f060339</item>
+        <item name="APKTOOL_DUPLICATE_attr_0x7f04002c">@style/APKTOOL_DUPLICATE_style_0x7f12012c</item>
+        <item name="APKTOOL_DUPLICATE_attr_0x7f04002d">@style/APKTOOL_DUPLICATE_style_0x7f120018</item>
+        <item name="APKTOOL_DUPLICATE_attr_0x7f040117">@color/APKTOOL_DUPLICATE_color_0x7f06008d</item>
+        <item name="APKTOOL_DUPLICATE_attr_0x7f040124">@color/APKTOOL_DUPLICATE_color_0x7f06008d</item>
+        <item name="APKTOOL_DUPLICATE_attr_0x7f040125">@color/APKTOOL_DUPLICATE_color_0x7f06008d</item>
+        <item name="APKTOOL_DUPLICATE_attr_0x7f04041e">@style/APKTOOL_DUPLICATE_style_0x7f12014f</item>
+        <item name="APKTOOL_DUPLICATE_attr_0x7f040422">@style/APKTOOL_DUPLICATE_style_0x7f12014e</item>
+        <item name="APKTOOL_DUPLICATE_attr_0x7f040423">0.6</item>
+        <item name="APKTOOL_DUPLICATE_attr_0x7f040425">@style/APKTOOL_DUPLICATE_style_0x7f120150</item>
+        <item name="APKTOOL_DUPLICATE_attr_0x7f040427">304.0dip</item>
+        <item name="APKTOOL_DUPLICATE_attr_0x7f04042b">@style/APKTOOL_DUPLICATE_style_0x7f120153</item>
+        <item name="APKTOOL_DUPLICATE_attr_0x7f040430">@style/APKTOOL_DUPLICATE_style_0x7f120158</item>
+        <item name="APKTOOL_DUPLICATE_attr_0x7f040431">@style/APKTOOL_DUPLICATE_style_0x7f120154</item>
+        <item name="APKTOOL_DUPLICATE_attr_0x7f040432">260.0dip</item>
+        <item name="APKTOOL_DUPLICATE_attr_0x7f040434">24.0dip</item>
+        <item name="APKTOOL_DUPLICATE_attr_0x7f040436">@dimen/APKTOOL_DUPLICATE_dimen_0x7f0701bf</item>
+        <item name="APKTOOL_DUPLICATE_attr_0x7f040437">@style/APKTOOL_DUPLICATE_style_0x7f120155</item>
+        <item name="APKTOOL_DUPLICATE_attr_0x7f040610">@style/APKTOOL_DUPLICATE_style_0x7f12012d</item>
+    </style>
+</resources>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/APKTOOL_DUPLICATE_color_0x7f0600f8" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout android:id="@id/APKTOOL_DUPLICATE_id_0x7f09035c" android:layout_width="fill_parent" android:layout_height="fill_parent" app:APKTOOL_DUPLICATE_attr_0x7f040583="true">
+        <com.scwang.smartrefresh.layout.header.ClassicsHeader android:layout_width="fill_parent" android:layout_height="wrap_content" app:APKTOOL_DUPLICATE_attr_0x7f040569="@color/APKTOOL_DUPLICATE_color_0x7f060116" app:APKTOOL_DUPLICATE_attr_0x7f040570="15.0dip" app:APKTOOL_DUPLICATE_attr_0x7f040573="15.0dip" app:APKTOOL_DUPLICATE_attr_0x7f0405a6="12.0sp" app:APKTOOL_DUPLICATE_attr_0x7f0405a7="12.0sp" />
+        <com.jcodecraeer.xrecyclerview.XRecyclerView android:id="@id/APKTOOL_DUPLICATE_id_0x7f0902a4" android:background="@color/APKTOOL_DUPLICATE_color_0x7f0600f8" android:padding="7.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="-16.0dip" />
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+    <include layout="@layout/APKTOOL_DUPLICATE_layout_0x7f0c007a" />
+</RelativeLayout>

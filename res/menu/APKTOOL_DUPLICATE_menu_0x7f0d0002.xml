@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:icon="@drawable/APKTOOL_DUPLICATE_drawable_0x7f0800d8" android:id="@id/APKTOOL_DUPLICATE_id_0x7f0903e9" android:title="换源" app:APKTOOL_DUPLICATE_attr_0x7f040546="APKTOOL_DUPLICATE_id_0x7f09008d" />
+    <item android:icon="@drawable/APKTOOL_DUPLICATE_drawable_0x7f0800f5" android:id="@id/APKTOOL_DUPLICATE_id_0x7f090079" android:title="刷新" app:APKTOOL_DUPLICATE_attr_0x7f040546="APKTOOL_DUPLICATE_id_0x7f09008d" />
+    <item android:icon="@drawable/APKTOOL_DUPLICATE_drawable_0x7f0800d4" android:id="@id/APKTOOL_DUPLICATE_id_0x7f09014a" android:title="下载" app:APKTOOL_DUPLICATE_attr_0x7f040546="APKTOOL_DUPLICATE_id_0x7f09008d" />
+    <item android:icon="@drawable/APKTOOL_DUPLICATE_drawable_0x7f0800e5" android:id="@id/APKTOOL_DUPLICATE_id_0x7f090295" android:title="登录" app:APKTOOL_DUPLICATE_attr_0x7f040546="APKTOOL_DUPLICATE_id_0x7f0902f8" />
+    <item android:icon="@drawable/APKTOOL_DUPLICATE_drawable_0x7f0800d4" android:id="@id/APKTOOL_DUPLICATE_id_0x7f09035d" android:title="更新规则" app:APKTOOL_DUPLICATE_attr_0x7f040546="APKTOOL_DUPLICATE_id_0x7f0902f8" />
+    <item android:icon="@drawable/APKTOOL_DUPLICATE_drawable_0x7f0800d5" android:id="@id/APKTOOL_DUPLICATE_id_0x7f090445" android:title="漫画详情" app:APKTOOL_DUPLICATE_attr_0x7f040546="APKTOOL_DUPLICATE_id_0x7f0902f8" />
+    <item android:icon="@drawable/APKTOOL_DUPLICATE_drawable_0x7f0800d5" android:id="@id/APKTOOL_DUPLICATE_id_0x7f09039d" android:title="分享漫画" app:APKTOOL_DUPLICATE_attr_0x7f040546="APKTOOL_DUPLICATE_id_0x7f0902f8" />
+    <item android:icon="@drawable/APKTOOL_DUPLICATE_drawable_0x7f0800d5" android:id="@id/APKTOOL_DUPLICATE_id_0x7f090312" android:title="打开图源" app:APKTOOL_DUPLICATE_attr_0x7f040546="APKTOOL_DUPLICATE_id_0x7f0902f8" />
+</menu>

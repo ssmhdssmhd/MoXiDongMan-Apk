@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:icon="@drawable/APKTOOL_DUPLICATE_drawable_0x7f0800ca" android:id="@id/APKTOOL_DUPLICATE_id_0x7f090071" android:title="图源分组" app:APKTOOL_DUPLICATE_attr_0x7f040546="APKTOOL_DUPLICATE_id_0x7f09008d">
+        <menu>
+            <group android:id="@id/APKTOOL_DUPLICATE_id_0x7f0903b5" />
+        </menu>
+    </item>
+    <item android:icon="@drawable/APKTOOL_DUPLICATE_drawable_0x7f0800f7" android:id="@id/APKTOOL_DUPLICATE_id_0x7f0903b4" android:title="全选" app:APKTOOL_DUPLICATE_attr_0x7f040546="APKTOOL_DUPLICATE_id_0x7f09008d" />
+    <item android:id="@id/APKTOOL_DUPLICATE_id_0x7f090083" android:title="添加图源" app:APKTOOL_DUPLICATE_attr_0x7f040546="APKTOOL_DUPLICATE_id_0x7f0902f8" />
+    <item android:id="@id/APKTOOL_DUPLICATE_id_0x7f090294" android:title="本地导入" app:APKTOOL_DUPLICATE_attr_0x7f040546="APKTOOL_DUPLICATE_id_0x7f0902f8" />
+    <item android:id="@id/APKTOOL_DUPLICATE_id_0x7f0902f7" android:title="网络导入" app:APKTOOL_DUPLICATE_attr_0x7f040546="APKTOOL_DUPLICATE_id_0x7f0902f8" />
+    <item android:id="@id/APKTOOL_DUPLICATE_id_0x7f09034d" android:title="扫码导入" app:APKTOOL_DUPLICATE_attr_0x7f040546="APKTOOL_DUPLICATE_id_0x7f0902f8" />
+    <item android:id="@id/APKTOOL_DUPLICATE_id_0x7f0901aa" android:title="导出图源" app:APKTOOL_DUPLICATE_attr_0x7f040546="APKTOOL_DUPLICATE_id_0x7f0902f8" />
+    <item android:id="@id/APKTOOL_DUPLICATE_id_0x7f09039f" android:title="分享选中源" app:APKTOOL_DUPLICATE_attr_0x7f040546="APKTOOL_DUPLICATE_id_0x7f0902f8" />
+    <item android:id="@id/APKTOOL_DUPLICATE_id_0x7f09012d" android:title="删除图源" app:APKTOOL_DUPLICATE_attr_0x7f040546="APKTOOL_DUPLICATE_id_0x7f0902f8" />
+    <item android:id="@id/APKTOOL_DUPLICATE_id_0x7f09030f" android:title="一键加密章节列表和正文" app:APKTOOL_DUPLICATE_attr_0x7f040546="APKTOOL_DUPLICATE_id_0x7f0902f8" />
+    <item android:id="@id/APKTOOL_DUPLICATE_id_0x7f090310" android:title="一键解密图源" app:APKTOOL_DUPLICATE_attr_0x7f040546="APKTOOL_DUPLICATE_id_0x7f0902f8" />
+    <item android:id="@id/APKTOOL_DUPLICATE_id_0x7f0900f0" android:title="校验图源" app:APKTOOL_DUPLICATE_attr_0x7f040546="APKTOOL_DUPLICATE_id_0x7f0902f8" />
+    <item android:id="@id/APKTOOL_DUPLICATE_id_0x7f0904e4" android:title="开启Web服务" app:APKTOOL_DUPLICATE_attr_0x7f040546="APKTOOL_DUPLICATE_id_0x7f0902f8" />
+</menu>

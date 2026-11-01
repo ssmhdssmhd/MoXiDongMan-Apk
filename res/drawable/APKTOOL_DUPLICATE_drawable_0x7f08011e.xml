@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="oval">
+            <size android:height="48.0dip" android:width="48.0dip" />
+            <solid android:color="#ffcccccc" />
+        </shape>
+    </item>
+    <item android:gravity="center" android:drawable="@drawable/APKTOOL_DUPLICATE_drawable_0x7f08011d" />
+</layer-list>

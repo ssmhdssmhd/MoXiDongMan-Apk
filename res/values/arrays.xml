@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="arg">
+        <item>0</item>
+        <item>1000</item>
+        <item>2000</item>
+        <item>3000</item>
+        <item>5000</item>
+        <item>10000</item>
+    </string-array>
+    <string-array name="APKTOOL_DUPLICATE_array_0x7f030001">
+        <item>查看原图</item>
+        <item>下载图片</item>
+    </string-array>
+    <string-array name="APKTOOL_DUPLICATE_array_0x7f030002">
+        <item>漫画</item>
+        <item>壁纸</item>
+        <item>视频</item>
+    </string-array>
+    <string-array name="APKTOOL_DUPLICATE_array_0x7f030003">
+        <item>.txt</item>
+        <item>.json</item>
+        <item>.xml</item>
+        <item>.TXT</item>
+        <item>.JSON</item>
+        <item>.XML</item>
+    </string-array>
+    <string-array name="APKTOOL_DUPLICATE_array_0x7f030004">
+        <item>否</item>
+        <item>是</item>
+    </string-array>
+    <string-array name="APKTOOL_DUPLICATE_array_0x7f030005">
+        <item>Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.25 Safari/537.36 Core/1.70.3870.400 QQBrowser/10.8.4405.400</item>
+        <item>Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36</item>
+        <item>Mozilla/5.0 (Linux; U; Android 11; zh-tw; MI 9 Build/RKQ1.200826.002) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/79.0.3945.147 Mobile Safari/537.36 XiaoMi/MiuiBrowser/15.1.12</item>
+        <item>Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_5_4; de-de) AppleWebKit/525.18 (KHTML, like Gecko) Version/3.1.2 Safari/525.20.1</item>
+        <item>Mozilla/5.0 (iPhone; CPU iPhone OS 14_0_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 MicroMessenger/8.0.9(0x18000927) NetType/4G Language/zh_CN</item>
+    </string-array>
+</resources>

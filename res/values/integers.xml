@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="arg">220</integer>
+    <integer name="APKTOOL_DUPLICATE_integer_0x7f0a0001">150</integer>
+    <integer name="APKTOOL_DUPLICATE_integer_0x7f0a0002">150</integer>
+    <integer name="APKTOOL_DUPLICATE_integer_0x7f0a0003">150</integer>
+    <integer name="APKTOOL_DUPLICATE_integer_0x7f0a0004">127</integer>
+    <integer name="APKTOOL_DUPLICATE_integer_0x7f0a0005">150</integer>
+    <integer name="APKTOOL_DUPLICATE_integer_0x7f0a0006">2</integer>
+    <integer name="APKTOOL_DUPLICATE_integer_0x7f0a0007">300</integer>
+    <integer name="APKTOOL_DUPLICATE_integer_0x7f0a0008">320</integer>
+    <integer name="APKTOOL_DUPLICATE_integer_0x7f0a0009">300</integer>
+    <integer name="APKTOOL_DUPLICATE_integer_0x7f0a000a">350</integer>
+    <integer name="APKTOOL_DUPLICATE_integer_0x7f0a000b">200</integer>
+    <integer name="APKTOOL_DUPLICATE_integer_0x7f0a000c">250</integer>
+    <integer name="APKTOOL_DUPLICATE_integer_0x7f0a000d">75</integer>
+    <integer name="APKTOOL_DUPLICATE_integer_0x7f0a000e">150</integer>
+    <integer name="APKTOOL_DUPLICATE_integer_0x7f0a000f">0</integer>
+    <integer name="APKTOOL_DUPLICATE_integer_0x7f0a0010">4</integer>
+    <integer name="APKTOOL_DUPLICATE_integer_0x7f0a0011">100</integer>
+    <integer name="APKTOOL_DUPLICATE_integer_0x7f0a0012">100</integer>
+    <integer name="APKTOOL_DUPLICATE_integer_0x7f0a0013">1</integer>
+    <integer name="APKTOOL_DUPLICATE_integer_0x7f0a0014">1</integer>
+    <integer name="APKTOOL_DUPLICATE_integer_0x7f0a0015">3</integer>
+    <integer name="APKTOOL_DUPLICATE_integer_0x7f0a0016">75</integer>
+    <integer name="APKTOOL_DUPLICATE_integer_0x7f0a0017">120</integer>
+    <integer name="APKTOOL_DUPLICATE_integer_0x7f0a0018">100</integer>
+    <integer name="APKTOOL_DUPLICATE_integer_0x7f0a0019">250</integer>
+    <integer name="APKTOOL_DUPLICATE_integer_0x7f0a001a">200</integer>
+    <integer name="APKTOOL_DUPLICATE_integer_0x7f0a001b">999</integer>
+    <integer name="APKTOOL_DUPLICATE_integer_0x7f0a001c">1500</integer>
+</resources>

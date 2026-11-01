@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:icon="@drawable/APKTOOL_DUPLICATE_drawable_0x7f0800fa" android:id="@id/APKTOOL_DUPLICATE_id_0x7f09010b" android:title="搜索" app:APKTOOL_DUPLICATE_attr_0x7f040546="APKTOOL_DUPLICATE_id_0x7f09020b" />
+    <item android:icon="@drawable/APKTOOL_DUPLICATE_drawable_0x7f08010d" android:id="@id/APKTOOL_DUPLICATE_id_0x7f090081" android:title="添加漫画" app:APKTOOL_DUPLICATE_attr_0x7f040546="APKTOOL_DUPLICATE_id_0x7f09020b" />
+</menu>

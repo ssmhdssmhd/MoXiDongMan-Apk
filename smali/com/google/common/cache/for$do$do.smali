@@ -1,0 +1,86 @@
+.class Lcom/google/common/cache/for$do$do;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Ljava/util/concurrent/Callable;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lcom/google/common/cache/for$do;->reload(Ljava/lang/Object;Ljava/lang/Object;)Lcom/google/common/util/concurrent/ListenableFuture;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x1
+    name = null
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Ljava/lang/Object;",
+        "Ljava/util/concurrent/Callable<",
+        "TV;>;"
+    }
+.end annotation
+
+
+# instance fields
+.field public final synthetic do:Ljava/lang/Object;
+
+.field public final synthetic for:Lcom/google/common/cache/for$do;
+
+.field public final synthetic if:Ljava/lang/Object;
+
+
+# direct methods
+.method public constructor <init>(Lcom/google/common/cache/for$do;Ljava/lang/Object;Ljava/lang/Object;)V
+    .locals 0
+
+    .line 1
+    iput-object p1, p0, Lcom/google/common/cache/for$do$do;->for:Lcom/google/common/cache/for$do;
+
+    iput-object p2, p0, Lcom/google/common/cache/for$do$do;->do:Ljava/lang/Object;
+
+    iput-object p3, p0, Lcom/google/common/cache/for$do$do;->if:Ljava/lang/Object;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public call()Ljava/lang/Object;
+    .locals 3
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()TV;"
+        }
+    .end annotation
+
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/lang/Exception;
+        }
+    .end annotation
+
+    .line 1
+    iget-object v0, p0, Lcom/google/common/cache/for$do$do;->for:Lcom/google/common/cache/for$do;
+
+    iget-object v0, v0, Lcom/google/common/cache/for$do;->do:Lcom/google/common/cache/for;
+
+    iget-object v1, p0, Lcom/google/common/cache/for$do$do;->do:Ljava/lang/Object;
+
+    iget-object v2, p0, Lcom/google/common/cache/for$do$do;->if:Ljava/lang/Object;
+
+    invoke-virtual {v0, v1, v2}, Lcom/google/common/cache/for;->reload(Ljava/lang/Object;Ljava/lang/Object;)Lcom/google/common/util/concurrent/ListenableFuture;
+
+    move-result-object v0
+
+    invoke-interface {v0}, Ljava/util/concurrent/Future;->get()Ljava/lang/Object;
+
+    move-result-object v0
+
+    return-object v0
+.end method

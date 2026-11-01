@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/APKTOOL_DUPLICATE_color_0x7f0600f8" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.appbar.AppBarLayout android:id="@id/APKTOOL_DUPLICATE_id_0x7f090299" android:layout_width="fill_parent" android:layout_height="wrap_content" app:APKTOOL_DUPLICATE_attr_0x7f0401ac="0.0dip">
+        <androidx.appcompat.widget.Toolbar android:id="@id/APKTOOL_DUPLICATE_id_0x7f0902ab" android:background="@drawable/APKTOOL_DUPLICATE_drawable_0x7f08005c" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="?APKTOOL_DUPLICATE_attr_0x7f040012" app:APKTOOL_DUPLICATE_attr_0x7f0403b7="@style/APKTOOL_DUPLICATE_style_0x7f120254" app:APKTOOL_DUPLICATE_attr_0x7f040632="@style/APKTOOL_DUPLICATE_style_0x7f120010" app:APKTOOL_DUPLICATE_attr_0x7f040657="@style/APKTOOL_DUPLICATE_style_0x7f120280" style="@style/APKTOOL_DUPLICATE_style_0x7f12027e">
+            <androidx.appcompat.widget.SearchView android:id="@id/APKTOOL_DUPLICATE_id_0x7f090389" android:layout_width="fill_parent" android:layout_height="wrap_content" android:imeOptions="actionSearch" app:APKTOOL_DUPLICATE_attr_0x7f04016f="搜索漫画名或作者" app:APKTOOL_DUPLICATE_attr_0x7f040524="@null" />
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout android:id="@id/APKTOOL_DUPLICATE_id_0x7f09035c" android:layout_width="fill_parent" android:layout_height="fill_parent" app:APKTOOL_DUPLICATE_attr_0x7f040583="true">
+        <com.scwang.smartrefresh.layout.header.ClassicsHeader android:layout_width="fill_parent" android:layout_height="wrap_content" app:APKTOOL_DUPLICATE_attr_0x7f040569="@color/APKTOOL_DUPLICATE_color_0x7f060116" app:APKTOOL_DUPLICATE_attr_0x7f040570="15.0dip" app:APKTOOL_DUPLICATE_attr_0x7f040573="15.0dip" app:APKTOOL_DUPLICATE_attr_0x7f0405a6="12.0sp" app:APKTOOL_DUPLICATE_attr_0x7f0405a7="12.0sp" />
+        <ScrollView android:id="@id/APKTOOL_DUPLICATE_id_0x7f0902a7" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <androidx.appcompat.widget.AppCompatTextView android:textColor="@color/APKTOOL_DUPLICATE_color_0x7f060114" android:autoLink="web" android:linksClickable="true" android:id="@id/APKTOOL_DUPLICATE_id_0x7f090470" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:textIsSelectable="true" />
+        </ScrollView>
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+</LinearLayout>

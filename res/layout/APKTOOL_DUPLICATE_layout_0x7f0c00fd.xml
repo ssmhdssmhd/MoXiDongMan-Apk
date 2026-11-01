@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.qmuiteam.qmui.widget.dialog.QMUIBottomSheetItemView android:gravity="center_horizontal" android:orientation="vertical" android:paddingTop="?APKTOOL_DUPLICATE_attr_0x7f0403e3" android:paddingBottom="?APKTOOL_DUPLICATE_attr_0x7f0403e2" android:layout_width="?APKTOOL_DUPLICATE_attr_0x7f0403e1" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="?APKTOOL_DUPLICATE_attr_0x7f0403e0" android:layout_height="?APKTOOL_DUPLICATE_attr_0x7f0403e0" android:layout_marginTop="?APKTOOL_DUPLICATE_attr_0x7f0403df" android:layout_marginBottom="?APKTOOL_DUPLICATE_attr_0x7f0403de">
+        <androidx.appcompat.widget.AppCompatImageView android:id="@id/APKTOOL_DUPLICATE_id_0x7f0901e8" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerInside" android:layout_centerInParent="true" />
+        <ViewStub android:id="@id/APKTOOL_DUPLICATE_id_0x7f0901e9" android:visibility="gone" android:layout="@layout/APKTOOL_DUPLICATE_layout_0x7f0c00fe" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <TextView android:textAppearance="?APKTOOL_DUPLICATE_attr_0x7f0403e4" android:gravity="center_horizontal" android:id="@id/APKTOOL_DUPLICATE_id_0x7f0901ea" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" />
+</com.qmuiteam.qmui.widget.dialog.QMUIBottomSheetItemView>

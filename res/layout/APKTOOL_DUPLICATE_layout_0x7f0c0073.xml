@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <CheckedTextView android:textAppearance="@style/APKTOOL_DUPLICATE_style_0x7f1201a4" android:gravity="start|center" android:id="@id/APKTOOL_DUPLICATE_id_0x7f090134" android:layout_width="0.0dip" android:layout_height="fill_parent" android:maxLines="1" android:drawablePadding="@dimen/APKTOOL_DUPLICATE_dimen_0x7f07007a" android:layout_weight="1.0" />
+    <ViewStub android:id="@id/APKTOOL_DUPLICATE_id_0x7f090133" android:layout="@layout/APKTOOL_DUPLICATE_layout_0x7f0c006d" android:inflatedId="@id/APKTOOL_DUPLICATE_id_0x7f090132" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+</merge>

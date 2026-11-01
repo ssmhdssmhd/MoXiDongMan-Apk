@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/APKTOOL_DUPLICATE_dimen_0x7f0701c2" android:textColor="?APKTOOL_DUPLICATE_attr_0x7f04040a" android:gravity="left" android:id="@id/APKTOOL_DUPLICATE_id_0x7f0901f4" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</merge>

@@ -1,0 +1,48 @@
+.class public final Lcom/google/common/util/concurrent/b;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# annotations
+.annotation build Landroid/support/v4/ki0;
+.end annotation
+
+.annotation build Landroid/support/v4/o8;
+.end annotation
+
+
+# static fields
+.field private static final do:Ljava/lang/Runnable;
+
+
+# direct methods
+.method public static constructor <clinit>()V
+    .locals 1
+
+    .line 1
+    new-instance v0, Lcom/google/common/util/concurrent/b$do;
+
+    invoke-direct {v0}, Lcom/google/common/util/concurrent/b$do;-><init>()V
+
+    sput-object v0, Lcom/google/common/util/concurrent/b;->do:Ljava/lang/Runnable;
+
+    return-void
+.end method
+
+.method private constructor <init>()V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+.method public static do()Ljava/lang/Runnable;
+    .locals 1
+
+    .line 1
+    sget-object v0, Lcom/google/common/util/concurrent/b;->do:Ljava/lang/Runnable;
+
+    return-object v0
+.end method

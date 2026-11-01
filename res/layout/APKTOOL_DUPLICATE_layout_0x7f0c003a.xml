@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/APKTOOL_DUPLICATE_id_0x7f09036e" android:background="@color/APKTOOL_DUPLICATE_color_0x7f060141" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="vertical" android:id="@id/APKTOOL_DUPLICATE_id_0x7f090115" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.wsw.cospa.widget.view.ZoomableRecyclerView android:id="@id/APKTOOL_DUPLICATE_id_0x7f0902ae" android:layout_width="fill_parent" android:layout_height="fill_parent" android:overScrollMode="never" />
+        <com.wsw.cospa.widget.view.RecyclerViewPager android:id="@id/APKTOOL_DUPLICATE_id_0x7f0902a5" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:overScrollMode="never" />
+        <View android:id="@id/APKTOOL_DUPLICATE_id_0x7f0904d9" android:background="#dd000000" android:layout_width="fill_parent" android:layout_height="fill_parent" android:alpha="0.0" />
+    </RelativeLayout>
+    <include layout="@layout/APKTOOL_DUPLICATE_layout_0x7f0c008d" />
+    <include layout="@layout/APKTOOL_DUPLICATE_layout_0x7f0c0062" />
+    <include layout="@layout/APKTOOL_DUPLICATE_layout_0x7f0c004d" />
+    <include layout="@layout/APKTOOL_DUPLICATE_layout_0x7f0c0028" />
+</RelativeLayout>

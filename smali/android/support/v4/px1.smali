@@ -1,0 +1,36 @@
+.class public final synthetic Landroid/support/v4/px1;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Landroid/view/View$OnLongClickListener;
+
+
+# instance fields
+.field public final synthetic do:Lcom/wsw/cospa/activity/ShopMallActivity;
+
+
+# direct methods
+.method public synthetic constructor <init>(Lcom/wsw/cospa/activity/ShopMallActivity;)V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p1, p0, Landroid/support/v4/px1;->do:Lcom/wsw/cospa/activity/ShopMallActivity;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final onLongClick(Landroid/view/View;)Z
+    .locals 1
+
+    iget-object v0, p0, Landroid/support/v4/px1;->do:Lcom/wsw/cospa/activity/ShopMallActivity;
+
+    invoke-static {v0, p1}, Lcom/wsw/cospa/activity/ShopMallActivity;->native(Lcom/wsw/cospa/activity/ShopMallActivity;Landroid/view/View;)Z
+
+    move-result p1
+
+    return p1
+.end method

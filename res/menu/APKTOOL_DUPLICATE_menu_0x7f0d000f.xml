@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:icon="@drawable/APKTOOL_DUPLICATE_drawable_0x7f0800fa" android:id="@id/APKTOOL_DUPLICATE_id_0x7f090227" android:visible="false" android:title="搜索" app:APKTOOL_DUPLICATE_attr_0x7f040546="APKTOOL_DUPLICATE_id_0x7f09008d" />
+    <item android:id="@id/APKTOOL_DUPLICATE_id_0x7f09006b" android:title="图源管理" app:APKTOOL_DUPLICATE_attr_0x7f040546="APKTOOL_DUPLICATE_id_0x7f0902f8" />
+    <item android:id="@id/APKTOOL_DUPLICATE_id_0x7f090078" android:title="精确搜索" android:checkable="true" app:APKTOOL_DUPLICATE_attr_0x7f040546="APKTOOL_DUPLICATE_id_0x7f0902f8" />
+    <group android:checkableBehavior="single">
+        <item android:id="@id/APKTOOL_DUPLICATE_id_0x7f090229" android:checked="true" android:title="列表模式" app:APKTOOL_DUPLICATE_attr_0x7f040546="APKTOOL_DUPLICATE_id_0x7f0902f8" />
+        <item android:id="@id/APKTOOL_DUPLICATE_id_0x7f090228" android:title="表格模式" app:APKTOOL_DUPLICATE_attr_0x7f040546="APKTOOL_DUPLICATE_id_0x7f0902f8" />
+    </group>
+</menu>

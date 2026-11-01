@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="?android:listPreferredItemHeight" android:foreground="?APKTOOL_DUPLICATE_attr_0x7f040529"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/APKTOOL_DUPLICATE_id_0x7f0901d1" android:layout_width="?android:listPreferredItemHeight" android:layout_height="?android:listPreferredItemHeight">
+        <androidx.appcompat.widget.AppCompatImageView android:id="@id/APKTOOL_DUPLICATE_id_0x7f090241" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="10.0dip" android:src="@drawable/APKTOOL_DUPLICATE_drawable_0x7f0800dd" app:APKTOOL_DUPLICATE_attr_0x7f040645="@color/APKTOOL_DUPLICATE_color_0x7f0600f4" />
+    </FrameLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <androidx.appcompat.widget.AppCompatTextView android:textSize="14.0sp" android:textColor="@color/APKTOOL_DUPLICATE_color_0x7f060114" android:id="@id/APKTOOL_DUPLICATE_id_0x7f090486" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/APKTOOL_DUPLICATE_string_0x7f110021" android:singleLine="true" />
+        <androidx.appcompat.widget.AppCompatTextView android:textSize="12.0sp" android:textColor="@color/APKTOOL_DUPLICATE_color_0x7f060116" android:ellipsize="middle" android:id="@id/APKTOOL_DUPLICATE_id_0x7f090487" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:text="@string/APKTOOL_DUPLICATE_string_0x7f110021" android:maxLines="2" />
+    </LinearLayout>
+</LinearLayout>

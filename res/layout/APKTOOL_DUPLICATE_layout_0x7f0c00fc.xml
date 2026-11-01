@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="?APKTOOL_DUPLICATE_attr_0x7f0403dd" android:paddingTop="?APKTOOL_DUPLICATE_attr_0x7f0403e7" android:paddingBottom="?APKTOOL_DUPLICATE_attr_0x7f0403e7" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <HorizontalScrollView android:scrollbars="none" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/APKTOOL_DUPLICATE_id_0x7f0900bc" android:paddingLeft="?APKTOOL_DUPLICATE_attr_0x7f0403e5" android:paddingRight="?APKTOOL_DUPLICATE_attr_0x7f0403e5" android:paddingBottom="?APKTOOL_DUPLICATE_attr_0x7f0403e6" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </HorizontalScrollView>
+    <HorizontalScrollView android:scrollbars="none" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/APKTOOL_DUPLICATE_id_0x7f0900bd" android:paddingLeft="?APKTOOL_DUPLICATE_attr_0x7f0403e5" android:paddingRight="?APKTOOL_DUPLICATE_attr_0x7f0403e5" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </HorizontalScrollView>
+    <LinearLayout android:orientation="horizontal" android:id="@id/APKTOOL_DUPLICATE_id_0x7f0900ba" android:background="?APKTOOL_DUPLICATE_attr_0x7f0403d9" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="?APKTOOL_DUPLICATE_attr_0x7f0403e7">
+        <com.qmuiteam.qmui.alpha.QMUIAlphaTextView android:textSize="?APKTOOL_DUPLICATE_attr_0x7f0403dc" android:textColor="?APKTOOL_DUPLICATE_attr_0x7f0403db" android:gravity="center" android:id="@id/APKTOOL_DUPLICATE_id_0x7f0900bb" android:layout_width="fill_parent" android:layout_height="?APKTOOL_DUPLICATE_attr_0x7f0403da" android:text="关 闭" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,110 @@
+.class public Landroid/support/v4/mk1$do;
+.super Landroid/support/v4/w3;
+.source "SourceFile"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Landroid/support/v4/mk1;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x9
+    name = "do"
+.end annotation
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 0
+
+    invoke-direct {p0}, Landroid/support/v4/w3;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public do(Lorg/bouncycastle/jcajce/provider/config/ConfigurableProvider;)V
+    .locals 14
+
+    const-string v0, "KeyFactory.Rainbow"
+
+    const-string v1, "org.bouncycastle.pqc.jcajce.provider.rainbow.RainbowKeyFactorySpi"
+
+    invoke-interface {p1, v0, v1}, Lorg/bouncycastle/jcajce/provider/config/ConfigurableProvider;->addAlgorithm(Ljava/lang/String;Ljava/lang/String;)V
+
+    const-string v0, "KeyPairGenerator.Rainbow"
+
+    const-string v1, "org.bouncycastle.pqc.jcajce.provider.rainbow.RainbowKeyPairGeneratorSpi"
+
+    invoke-interface {p1, v0, v1}, Lorg/bouncycastle/jcajce/provider/config/ConfigurableProvider;->addAlgorithm(Ljava/lang/String;Ljava/lang/String;)V
+
+    sget-object v7, Lorg/bouncycastle/pqc/asn1/PQCObjectIdentifiers;->rainbowWithSha224:Lorg/bouncycastle/asn1/catch;
+
+    const-string v4, "SHA224"
+
+    const-string v5, "Rainbow"
+
+    const-string v6, "org.bouncycastle.pqc.jcajce.provider.rainbow.SignatureSpi$withSha224"
+
+    move-object v2, p0
+
+    move-object v3, p1
+
+    invoke-virtual/range {v2 .. v7}, Landroid/support/v4/w3;->if(Lorg/bouncycastle/jcajce/provider/config/ConfigurableProvider;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lorg/bouncycastle/asn1/catch;)V
+
+    sget-object v13, Lorg/bouncycastle/pqc/asn1/PQCObjectIdentifiers;->rainbowWithSha256:Lorg/bouncycastle/asn1/catch;
+
+    const-string v10, "SHA256"
+
+    const-string v11, "Rainbow"
+
+    const-string v12, "org.bouncycastle.pqc.jcajce.provider.rainbow.SignatureSpi$withSha256"
+
+    move-object v8, p0
+
+    move-object v9, p1
+
+    invoke-virtual/range {v8 .. v13}, Landroid/support/v4/w3;->if(Lorg/bouncycastle/jcajce/provider/config/ConfigurableProvider;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lorg/bouncycastle/asn1/catch;)V
+
+    sget-object v5, Lorg/bouncycastle/pqc/asn1/PQCObjectIdentifiers;->rainbowWithSha384:Lorg/bouncycastle/asn1/catch;
+
+    const-string v2, "SHA384"
+
+    const-string v3, "Rainbow"
+
+    const-string v4, "org.bouncycastle.pqc.jcajce.provider.rainbow.SignatureSpi$withSha384"
+
+    move-object v0, p0
+
+    move-object v1, p1
+
+    invoke-virtual/range {v0 .. v5}, Landroid/support/v4/w3;->if(Lorg/bouncycastle/jcajce/provider/config/ConfigurableProvider;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lorg/bouncycastle/asn1/catch;)V
+
+    sget-object v11, Lorg/bouncycastle/pqc/asn1/PQCObjectIdentifiers;->rainbowWithSha512:Lorg/bouncycastle/asn1/catch;
+
+    const-string v8, "SHA512"
+
+    const-string v9, "Rainbow"
+
+    const-string v10, "org.bouncycastle.pqc.jcajce.provider.rainbow.SignatureSpi$withSha512"
+
+    move-object v6, p0
+
+    move-object v7, p1
+
+    invoke-virtual/range {v6 .. v11}, Landroid/support/v4/w3;->if(Lorg/bouncycastle/jcajce/provider/config/ConfigurableProvider;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lorg/bouncycastle/asn1/catch;)V
+
+    new-instance v0, Landroid/support/v4/nk1;
+
+    invoke-direct {v0}, Landroid/support/v4/nk1;-><init>()V
+
+    sget-object v1, Lorg/bouncycastle/pqc/asn1/PQCObjectIdentifiers;->rainbow:Lorg/bouncycastle/asn1/catch;
+
+    const-string v2, "Rainbow"
+
+    invoke-virtual {p0, p1, v1, v2, v0}, Landroid/support/v4/w3;->new(Lorg/bouncycastle/jcajce/provider/config/ConfigurableProvider;Lorg/bouncycastle/asn1/catch;Ljava/lang/String;Lorg/bouncycastle/jcajce/provider/util/AsymmetricKeyInfoConverter;)V
+
+    return-void
+.end method

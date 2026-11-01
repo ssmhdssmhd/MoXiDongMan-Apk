@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <cc.shinichi.library.view.helper.FingerDragHelper android:gravity="center" android:orientation="vertical" android:id="@id/APKTOOL_DUPLICATE_id_0x7f0901c7" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <cc.shinichi.library.view.helper.SubsamplingScaleImageViewDragClose android:id="@id/APKTOOL_DUPLICATE_id_0x7f090324" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <cc.shinichi.library.view.photoview.PhotoView android:id="@id/APKTOOL_DUPLICATE_id_0x7f0901e2" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerInside" />
+    </cc.shinichi.library.view.helper.FingerDragHelper>
+    <ProgressBar android:layout_gravity="center" android:id="@id/APKTOOL_DUPLICATE_id_0x7f090338" android:layout_width="60.0dip" android:layout_height="60.0dip" />
+</FrameLayout>

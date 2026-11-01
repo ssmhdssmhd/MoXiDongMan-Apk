@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <corners android:topLeftRadius="15.0dip" android:bottomLeftRadius="15.0dip" />
+    <solid android:color="@color/APKTOOL_DUPLICATE_color_0x7f060141" />
+    <stroke android:color="@color/APKTOOL_DUPLICATE_color_0x7f060141" />
+</shape>

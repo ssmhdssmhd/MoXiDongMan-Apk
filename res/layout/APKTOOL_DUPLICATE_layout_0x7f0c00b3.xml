@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_gravity="center" android:id="@id/APKTOOL_DUPLICATE_id_0x7f0902b5" android:layout_width="256.0dip" android:layout_height="256.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.timepicker.ClockHandView android:id="@id/APKTOOL_DUPLICATE_id_0x7f0902b6" android:tag="skip" android:layout_width="fill_parent" android:layout_height="fill_parent" app:APKTOOL_DUPLICATE_attr_0x7f04029e="APKTOOL_DUPLICATE_id_0x7f09031a" app:APKTOOL_DUPLICATE_attr_0x7f0402a4="APKTOOL_DUPLICATE_id_0x7f09031a" app:APKTOOL_DUPLICATE_attr_0x7f0402b8="APKTOOL_DUPLICATE_id_0x7f09031a" app:APKTOOL_DUPLICATE_attr_0x7f0402bc="APKTOOL_DUPLICATE_id_0x7f09031a" app:APKTOOL_DUPLICATE_attr_0x7f04052d="24.0dip" />
+</merge>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="APKTOOL_DUPLICATE_string_0x7f110001">Navegar para a página inicial</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f110002">Navegar para cima</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f110003">Mais opções</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f110004">Concluído</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f110005">Ver tudo</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f110006">Selecionar um app</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f110007">DESATIVADO</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f110008">ATIVADO</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f110009">Alt+</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f11000a">Ctrl+</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f11000b">delete</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f11000c">enter</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f11000d">Function+</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f11000e">Meta+</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f11000f">Shift+</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f110010">espaço</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f110011">Sym+</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f110012">Menu+</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f110013">Pesquisar…</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f110014">Limpar consulta</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f110015">Consulta de pesquisa</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f110016">Pesquisar</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f110017">Enviar consulta</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f110018">Pesquisa por voz</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f110019">Compartilhar com</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f11001a">Compartilhar com %s</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f11001b">Recolher</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f1100dd">Pesquisar</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f1100f7">999+</string>
+</resources>

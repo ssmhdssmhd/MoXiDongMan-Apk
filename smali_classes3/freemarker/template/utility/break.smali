@@ -1,0 +1,191 @@
+.class public final Lfreemarker/template/utility/break;
+.super Ljava/io/Writer;
+.source "SourceFile"
+
+
+# static fields
+.field public static final do:Lfreemarker/template/utility/break;
+
+
+# direct methods
+.method public static constructor <clinit>()V
+    .locals 1
+
+    .line 1
+    new-instance v0, Lfreemarker/template/utility/break;
+
+    invoke-direct {v0}, Lfreemarker/template/utility/break;-><init>()V
+
+    sput-object v0, Lfreemarker/template/utility/break;->do:Lfreemarker/template/utility/break;
+
+    return-void
+.end method
+
+.method private constructor <init>()V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Ljava/io/Writer;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public append(C)Ljava/io/Writer;
+    .locals 0
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/io/IOException;
+        }
+    .end annotation
+
+    return-object p0
+.end method
+
+.method public append(Ljava/lang/CharSequence;)Ljava/io/Writer;
+    .locals 0
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/io/IOException;
+        }
+    .end annotation
+
+    return-object p0
+.end method
+
+.method public append(Ljava/lang/CharSequence;II)Ljava/io/Writer;
+    .locals 0
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/io/IOException;
+        }
+    .end annotation
+
+    return-object p0
+.end method
+
+.method public bridge synthetic append(C)Ljava/lang/Appendable;
+    .locals 0
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/io/IOException;
+        }
+    .end annotation
+
+    .line 1
+    invoke-virtual {p0, p1}, Lfreemarker/template/utility/break;->append(C)Ljava/io/Writer;
+
+    move-result-object p1
+
+    return-object p1
+.end method
+
+.method public bridge synthetic append(Ljava/lang/CharSequence;)Ljava/lang/Appendable;
+    .locals 0
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/io/IOException;
+        }
+    .end annotation
+
+    .line 2
+    invoke-virtual {p0, p1}, Lfreemarker/template/utility/break;->append(Ljava/lang/CharSequence;)Ljava/io/Writer;
+
+    move-result-object p1
+
+    return-object p1
+.end method
+
+.method public bridge synthetic append(Ljava/lang/CharSequence;II)Ljava/lang/Appendable;
+    .locals 0
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/io/IOException;
+        }
+    .end annotation
+
+    .line 3
+    invoke-virtual {p0, p1, p2, p3}, Lfreemarker/template/utility/break;->append(Ljava/lang/CharSequence;II)Ljava/io/Writer;
+
+    move-result-object p1
+
+    return-object p1
+.end method
+
+.method public close()V
+    .locals 0
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/io/IOException;
+        }
+    .end annotation
+
+    return-void
+.end method
+
+.method public flush()V
+    .locals 0
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/io/IOException;
+        }
+    .end annotation
+
+    return-void
+.end method
+
+.method public write(I)V
+    .locals 0
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/io/IOException;
+        }
+    .end annotation
+
+    return-void
+.end method
+
+.method public write(Ljava/lang/String;)V
+    .locals 0
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/io/IOException;
+        }
+    .end annotation
+
+    return-void
+.end method
+
+.method public write(Ljava/lang/String;II)V
+    .locals 0
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/io/IOException;
+        }
+    .end annotation
+
+    return-void
+.end method
+
+.method public write([C)V
+    .locals 0
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/io/IOException;
+        }
+    .end annotation
+
+    return-void
+.end method
+
+.method public write([CII)V
+    .locals 0
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/io/IOException;
+        }
+    .end annotation
+
+    return-void
+.end method

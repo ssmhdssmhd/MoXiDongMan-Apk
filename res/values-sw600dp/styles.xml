@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="APKTOOL_DUPLICATE_style_0x7f1202d7" parent="@style/APKTOOL_DUPLICATE_style_0x7f1200ec">
+        <item name="APKTOOL_DUPLICATE_attr_0x7f0405e8">APKTOOL_DUPLICATE_id_0x7f0900e1</item>
+        <item name="APKTOOL_DUPLICATE_attr_0x7f0405f5">APKTOOL_DUPLICATE_id_0x7f0901ce</item>
+    </style>
+</resources>

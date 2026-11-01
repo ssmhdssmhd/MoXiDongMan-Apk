@@ -1,0 +1,1615 @@
+.class public final Lcom/wsw/cospa/utils/analyzeUrl/Utils/protobuf/dmzj/novel/NovelChapterResponseOuterClass$NovelChapterVolumeResponse;
+.super Lcom/google/protobuf/GeneratedMessageV3;
+.source "SourceFile"
+
+# interfaces
+.implements Lcom/wsw/cospa/utils/analyzeUrl/Utils/protobuf/dmzj/novel/NovelChapterResponseOuterClass$NovelChapterVolumeResponseOrBuilder;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/wsw/cospa/utils/analyzeUrl/Utils/protobuf/dmzj/novel/NovelChapterResponseOuterClass;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = "NovelChapterVolumeResponse"
+.end annotation
+
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Lcom/wsw/cospa/utils/analyzeUrl/Utils/protobuf/dmzj/novel/NovelChapterResponseOuterClass$NovelChapterVolumeResponse$Builder;
+    }
+.end annotation
+
+
+# static fields
+.field public static final CHAPTERS_FIELD_NUMBER:I = 0x4
+
+.field private static final DEFAULT_INSTANCE:Lcom/wsw/cospa/utils/analyzeUrl/Utils/protobuf/dmzj/novel/NovelChapterResponseOuterClass$NovelChapterVolumeResponse;
+
+.field private static final PARSER:Lcom/google/protobuf/Parser;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lcom/google/protobuf/Parser<",
+            "Lcom/wsw/cospa/utils/analyzeUrl/Utils/protobuf/dmzj/novel/NovelChapterResponseOuterClass$NovelChapterVolumeResponse;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field public static final VOLUMEID_FIELD_NUMBER:I = 0x1
+
+.field public static final VOLUMENAME_FIELD_NUMBER:I = 0x2
+
+.field public static final VOLUMEORDER_FIELD_NUMBER:I = 0x3
+
+.field private static final serialVersionUID:J
+
+
+# instance fields
+.field private chapters_:Ljava/util/List;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/List<",
+            "Lcom/wsw/cospa/utils/analyzeUrl/Utils/protobuf/dmzj/novel/NovelChapterResponseOuterClass$NovelChapterItemResponse;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private memoizedIsInitialized:B
+
+.field private volumeId_:I
+
+.field private volatile volumeName_:Ljava/lang/Object;
+
+.field private volumeOrder_:I
+
+
+# direct methods
+.method public static constructor <clinit>()V
+    .locals 1
+
+    .line 1
+    new-instance v0, Lcom/wsw/cospa/utils/analyzeUrl/Utils/protobuf/dmzj/novel/NovelChapterResponseOuterClass$NovelChapterVolumeResponse;
+
+    invoke-direct {v0}, Lcom/wsw/cospa/utils/analyzeUrl/Utils/protobuf/dmzj/novel/NovelChapterResponseOuterClass$NovelChapterVolumeResponse;-><init>()V
+
+    sput-object v0, Lcom/wsw/cospa/utils/analyzeUrl/Utils/protobuf/dmzj/novel/NovelChapterResponseOuterClass$NovelChapterVolumeResponse;->DEFAULT_INSTANCE:Lcom/wsw/cospa/utils/analyzeUrl/Utils/protobuf/dmzj/novel/NovelChapterResponseOuterClass$NovelChapterVolumeResponse;
+
+    .line 2
+    new-instance v0, Lcom/wsw/cospa/utils/analyzeUrl/Utils/protobuf/dmzj/novel/NovelChapterResponseOuterClass$NovelChapterVolumeResponse$1;
+
+    invoke-direct {v0}, Lcom/wsw/cospa/utils/analyzeUrl/Utils/protobuf/dmzj/novel/NovelChapterResponseOuterClass$NovelChapterVolumeResponse$1;-><init>()V
+
+    sput-object v0, Lcom/wsw/cospa/utils/analyzeUrl/Utils/protobuf/dmzj/novel/NovelChapterResponseOuterClass$NovelChapterVolumeResponse;->PARSER:Lcom/google/protobuf/Parser;
+
+    return-void
+.end method
+
+.method private constructor <init>()V
+    .locals 1
+
+    .line 5
+    invoke-direct {p0}, Lcom/google/protobuf/GeneratedMessageV3;-><init>()V
+
+    const/4 v0, -0x1
+
+    .line 6
+    iput-byte v0, p0, Lcom/wsw/cospa/utils/analyzeUrl/Utils/protobuf/dmzj/novel/NovelChapterResponseOuterClass$NovelChapterVolumeResponse;->memoizedIsInitialized:B
+
+    const-string v0, ""
+
+    .line 7
+    iput-object v0, p0, Lcom/wsw/cospa/utils/analyzeUrl/Utils/protobuf/dmzj/novel/NovelChapterResponseOuterClass$NovelChapterVolumeResponse;->volumeName_:Ljava/lang/Object;
+
+    .line 8
+    invoke-static {}, Ljava/util/Collections;->emptyList()Ljava/util/List;
+
+    move-result-object v0
+
+    iput-object v0, p0, Lcom/wsw/cospa/utils/analyzeUrl/Utils/protobuf/dmzj/novel/NovelChapterResponseOuterClass$NovelChapterVolumeResponse;->chapters_:Ljava/util/List;
+
+    return-void
+.end method
+
+.method private constructor <init>(Lcom/google/protobuf/CodedInputStream;Lcom/google/protobuf/implements;)V
+    .locals 6
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Lcom/google/protobuf/n;
+        }
+    .end annotation
+
+    .line 9
+    invoke-direct {p0}, Lcom/wsw/cospa/utils/analyzeUrl/Utils/protobuf/dmzj/novel/NovelChapterResponseOuterClass$NovelChapterVolumeResponse;-><init>()V
+
+    .line 10
+    invoke-static {p2}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 11
+    invoke-static {}, Lcom/google/protobuf/t1;->this()Lcom/google/protobuf/t1$if;
+
+    move-result-object v0
+
+    const/4 v1, 0x0
+
+    const/4 v2, 0x0
+
+    :cond_0
+    :goto_0
+    const/4 v3, 0x1
+
+    if-nez v1, :cond_8
+
+    .line 12
+    :try_start_0
+    invoke-virtual {p1}, Lcom/google/protobuf/CodedInputStream;->l()I
+
+    move-result v4
+
+    if-eqz v4, :cond_6
+
+    const/16 v5, 0x8
+
+    if-eq v4, v5, :cond_5
+
+    const/16 v5, 0x12
+
+    if-eq v4, v5, :cond_4
+
+    const/16 v5, 0x18
+
+    if-eq v4, v5, :cond_3
+
+    const/16 v5, 0x22
+
+    if-eq v4, v5, :cond_1
+
+    .line 13
+    invoke-virtual {p0, p1, v0, p2, v4}, Lcom/google/protobuf/GeneratedMessageV3;->parseUnknownField(Lcom/google/protobuf/CodedInputStream;Lcom/google/protobuf/t1$if;Lcom/google/protobuf/implements;I)Z
+
+    move-result v4
+
+    if-nez v4, :cond_0
+
+    goto :goto_1
+
+    :cond_1
+    and-int/lit8 v4, v2, 0x1
+
+    if-nez v4, :cond_2
+
+    .line 14
+    new-instance v4, Ljava/util/ArrayList;
+
+    invoke-direct {v4}, Ljava/util/ArrayList;-><init>()V
+
+    iput-object v4, p0, Lcom/wsw/cospa/utils/analyzeUrl/Utils/protobuf/dmzj/novel/NovelChapterResponseOuterClass$NovelChapterVolumeResponse;->chapters_:Ljava/util/List;
+
+    or-int/lit8 v2, v2, 0x1
+
+    .line 15
+    :cond_2
+    iget-object v4, p0, Lcom/wsw/cospa/utils/analyzeUrl/Utils/protobuf/dmzj/novel/NovelChapterResponseOuterClass$NovelChapterVolumeResponse;->chapters_:Ljava/util/List;
+
+    .line 16
+    invoke-static {}, Lcom/wsw/cospa/utils/analyzeUrl/Utils/protobuf/dmzj/novel/NovelChapterResponseOuterClass$NovelChapterItemResponse;->parser()Lcom/google/protobuf/Parser;
+
+    move-result-object v5
+
+    invoke-virtual {p1, v5, p2}, Lcom/google/protobuf/CodedInputStream;->interface(Lcom/google/protobuf/Parser;Lcom/google/protobuf/implements;)Lcom/google/protobuf/MessageLite;
+
+    move-result-object v5
+
+    check-cast v5, Lcom/wsw/cospa/utils/analyzeUrl/Utils/protobuf/dmzj/novel/NovelChapterResponseOuterClass$NovelChapterItemResponse;
+
+    .line 17
+    invoke-interface {v4, v5}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+
+    goto :goto_0
+
+    .line 18
+    :cond_3
+    invoke-virtual {p1}, Lcom/google/protobuf/CodedInputStream;->strictfp()I
+
+    move-result v4
+
+    iput v4, p0, Lcom/wsw/cospa/utils/analyzeUrl/Utils/protobuf/dmzj/novel/NovelChapterResponseOuterClass$NovelChapterVolumeResponse;->volumeOrder_:I
+
+    goto :goto_0
+
+    .line 19
+    :cond_4
+    invoke-virtual {p1}, Lcom/google/protobuf/CodedInputStream;->k()Ljava/lang/String;
+
+    move-result-object v4
+
+    .line 20
+    iput-object v4, p0, Lcom/wsw/cospa/utils/analyzeUrl/Utils/protobuf/dmzj/novel/NovelChapterResponseOuterClass$NovelChapterVolumeResponse;->volumeName_:Ljava/lang/Object;
+
+    goto :goto_0
+
+    .line 21
+    :cond_5
+    invoke-virtual {p1}, Lcom/google/protobuf/CodedInputStream;->strictfp()I
+
+    move-result v4
+
+    iput v4, p0, Lcom/wsw/cospa/utils/analyzeUrl/Utils/protobuf/dmzj/novel/NovelChapterResponseOuterClass$NovelChapterVolumeResponse;->volumeId_:I
+    :try_end_0
+    .catch Lcom/google/protobuf/n; {:try_start_0 .. :try_end_0} :catch_1
+    .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    goto :goto_0
+
+    :cond_6
+    :goto_1
+    const/4 v1, 0x1
+
+    goto :goto_0
+
+    :catchall_0
+    move-exception p1
+
+    goto :goto_2
+
+    :catch_0
+    move-exception p1
+
+    .line 22
+    :try_start_1
+    new-instance p2, Lcom/google/protobuf/n;
+
+    invoke-direct {p2, p1}, Lcom/google/protobuf/n;-><init>(Ljava/io/IOException;)V
+
+    .line 23
+    invoke-virtual {p2, p0}, Lcom/google/protobuf/n;->setUnfinishedMessage(Lcom/google/protobuf/MessageLite;)Lcom/google/protobuf/n;
+
+    move-result-object p1
+
+    throw p1
+
+    :catch_1
+    move-exception p1
+
+    .line 24
+    invoke-virtual {p1, p0}, Lcom/google/protobuf/n;->setUnfinishedMessage(Lcom/google/protobuf/MessageLite;)Lcom/google/protobuf/n;
+
+    move-result-object p1
+
+    throw p1
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+
+    :goto_2
+    and-int/lit8 p2, v2, 0x1
+
+    if-eqz p2, :cond_7
+
+    .line 25
+    iget-object p2, p0, Lcom/wsw/cospa/utils/analyzeUrl/Utils/protobuf/dmzj/novel/NovelChapterResponseOuterClass$NovelChapterVolumeResponse;->chapters_:Ljava/util/List;
+
+    invoke-static {p2}, Ljava/util/Collections;->unmodifiableList(Ljava/util/List;)Ljava/util/List;
+
+    move-result-object p2
+
+    iput-object p2, p0, Lcom/wsw/cospa/utils/analyzeUrl/Utils/protobuf/dmzj/novel/NovelChapterResponseOuterClass$NovelChapterVolumeResponse;->chapters_:Ljava/util/List;
+
+    .line 26
+    :cond_7
+    invoke-virtual {v0}, Lcom/google/protobuf/t1$if;->new()Lcom/google/protobuf/t1;
+
+    move-result-object p2
+
+    iput-object p2, p0, Lcom/google/protobuf/GeneratedMessageV3;->unknownFields:Lcom/google/protobuf/t1;
+
+    .line 27
+    invoke-virtual {p0}, Lcom/google/protobuf/GeneratedMessageV3;->makeExtensionsImmutable()V
+
+    .line 28
+    throw p1
+
+    :cond_8
+    and-int/lit8 p1, v2, 0x1
+
+    if-eqz p1, :cond_9
+
+    .line 29
+    iget-object p1, p0, Lcom/wsw/cospa/utils/analyzeUrl/Utils/protobuf/dmzj/novel/NovelChapterResponseOuterClass$NovelChapterVolumeResponse;->chapters_:Ljava/util/List;
+
+    invoke-static {p1}, Ljava/util/Collections;->unmodifiableList(Ljava/util/List;)Ljava/util/List;
+
+    move-result-object p1
+
+    iput-object p1, p0, Lcom/wsw/cospa/utils/analyzeUrl/Utils/protobuf/dmzj/novel/NovelChapterResponseOuterClass$NovelChapterVolumeResponse;->chapters_:Ljava/util/List;
+
+    .line 30
+    :cond_9
+    invoke-virtual {v0}, Lcom/google/protobuf/t1$if;->new()Lcom/google/protobuf/t1;
+
+    move-result-object p1
+
+    iput-object p1, p0, Lcom/google/protobuf/GeneratedMessageV3;->unknownFields:Lcom/google/protobuf/t1;
+
+    .line 31
+    invoke-virtual {p0}, Lcom/google/protobuf/GeneratedMessageV3;->makeExtensionsImmutable()V
+
+    return-void
+.end method
+
+.method public synthetic constructor <init>(Lcom/google/protobuf/CodedInputStream;Lcom/google/protobuf/implements;Lcom/wsw/cospa/utils/analyzeUrl/Utils/protobuf/dmzj/novel/NovelChapterResponseOuterClass$1;)V
+    .locals 0
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Lcom/google/protobuf/n;
+        }
+    .end annotation
+
+    .line 1
+    invoke-direct {p0, p1, p2}, Lcom/wsw/cospa/utils/analyzeUrl/Utils/protobuf/dmzj/novel/NovelChapterResponseOuterClass$NovelChapterVolumeResponse;-><init>(Lcom/google/protobuf/CodedInputStream;Lcom/google/protobuf/implements;)V
+
+    return-void
+.end method
+
+.method private constructor <init>(Lcom/google/protobuf/GeneratedMessageV3$if;)V
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lcom/google/protobuf/GeneratedMessageV3$if<",
+            "*>;)V"
+        }
+    .end annotation
+
+    .line 3
+    invoke-direct {p0, p1}, Lcom/google/protobuf/GeneratedMessageV3;-><init>(Lcom/google/protobuf/GeneratedMessageV3$if;)V
+
+    const/4 p1, -0x1
+
+    .line 4
+    iput-byte p1, p0, Lcom/wsw/cospa/utils/analyzeUrl/Utils/protobuf/dmzj/novel/NovelChapterResponseOuterClass$NovelChapterVolumeResponse;->memoizedIsInitialized:B
+
+    return-void
+.end method
+
+.method public synthetic constructor <init>(Lcom/google/protobuf/GeneratedMessageV3$if;Lcom/wsw/cospa/utils/analyzeUrl/Utils/protobuf/dmzj/novel/NovelChapterResponseOuterClass$1;)V
+    .locals 0
+
+    .line 2
+    invoke-direct {p0, p1}, Lcom/wsw/cospa/utils/analyzeUrl/Utils/protobuf/dmzj/novel/NovelChapterResponseOuterClass$NovelChapterVolumeResponse;-><init>(Lcom/google/protobuf/GeneratedMessageV3$if;)V
+
+    return-void
+.end method
+
+.method public static synthetic access$1800()Z
+    .locals 1
+
+    .line 1
+    sget-boolean v0, Lcom/google/protobuf/GeneratedMessageV3;->alwaysUseFieldBuilders:Z
+
+    return v0
+.end method
+
+.method public static synthetic access$2002(Lcom/wsw/cospa/utils/analyzeUrl/Utils/protobuf/dmzj/novel/NovelChapterResponseOuterClass$NovelChapterVolumeResponse;I)I
+    .locals 0
+
+    .line 1
+    iput p1, p0, Lcom/wsw/cospa/utils/analyzeUrl/Utils/protobuf/dmzj/novel/NovelChapterResponseOuterClass$NovelChapterVolumeResponse;->volumeId_:I
+
+    return p1
+.end method
+
+.method public static synthetic access$2100(Lcom/wsw/cospa/utils/analyzeUrl/Utils/protobuf/dmzj/novel/NovelChapterResponseOuterClass$NovelChapterVolumeResponse;)Ljava/lang/Object;
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Lcom/wsw/cospa/utils/analyzeUrl/Utils/protobuf/dmzj/novel/NovelChapterResponseOuterClass$NovelChapterVolumeResponse;->volumeName_:Ljava/lang/Object;
+
+    return-object p0
+.end method
+
+.method public static synthetic access$2102(Lcom/wsw/cospa/utils/analyzeUrl/Utils/protobuf/dmzj/novel/NovelChapterResponseOuterClass$NovelChapterVolumeResponse;Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 0
+
+    .line 1
+    iput-object p1, p0, Lcom/wsw/cospa/utils/analyzeUrl/Utils/protobuf/dmzj/novel/NovelChapterResponseOuterClass$NovelChapterVolumeResponse;->volumeName_:Ljava/lang/Object;
+
+    return-object p1
+.end method
+
+.method public static synthetic access$2202(Lcom/wsw/cospa/utils/analyzeUrl/Utils/protobuf/dmzj/novel/NovelChapterResponseOuterClass$NovelChapterVolumeResponse;I)I
+    .locals 0
+
+    .line 1
+    iput p1, p0, Lcom/wsw/cospa/utils/analyzeUrl/Utils/protobuf/dmzj/novel/NovelChapterResponseOuterClass$NovelChapterVolumeResponse;->volumeOrder_:I
+
+    return p1
+.end method
+
+.method public static synthetic access$2300(Lcom/wsw/cospa/utils/analyzeUrl/Utils/protobuf/dmzj/novel/NovelChapterResponseOuterClass$NovelChapterVolumeResponse;)Ljava/util/List;
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Lcom/wsw/cospa/utils/analyzeUrl/Utils/protobuf/dmzj/novel/NovelChapterResponseOuterClass$NovelChapterVolumeResponse;->chapters_:Ljava/util/List;
+
+    return-object p0
+.end method
+
+.method public static synthetic access$2302(Lcom/wsw/cospa/utils/analyzeUrl/Utils/protobuf/dmzj/novel/NovelChapterResponseOuterClass$NovelChapterVolumeResponse;Ljava/util/List;)Ljava/util/List;
+    .locals 0
+
+    .line 1
+    iput-object p1, p0, Lcom/wsw/cospa/utils/analyzeUrl/Utils/protobuf/dmzj/novel/NovelChapterResponseOuterClass$NovelChapterVolumeResponse;->chapters_:Ljava/util/List;
+
+    return-object p1
+.end method
+
+.method public static synthetic access$2400()Z
+    .locals 1
+
+    .line 1
+    sget-boolean v0, Lcom/google/protobuf/GeneratedMessageV3;->alwaysUseFieldBuilders:Z
+
+    return v0
+.end method
+
+.method public static synthetic access$2500(Lcom/wsw/cospa/utils/analyzeUrl/Utils/protobuf/dmzj/novel/NovelChapterResponseOuterClass$NovelChapterVolumeResponse;)Lcom/google/protobuf/t1;
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Lcom/google/protobuf/GeneratedMessageV3;->unknownFields:Lcom/google/protobuf/t1;
+
+    return-object p0
+.end method
+
+.method public static synthetic access$2600()Lcom/google/protobuf/Parser;
+    .locals 1
+
+    .line 1
+    sget-object v0, Lcom/wsw/cospa/utils/analyzeUrl/Utils/protobuf/dmzj/novel/NovelChapterResponseOuterClass$NovelChapterVolumeResponse;->PARSER:Lcom/google/protobuf/Parser;
+
+    return-object v0
+.end method
+
+.method public static synthetic access$2700(Lcom/google/protobuf/ByteString;)V
+    .locals 0
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/lang/IllegalArgumentException;
+        }
+    .end annotation
+
+    .line 1
+    invoke-static {p0}, Lcom/google/protobuf/AbstractMessageLite;->checkByteStringIsUtf8(Lcom/google/protobuf/ByteString;)V
+
+    return-void
+.end method
+
+.method public static getDefaultInstance()Lcom/wsw/cospa/utils/analyzeUrl/Utils/protobuf/dmzj/novel/NovelChapterResponseOuterClass$NovelChapterVolumeResponse;
+    .locals 1
+
+    .line 1
+    sget-object v0, Lcom/wsw/cospa/utils/analyzeUrl/Utils/protobuf/dmzj/novel/NovelChapterResponseOuterClass$NovelChapterVolumeResponse;->DEFAULT_INSTANCE:Lcom/wsw/cospa/utils/analyzeUrl/Utils/protobuf/dmzj/novel/NovelChapterResponseOuterClass$NovelChapterVolumeResponse;
+
+    return-object v0
+.end method
+
+.method public static final getDescriptor()Lcom/google/protobuf/Descriptors$if;
+    .locals 1
+
+    .line 1
+    invoke-static {}, Lcom/wsw/cospa/utils/analyzeUrl/Utils/protobuf/dmzj/novel/NovelChapterResponseOuterClass;->access$1400()Lcom/google/protobuf/Descriptors$if;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public static newBuilder()Lcom/wsw/cospa/utils/analyzeUrl/Utils/protobuf/dmzj/novel/NovelChapterResponseOuterClass$NovelChapterVolumeResponse$Builder;
+    .locals 1
+
+    .line 1
+    sget-object v0, Lcom/wsw/cospa/utils/analyzeUrl/Utils/protobuf/dmzj/novel/NovelChapterResponseOuterClass$NovelChapterVolumeResponse;->DEFAULT_INSTANCE:Lcom/wsw/cospa/utils/analyzeUrl/Utils/protobuf/dmzj/novel/NovelChapterResponseOuterClass$NovelChapterVolumeResponse;
+
+    invoke-virtual {v0}, Lcom/wsw/cospa/utils/analyzeUrl/Utils/protobuf/dmzj/novel/NovelChapterResponseOuterClass$NovelChapterVolumeResponse;->toBuilder()Lcom/wsw/cospa/utils/analyzeUrl/Utils/protobuf/dmzj/novel/NovelChapterResponseOuterClass$NovelChapterVolumeResponse$Builder;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public static newBuilder(Lcom/wsw/cospa/utils/analyzeUrl/Utils/protobuf/dmzj/novel/NovelChapterResponseOuterClass$NovelChapterVolumeResponse;)Lcom/wsw/cospa/utils/analyzeUrl/Utils/protobuf/dmzj/novel/NovelChapterResponseOuterClass$NovelChapterVolumeResponse$Builder;
+    .locals 1
+
+    .line 2
+    sget-object v0, Lcom/wsw/cospa/utils/analyzeUrl/Utils/protobuf/dmzj/novel/NovelChapterResponseOuterClass$NovelChapterVolumeResponse;->DEFAULT_INSTANCE:Lcom/wsw/cospa/utils/analyzeUrl/Utils/protobuf/dmzj/novel/NovelChapterResponseOuterClass$NovelChapterVolumeResponse;
+
+    invoke-virtual {v0}, Lcom/wsw/cospa/utils/analyzeUrl/Utils/protobuf/dmzj/novel/NovelChapterResponseOuterClass$NovelChapterVolumeResponse;->toBuilder()Lcom/wsw/cospa/utils/analyzeUrl/Utils/protobuf/dmzj/novel/NovelChapterResponseOuterClass$NovelChapterVolumeResponse$Builder;
+
+    move-result-object v0
+
+    invoke-virtual {v0, p0}, Lcom/wsw/cospa/utils/analyzeUrl/Utils/protobuf/dmzj/novel/NovelChapterResponseOuterClass$NovelChapterVolumeResponse$Builder;->mergeFrom(Lcom/wsw/cospa/utils/analyzeUrl/Utils/protobuf/dmzj/novel/NovelChapterResponseOuterClass$NovelChapterVolumeResponse;)Lcom/wsw/cospa/utils/analyzeUrl/Utils/protobuf/dmzj/novel/NovelChapterResponseOuterClass$NovelChapterVolumeResponse$Builder;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public static parseDelimitedFrom(Ljava/io/InputStream;)Lcom/wsw/cospa/utils/analyzeUrl/Utils/protobuf/dmzj/novel/NovelChapterResponseOuterClass$NovelChapterVolumeResponse;
+    .locals 1
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/io/IOException;
+        }
+    .end annotation
+
+    .line 1
+    sget-object v0, Lcom/wsw/cospa/utils/analyzeUrl/Utils/protobuf/dmzj/novel/NovelChapterResponseOuterClass$NovelChapterVolumeResponse;->PARSER:Lcom/google/protobuf/Parser;
+
+    .line 2
+    invoke-static {v0, p0}, Lcom/google/protobuf/GeneratedMessageV3;->parseDelimitedWithIOException(Lcom/google/protobuf/Parser;Ljava/io/InputStream;)Lcom/google/protobuf/Message;
+
+    move-result-object p0
+
+    check-cast p0, Lcom/wsw/cospa/utils/analyzeUrl/Utils/protobuf/dmzj/novel/NovelChapterResponseOuterClass$NovelChapterVolumeResponse;
+
+    return-object p0
+.end method
+
+.method public static parseDelimitedFrom(Ljava/io/InputStream;Lcom/google/protobuf/implements;)Lcom/wsw/cospa/utils/analyzeUrl/Utils/protobuf/dmzj/novel/NovelChapterResponseOuterClass$NovelChapterVolumeResponse;
+    .locals 1
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/io/IOException;
+        }
+    .end annotation
+
+    .line 3
+    sget-object v0, Lcom/wsw/cospa/utils/analyzeUrl/Utils/protobuf/dmzj/novel/NovelChapterResponseOuterClass$NovelChapterVolumeResponse;->PARSER:Lcom/google/protobuf/Parser;
+
+    .line 4
+    invoke-static {v0, p0, p1}, Lcom/google/protobuf/GeneratedMessageV3;->parseDelimitedWithIOException(Lcom/google/protobuf/Parser;Ljava/io/InputStream;Lcom/google/protobuf/implements;)Lcom/google/protobuf/Message;
+
+    move-result-object p0
+
+    check-cast p0, Lcom/wsw/cospa/utils/analyzeUrl/Utils/protobuf/dmzj/novel/NovelChapterResponseOuterClass$NovelChapterVolumeResponse;
+
+    return-object p0
+.end method
+
+.method public static parseFrom(Lcom/google/protobuf/ByteString;)Lcom/wsw/cospa/utils/analyzeUrl/Utils/protobuf/dmzj/novel/NovelChapterResponseOuterClass$NovelChapterVolumeResponse;
+    .locals 1
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Lcom/google/protobuf/n;
+        }
+    .end annotation
+
+    .line 3
+    sget-object v0, Lcom/wsw/cospa/utils/analyzeUrl/Utils/protobuf/dmzj/novel/NovelChapterResponseOuterClass$NovelChapterVolumeResponse;->PARSER:Lcom/google/protobuf/Parser;
+
+    invoke-interface {v0, p0}, Lcom/google/protobuf/Parser;->parseFrom(Lcom/google/protobuf/ByteString;)Ljava/lang/Object;
+
+    move-result-object p0
+
+    check-cast p0, Lcom/wsw/cospa/utils/analyzeUrl/Utils/protobuf/dmzj/novel/NovelChapterResponseOuterClass$NovelChapterVolumeResponse;
+
+    return-object p0
+.end method
+
+.method public static parseFrom(Lcom/google/protobuf/ByteString;Lcom/google/protobuf/implements;)Lcom/wsw/cospa/utils/analyzeUrl/Utils/protobuf/dmzj/novel/NovelChapterResponseOuterClass$NovelChapterVolumeResponse;
+    .locals 1
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Lcom/google/protobuf/n;
+        }
+    .end annotation
+
+    .line 4
+    sget-object v0, Lcom/wsw/cospa/utils/analyzeUrl/Utils/protobuf/dmzj/novel/NovelChapterResponseOuterClass$NovelChapterVolumeResponse;->PARSER:Lcom/google/protobuf/Parser;
+
+    invoke-interface {v0, p0, p1}, Lcom/google/protobuf/Parser;->parseFrom(Lcom/google/protobuf/ByteString;Lcom/google/protobuf/implements;)Ljava/lang/Object;
+
+    move-result-object p0
+
+    check-cast p0, Lcom/wsw/cospa/utils/analyzeUrl/Utils/protobuf/dmzj/novel/NovelChapterResponseOuterClass$NovelChapterVolumeResponse;
+
+    return-object p0
+.end method
+
+.method public static parseFrom(Lcom/google/protobuf/CodedInputStream;)Lcom/wsw/cospa/utils/analyzeUrl/Utils/protobuf/dmzj/novel/NovelChapterResponseOuterClass$NovelChapterVolumeResponse;
+    .locals 1
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/io/IOException;
+        }
+    .end annotation
+
+    .line 11
+    sget-object v0, Lcom/wsw/cospa/utils/analyzeUrl/Utils/protobuf/dmzj/novel/NovelChapterResponseOuterClass$NovelChapterVolumeResponse;->PARSER:Lcom/google/protobuf/Parser;
+
+    .line 12
+    invoke-static {v0, p0}, Lcom/google/protobuf/GeneratedMessageV3;->parseWithIOException(Lcom/google/protobuf/Parser;Lcom/google/protobuf/CodedInputStream;)Lcom/google/protobuf/Message;
+
+    move-result-object p0
+
+    check-cast p0, Lcom/wsw/cospa/utils/analyzeUrl/Utils/protobuf/dmzj/novel/NovelChapterResponseOuterClass$NovelChapterVolumeResponse;
+
+    return-object p0
+.end method
+
+.method public static parseFrom(Lcom/google/protobuf/CodedInputStream;Lcom/google/protobuf/implements;)Lcom/wsw/cospa/utils/analyzeUrl/Utils/protobuf/dmzj/novel/NovelChapterResponseOuterClass$NovelChapterVolumeResponse;
+    .locals 1
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/io/IOException;
+        }
+    .end annotation
+
+    .line 13
+    sget-object v0, Lcom/wsw/cospa/utils/analyzeUrl/Utils/protobuf/dmzj/novel/NovelChapterResponseOuterClass$NovelChapterVolumeResponse;->PARSER:Lcom/google/protobuf/Parser;
+
+    .line 14
+    invoke-static {v0, p0, p1}, Lcom/google/protobuf/GeneratedMessageV3;->parseWithIOException(Lcom/google/protobuf/Parser;Lcom/google/protobuf/CodedInputStream;Lcom/google/protobuf/implements;)Lcom/google/protobuf/Message;
+
+    move-result-object p0
+
+    check-cast p0, Lcom/wsw/cospa/utils/analyzeUrl/Utils/protobuf/dmzj/novel/NovelChapterResponseOuterClass$NovelChapterVolumeResponse;
+
+    return-object p0
+.end method
+
+.method public static parseFrom(Ljava/io/InputStream;)Lcom/wsw/cospa/utils/analyzeUrl/Utils/protobuf/dmzj/novel/NovelChapterResponseOuterClass$NovelChapterVolumeResponse;
+    .locals 1
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/io/IOException;
+        }
+    .end annotation
+
+    .line 7
+    sget-object v0, Lcom/wsw/cospa/utils/analyzeUrl/Utils/protobuf/dmzj/novel/NovelChapterResponseOuterClass$NovelChapterVolumeResponse;->PARSER:Lcom/google/protobuf/Parser;
+
+    .line 8
+    invoke-static {v0, p0}, Lcom/google/protobuf/GeneratedMessageV3;->parseWithIOException(Lcom/google/protobuf/Parser;Ljava/io/InputStream;)Lcom/google/protobuf/Message;
+
+    move-result-object p0
+
+    check-cast p0, Lcom/wsw/cospa/utils/analyzeUrl/Utils/protobuf/dmzj/novel/NovelChapterResponseOuterClass$NovelChapterVolumeResponse;
+
+    return-object p0
+.end method
+
+.method public static parseFrom(Ljava/io/InputStream;Lcom/google/protobuf/implements;)Lcom/wsw/cospa/utils/analyzeUrl/Utils/protobuf/dmzj/novel/NovelChapterResponseOuterClass$NovelChapterVolumeResponse;
+    .locals 1
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/io/IOException;
+        }
+    .end annotation
+
+    .line 9
+    sget-object v0, Lcom/wsw/cospa/utils/analyzeUrl/Utils/protobuf/dmzj/novel/NovelChapterResponseOuterClass$NovelChapterVolumeResponse;->PARSER:Lcom/google/protobuf/Parser;
+
+    .line 10
+    invoke-static {v0, p0, p1}, Lcom/google/protobuf/GeneratedMessageV3;->parseWithIOException(Lcom/google/protobuf/Parser;Ljava/io/InputStream;Lcom/google/protobuf/implements;)Lcom/google/protobuf/Message;
+
+    move-result-object p0
+
+    check-cast p0, Lcom/wsw/cospa/utils/analyzeUrl/Utils/protobuf/dmzj/novel/NovelChapterResponseOuterClass$NovelChapterVolumeResponse;
+
+    return-object p0
+.end method
+
+.method public static parseFrom(Ljava/nio/ByteBuffer;)Lcom/wsw/cospa/utils/analyzeUrl/Utils/protobuf/dmzj/novel/NovelChapterResponseOuterClass$NovelChapterVolumeResponse;
+    .locals 1
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Lcom/google/protobuf/n;
+        }
+    .end annotation
+
+    .line 1
+    sget-object v0, Lcom/wsw/cospa/utils/analyzeUrl/Utils/protobuf/dmzj/novel/NovelChapterResponseOuterClass$NovelChapterVolumeResponse;->PARSER:Lcom/google/protobuf/Parser;
+
+    invoke-interface {v0, p0}, Lcom/google/protobuf/Parser;->parseFrom(Ljava/nio/ByteBuffer;)Ljava/lang/Object;
+
+    move-result-object p0
+
+    check-cast p0, Lcom/wsw/cospa/utils/analyzeUrl/Utils/protobuf/dmzj/novel/NovelChapterResponseOuterClass$NovelChapterVolumeResponse;
+
+    return-object p0
+.end method
+
+.method public static parseFrom(Ljava/nio/ByteBuffer;Lcom/google/protobuf/implements;)Lcom/wsw/cospa/utils/analyzeUrl/Utils/protobuf/dmzj/novel/NovelChapterResponseOuterClass$NovelChapterVolumeResponse;
+    .locals 1
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Lcom/google/protobuf/n;
+        }
+    .end annotation
+
+    .line 2
+    sget-object v0, Lcom/wsw/cospa/utils/analyzeUrl/Utils/protobuf/dmzj/novel/NovelChapterResponseOuterClass$NovelChapterVolumeResponse;->PARSER:Lcom/google/protobuf/Parser;
+
+    invoke-interface {v0, p0, p1}, Lcom/google/protobuf/Parser;->parseFrom(Ljava/nio/ByteBuffer;Lcom/google/protobuf/implements;)Ljava/lang/Object;
+
+    move-result-object p0
+
+    check-cast p0, Lcom/wsw/cospa/utils/analyzeUrl/Utils/protobuf/dmzj/novel/NovelChapterResponseOuterClass$NovelChapterVolumeResponse;
+
+    return-object p0
+.end method
+
+.method public static parseFrom([B)Lcom/wsw/cospa/utils/analyzeUrl/Utils/protobuf/dmzj/novel/NovelChapterResponseOuterClass$NovelChapterVolumeResponse;
+    .locals 1
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Lcom/google/protobuf/n;
+        }
+    .end annotation
+
+    .line 5
+    sget-object v0, Lcom/wsw/cospa/utils/analyzeUrl/Utils/protobuf/dmzj/novel/NovelChapterResponseOuterClass$NovelChapterVolumeResponse;->PARSER:Lcom/google/protobuf/Parser;
+
+    invoke-interface {v0, p0}, Lcom/google/protobuf/Parser;->parseFrom([B)Ljava/lang/Object;
+
+    move-result-object p0
+
+    check-cast p0, Lcom/wsw/cospa/utils/analyzeUrl/Utils/protobuf/dmzj/novel/NovelChapterResponseOuterClass$NovelChapterVolumeResponse;
+
+    return-object p0
+.end method
+
+.method public static parseFrom([BLcom/google/protobuf/implements;)Lcom/wsw/cospa/utils/analyzeUrl/Utils/protobuf/dmzj/novel/NovelChapterResponseOuterClass$NovelChapterVolumeResponse;
+    .locals 1
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Lcom/google/protobuf/n;
+        }
+    .end annotation
+
+    .line 6
+    sget-object v0, Lcom/wsw/cospa/utils/analyzeUrl/Utils/protobuf/dmzj/novel/NovelChapterResponseOuterClass$NovelChapterVolumeResponse;->PARSER:Lcom/google/protobuf/Parser;
+
+    invoke-interface {v0, p0, p1}, Lcom/google/protobuf/Parser;->parseFrom([BLcom/google/protobuf/implements;)Ljava/lang/Object;
+
+    move-result-object p0
+
+    check-cast p0, Lcom/wsw/cospa/utils/analyzeUrl/Utils/protobuf/dmzj/novel/NovelChapterResponseOuterClass$NovelChapterVolumeResponse;
+
+    return-object p0
+.end method
+
+.method public static parser()Lcom/google/protobuf/Parser;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Lcom/google/protobuf/Parser<",
+            "Lcom/wsw/cospa/utils/analyzeUrl/Utils/protobuf/dmzj/novel/NovelChapterResponseOuterClass$NovelChapterVolumeResponse;",
+            ">;"
+        }
+    .end annotation
+
+    .line 1
+    sget-object v0, Lcom/wsw/cospa/utils/analyzeUrl/Utils/protobuf/dmzj/novel/NovelChapterResponseOuterClass$NovelChapterVolumeResponse;->PARSER:Lcom/google/protobuf/Parser;
+
+    return-object v0
+.end method
+
+
+# virtual methods
+.method public equals(Ljava/lang/Object;)Z
+    .locals 4
+
+    const/4 v0, 0x1
+
+    if-ne p1, p0, :cond_0
+
+    return v0
+
+    .line 1
+    :cond_0
+    instance-of v1, p1, Lcom/wsw/cospa/utils/analyzeUrl/Utils/protobuf/dmzj/novel/NovelChapterResponseOuterClass$NovelChapterVolumeResponse;
+
+    if-nez v1, :cond_1
+
+    .line 2
+    invoke-super {p0, p1}, Lcom/google/protobuf/AbstractMessage;->equals(Ljava/lang/Object;)Z
+
+    move-result p1
+
+    return p1
+
+    .line 3
+    :cond_1
+    check-cast p1, Lcom/wsw/cospa/utils/analyzeUrl/Utils/protobuf/dmzj/novel/NovelChapterResponseOuterClass$NovelChapterVolumeResponse;
+
+    .line 4
+    invoke-virtual {p0}, Lcom/wsw/cospa/utils/analyzeUrl/Utils/protobuf/dmzj/novel/NovelChapterResponseOuterClass$NovelChapterVolumeResponse;->getVolumeId()I
+
+    move-result v1
+
+    .line 5
+    invoke-virtual {p1}, Lcom/wsw/cospa/utils/analyzeUrl/Utils/protobuf/dmzj/novel/NovelChapterResponseOuterClass$NovelChapterVolumeResponse;->getVolumeId()I
+
+    move-result v2
+
+    const/4 v3, 0x0
+
+    if-eq v1, v2, :cond_2
+
+    return v3
+
+    .line 6
+    :cond_2
+    invoke-virtual {p0}, Lcom/wsw/cospa/utils/analyzeUrl/Utils/protobuf/dmzj/novel/NovelChapterResponseOuterClass$NovelChapterVolumeResponse;->getVolumeName()Ljava/lang/String;
+
+    move-result-object v1
+
+    .line 7
+    invoke-virtual {p1}, Lcom/wsw/cospa/utils/analyzeUrl/Utils/protobuf/dmzj/novel/NovelChapterResponseOuterClass$NovelChapterVolumeResponse;->getVolumeName()Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-virtual {v1, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v1
+
+    if-nez v1, :cond_3
+
+    return v3
+
+    .line 8
+    :cond_3
+    invoke-virtual {p0}, Lcom/wsw/cospa/utils/analyzeUrl/Utils/protobuf/dmzj/novel/NovelChapterResponseOuterClass$NovelChapterVolumeResponse;->getVolumeOrder()I
+
+    move-result v1
+
+    .line 9
+    invoke-virtual {p1}, Lcom/wsw/cospa/utils/analyzeUrl/Utils/protobuf/dmzj/novel/NovelChapterResponseOuterClass$NovelChapterVolumeResponse;->getVolumeOrder()I
+
+    move-result v2
+
+    if-eq v1, v2, :cond_4
+
+    return v3
+
+    .line 10
+    :cond_4
+    invoke-virtual {p0}, Lcom/wsw/cospa/utils/analyzeUrl/Utils/protobuf/dmzj/novel/NovelChapterResponseOuterClass$NovelChapterVolumeResponse;->getChaptersList()Ljava/util/List;
+
+    move-result-object v1
+
+    .line 11
+    invoke-virtual {p1}, Lcom/wsw/cospa/utils/analyzeUrl/Utils/protobuf/dmzj/novel/NovelChapterResponseOuterClass$NovelChapterVolumeResponse;->getChaptersList()Ljava/util/List;
+
+    move-result-object v2
+
+    invoke-interface {v1, v2}, Ljava/util/List;->equals(Ljava/lang/Object;)Z
+
+    move-result v1
+
+    if-nez v1, :cond_5
+
+    return v3
+
+    .line 12
+    :cond_5
+    iget-object v1, p0, Lcom/google/protobuf/GeneratedMessageV3;->unknownFields:Lcom/google/protobuf/t1;
+
+    iget-object p1, p1, Lcom/google/protobuf/GeneratedMessageV3;->unknownFields:Lcom/google/protobuf/t1;
+
+    invoke-virtual {v1, p1}, Lcom/google/protobuf/t1;->equals(Ljava/lang/Object;)Z
+
+    move-result p1
+
+    if-nez p1, :cond_6
+
+    return v3
+
+    :cond_6
+    return v0
+.end method
+
+.method public getChapters(I)Lcom/wsw/cospa/utils/analyzeUrl/Utils/protobuf/dmzj/novel/NovelChapterResponseOuterClass$NovelChapterItemResponse;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/wsw/cospa/utils/analyzeUrl/Utils/protobuf/dmzj/novel/NovelChapterResponseOuterClass$NovelChapterVolumeResponse;->chapters_:Ljava/util/List;
+
+    invoke-interface {v0, p1}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    move-result-object p1
+
+    check-cast p1, Lcom/wsw/cospa/utils/analyzeUrl/Utils/protobuf/dmzj/novel/NovelChapterResponseOuterClass$NovelChapterItemResponse;
+
+    return-object p1
+.end method
+
+.method public getChaptersCount()I
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/wsw/cospa/utils/analyzeUrl/Utils/protobuf/dmzj/novel/NovelChapterResponseOuterClass$NovelChapterVolumeResponse;->chapters_:Ljava/util/List;
+
+    invoke-interface {v0}, Ljava/util/List;->size()I
+
+    move-result v0
+
+    return v0
+.end method
+
+.method public getChaptersList()Ljava/util/List;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Ljava/util/List<",
+            "Lcom/wsw/cospa/utils/analyzeUrl/Utils/protobuf/dmzj/novel/NovelChapterResponseOuterClass$NovelChapterItemResponse;",
+            ">;"
+        }
+    .end annotation
+
+    .line 1
+    iget-object v0, p0, Lcom/wsw/cospa/utils/analyzeUrl/Utils/protobuf/dmzj/novel/NovelChapterResponseOuterClass$NovelChapterVolumeResponse;->chapters_:Ljava/util/List;
+
+    return-object v0
+.end method
+
+.method public getChaptersOrBuilder(I)Lcom/wsw/cospa/utils/analyzeUrl/Utils/protobuf/dmzj/novel/NovelChapterResponseOuterClass$NovelChapterItemResponseOrBuilder;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/wsw/cospa/utils/analyzeUrl/Utils/protobuf/dmzj/novel/NovelChapterResponseOuterClass$NovelChapterVolumeResponse;->chapters_:Ljava/util/List;
+
+    invoke-interface {v0, p1}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    move-result-object p1
+
+    check-cast p1, Lcom/wsw/cospa/utils/analyzeUrl/Utils/protobuf/dmzj/novel/NovelChapterResponseOuterClass$NovelChapterItemResponseOrBuilder;
+
+    return-object p1
+.end method
+
+.method public getChaptersOrBuilderList()Ljava/util/List;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Ljava/util/List<",
+            "+",
+            "Lcom/wsw/cospa/utils/analyzeUrl/Utils/protobuf/dmzj/novel/NovelChapterResponseOuterClass$NovelChapterItemResponseOrBuilder;",
+            ">;"
+        }
+    .end annotation
+
+    .line 1
+    iget-object v0, p0, Lcom/wsw/cospa/utils/analyzeUrl/Utils/protobuf/dmzj/novel/NovelChapterResponseOuterClass$NovelChapterVolumeResponse;->chapters_:Ljava/util/List;
+
+    return-object v0
+.end method
+
+.method public bridge synthetic getDefaultInstanceForType()Lcom/google/protobuf/Message;
+    .locals 1
+
+    .line 1
+    invoke-virtual {p0}, Lcom/wsw/cospa/utils/analyzeUrl/Utils/protobuf/dmzj/novel/NovelChapterResponseOuterClass$NovelChapterVolumeResponse;->getDefaultInstanceForType()Lcom/wsw/cospa/utils/analyzeUrl/Utils/protobuf/dmzj/novel/NovelChapterResponseOuterClass$NovelChapterVolumeResponse;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public bridge synthetic getDefaultInstanceForType()Lcom/google/protobuf/MessageLite;
+    .locals 1
+
+    .line 2
+    invoke-virtual {p0}, Lcom/wsw/cospa/utils/analyzeUrl/Utils/protobuf/dmzj/novel/NovelChapterResponseOuterClass$NovelChapterVolumeResponse;->getDefaultInstanceForType()Lcom/wsw/cospa/utils/analyzeUrl/Utils/protobuf/dmzj/novel/NovelChapterResponseOuterClass$NovelChapterVolumeResponse;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public getDefaultInstanceForType()Lcom/wsw/cospa/utils/analyzeUrl/Utils/protobuf/dmzj/novel/NovelChapterResponseOuterClass$NovelChapterVolumeResponse;
+    .locals 1
+
+    .line 3
+    sget-object v0, Lcom/wsw/cospa/utils/analyzeUrl/Utils/protobuf/dmzj/novel/NovelChapterResponseOuterClass$NovelChapterVolumeResponse;->DEFAULT_INSTANCE:Lcom/wsw/cospa/utils/analyzeUrl/Utils/protobuf/dmzj/novel/NovelChapterResponseOuterClass$NovelChapterVolumeResponse;
+
+    return-object v0
+.end method
+
+.method public getParserForType()Lcom/google/protobuf/Parser;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Lcom/google/protobuf/Parser<",
+            "Lcom/wsw/cospa/utils/analyzeUrl/Utils/protobuf/dmzj/novel/NovelChapterResponseOuterClass$NovelChapterVolumeResponse;",
+            ">;"
+        }
+    .end annotation
+
+    .line 1
+    sget-object v0, Lcom/wsw/cospa/utils/analyzeUrl/Utils/protobuf/dmzj/novel/NovelChapterResponseOuterClass$NovelChapterVolumeResponse;->PARSER:Lcom/google/protobuf/Parser;
+
+    return-object v0
+.end method
+
+.method public getSerializedSize()I
+    .locals 4
+
+    .line 1
+    iget v0, p0, Lcom/google/protobuf/AbstractMessage;->memoizedSize:I
+
+    const/4 v1, -0x1
+
+    if-eq v0, v1, :cond_0
+
+    return v0
+
+    .line 2
+    :cond_0
+    iget v0, p0, Lcom/wsw/cospa/utils/analyzeUrl/Utils/protobuf/dmzj/novel/NovelChapterResponseOuterClass$NovelChapterVolumeResponse;->volumeId_:I
+
+    const/4 v1, 0x0
+
+    if-eqz v0, :cond_1
+
+    const/4 v2, 0x1
+
+    .line 3
+    invoke-static {v2, v0}, Lcom/google/protobuf/native;->abstract(II)I
+
+    move-result v0
+
+    add-int/2addr v0, v1
+
+    goto :goto_0
+
+    :cond_1
+    const/4 v0, 0x0
+
+    .line 4
+    :goto_0
+    invoke-virtual {p0}, Lcom/wsw/cospa/utils/analyzeUrl/Utils/protobuf/dmzj/novel/NovelChapterResponseOuterClass$NovelChapterVolumeResponse;->getVolumeNameBytes()Lcom/google/protobuf/ByteString;
+
+    move-result-object v2
+
+    invoke-virtual {v2}, Lcom/google/protobuf/ByteString;->isEmpty()Z
+
+    move-result v2
+
+    if-nez v2, :cond_2
+
+    const/4 v2, 0x2
+
+    .line 5
+    iget-object v3, p0, Lcom/wsw/cospa/utils/analyzeUrl/Utils/protobuf/dmzj/novel/NovelChapterResponseOuterClass$NovelChapterVolumeResponse;->volumeName_:Ljava/lang/Object;
+
+    invoke-static {v2, v3}, Lcom/google/protobuf/GeneratedMessageV3;->computeStringSize(ILjava/lang/Object;)I
+
+    move-result v2
+
+    add-int/2addr v0, v2
+
+    .line 6
+    :cond_2
+    iget v2, p0, Lcom/wsw/cospa/utils/analyzeUrl/Utils/protobuf/dmzj/novel/NovelChapterResponseOuterClass$NovelChapterVolumeResponse;->volumeOrder_:I
+
+    if-eqz v2, :cond_3
+
+    const/4 v3, 0x3
+
+    .line 7
+    invoke-static {v3, v2}, Lcom/google/protobuf/native;->abstract(II)I
+
+    move-result v2
+
+    add-int/2addr v0, v2
+
+    .line 8
+    :cond_3
+    :goto_1
+    iget-object v2, p0, Lcom/wsw/cospa/utils/analyzeUrl/Utils/protobuf/dmzj/novel/NovelChapterResponseOuterClass$NovelChapterVolumeResponse;->chapters_:Ljava/util/List;
+
+    invoke-interface {v2}, Ljava/util/List;->size()I
+
+    move-result v2
+
+    if-ge v1, v2, :cond_4
+
+    const/4 v2, 0x4
+
+    .line 9
+    iget-object v3, p0, Lcom/wsw/cospa/utils/analyzeUrl/Utils/protobuf/dmzj/novel/NovelChapterResponseOuterClass$NovelChapterVolumeResponse;->chapters_:Ljava/util/List;
+
+    .line 10
+    invoke-interface {v3, v1}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    move-result-object v3
+
+    check-cast v3, Lcom/google/protobuf/MessageLite;
+
+    invoke-static {v2, v3}, Lcom/google/protobuf/native;->synchronized(ILcom/google/protobuf/MessageLite;)I
+
+    move-result v2
+
+    add-int/2addr v0, v2
+
+    add-int/lit8 v1, v1, 0x1
+
+    goto :goto_1
+
+    .line 11
+    :cond_4
+    iget-object v1, p0, Lcom/google/protobuf/GeneratedMessageV3;->unknownFields:Lcom/google/protobuf/t1;
+
+    invoke-virtual {v1}, Lcom/google/protobuf/t1;->getSerializedSize()I
+
+    move-result v1
+
+    add-int/2addr v0, v1
+
+    .line 12
+    iput v0, p0, Lcom/google/protobuf/AbstractMessage;->memoizedSize:I
+
+    return v0
+.end method
+
+.method public final getUnknownFields()Lcom/google/protobuf/t1;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/google/protobuf/GeneratedMessageV3;->unknownFields:Lcom/google/protobuf/t1;
+
+    return-object v0
+.end method
+
+.method public getVolumeId()I
+    .locals 1
+
+    .line 1
+    iget v0, p0, Lcom/wsw/cospa/utils/analyzeUrl/Utils/protobuf/dmzj/novel/NovelChapterResponseOuterClass$NovelChapterVolumeResponse;->volumeId_:I
+
+    return v0
+.end method
+
+.method public getVolumeName()Ljava/lang/String;
+    .locals 2
+
+    .line 1
+    iget-object v0, p0, Lcom/wsw/cospa/utils/analyzeUrl/Utils/protobuf/dmzj/novel/NovelChapterResponseOuterClass$NovelChapterVolumeResponse;->volumeName_:Ljava/lang/Object;
+
+    .line 2
+    instance-of v1, v0, Ljava/lang/String;
+
+    if-eqz v1, :cond_0
+
+    .line 3
+    check-cast v0, Ljava/lang/String;
+
+    return-object v0
+
+    .line 4
+    :cond_0
+    check-cast v0, Lcom/google/protobuf/ByteString;
+
+    .line 5
+    invoke-virtual {v0}, Lcom/google/protobuf/ByteString;->toStringUtf8()Ljava/lang/String;
+
+    move-result-object v0
+
+    .line 6
+    iput-object v0, p0, Lcom/wsw/cospa/utils/analyzeUrl/Utils/protobuf/dmzj/novel/NovelChapterResponseOuterClass$NovelChapterVolumeResponse;->volumeName_:Ljava/lang/Object;
+
+    return-object v0
+.end method
+
+.method public getVolumeNameBytes()Lcom/google/protobuf/ByteString;
+    .locals 2
+
+    .line 1
+    iget-object v0, p0, Lcom/wsw/cospa/utils/analyzeUrl/Utils/protobuf/dmzj/novel/NovelChapterResponseOuterClass$NovelChapterVolumeResponse;->volumeName_:Ljava/lang/Object;
+
+    .line 2
+    instance-of v1, v0, Ljava/lang/String;
+
+    if-eqz v1, :cond_0
+
+    .line 3
+    check-cast v0, Ljava/lang/String;
+
+    .line 4
+    invoke-static {v0}, Lcom/google/protobuf/ByteString;->copyFromUtf8(Ljava/lang/String;)Lcom/google/protobuf/ByteString;
+
+    move-result-object v0
+
+    .line 5
+    iput-object v0, p0, Lcom/wsw/cospa/utils/analyzeUrl/Utils/protobuf/dmzj/novel/NovelChapterResponseOuterClass$NovelChapterVolumeResponse;->volumeName_:Ljava/lang/Object;
+
+    return-object v0
+
+    .line 6
+    :cond_0
+    check-cast v0, Lcom/google/protobuf/ByteString;
+
+    return-object v0
+.end method
+
+.method public getVolumeOrder()I
+    .locals 1
+
+    .line 1
+    iget v0, p0, Lcom/wsw/cospa/utils/analyzeUrl/Utils/protobuf/dmzj/novel/NovelChapterResponseOuterClass$NovelChapterVolumeResponse;->volumeOrder_:I
+
+    return v0
+.end method
+
+.method public hashCode()I
+    .locals 2
+
+    .line 1
+    iget v0, p0, Lcom/google/protobuf/AbstractMessageLite;->memoizedHashCode:I
+
+    if-eqz v0, :cond_0
+
+    return v0
+
+    :cond_0
+    const/16 v0, 0x30b
+
+    .line 2
+    invoke-static {}, Lcom/wsw/cospa/utils/analyzeUrl/Utils/protobuf/dmzj/novel/NovelChapterResponseOuterClass$NovelChapterVolumeResponse;->getDescriptor()Lcom/google/protobuf/Descriptors$if;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Ljava/lang/Object;->hashCode()I
+
+    move-result v1
+
+    add-int/2addr v0, v1
+
+    mul-int/lit8 v0, v0, 0x25
+
+    add-int/lit8 v0, v0, 0x1
+
+    mul-int/lit8 v0, v0, 0x35
+
+    .line 3
+    invoke-virtual {p0}, Lcom/wsw/cospa/utils/analyzeUrl/Utils/protobuf/dmzj/novel/NovelChapterResponseOuterClass$NovelChapterVolumeResponse;->getVolumeId()I
+
+    move-result v1
+
+    add-int/2addr v0, v1
+
+    mul-int/lit8 v0, v0, 0x25
+
+    add-int/lit8 v0, v0, 0x2
+
+    mul-int/lit8 v0, v0, 0x35
+
+    .line 4
+    invoke-virtual {p0}, Lcom/wsw/cospa/utils/analyzeUrl/Utils/protobuf/dmzj/novel/NovelChapterResponseOuterClass$NovelChapterVolumeResponse;->getVolumeName()Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Ljava/lang/String;->hashCode()I
+
+    move-result v1
+
+    add-int/2addr v0, v1
+
+    mul-int/lit8 v0, v0, 0x25
+
+    add-int/lit8 v0, v0, 0x3
+
+    mul-int/lit8 v0, v0, 0x35
+
+    .line 5
+    invoke-virtual {p0}, Lcom/wsw/cospa/utils/analyzeUrl/Utils/protobuf/dmzj/novel/NovelChapterResponseOuterClass$NovelChapterVolumeResponse;->getVolumeOrder()I
+
+    move-result v1
+
+    add-int/2addr v0, v1
+
+    .line 6
+    invoke-virtual {p0}, Lcom/wsw/cospa/utils/analyzeUrl/Utils/protobuf/dmzj/novel/NovelChapterResponseOuterClass$NovelChapterVolumeResponse;->getChaptersCount()I
+
+    move-result v1
+
+    if-lez v1, :cond_1
+
+    mul-int/lit8 v0, v0, 0x25
+
+    add-int/lit8 v0, v0, 0x4
+
+    mul-int/lit8 v0, v0, 0x35
+
+    .line 7
+    invoke-virtual {p0}, Lcom/wsw/cospa/utils/analyzeUrl/Utils/protobuf/dmzj/novel/NovelChapterResponseOuterClass$NovelChapterVolumeResponse;->getChaptersList()Ljava/util/List;
+
+    move-result-object v1
+
+    invoke-interface {v1}, Ljava/util/List;->hashCode()I
+
+    move-result v1
+
+    add-int/2addr v0, v1
+
+    :cond_1
+    mul-int/lit8 v0, v0, 0x1d
+
+    .line 8
+    iget-object v1, p0, Lcom/google/protobuf/GeneratedMessageV3;->unknownFields:Lcom/google/protobuf/t1;
+
+    invoke-virtual {v1}, Lcom/google/protobuf/t1;->hashCode()I
+
+    move-result v1
+
+    add-int/2addr v0, v1
+
+    .line 9
+    iput v0, p0, Lcom/google/protobuf/AbstractMessageLite;->memoizedHashCode:I
+
+    return v0
+.end method
+
+.method public internalGetFieldAccessorTable()Lcom/google/protobuf/GeneratedMessageV3$FieldAccessorTable;
+    .locals 3
+
+    .line 1
+    invoke-static {}, Lcom/wsw/cospa/utils/analyzeUrl/Utils/protobuf/dmzj/novel/NovelChapterResponseOuterClass;->access$1500()Lcom/google/protobuf/GeneratedMessageV3$FieldAccessorTable;
+
+    move-result-object v0
+
+    const-class v1, Lcom/wsw/cospa/utils/analyzeUrl/Utils/protobuf/dmzj/novel/NovelChapterResponseOuterClass$NovelChapterVolumeResponse;
+
+    const-class v2, Lcom/wsw/cospa/utils/analyzeUrl/Utils/protobuf/dmzj/novel/NovelChapterResponseOuterClass$NovelChapterVolumeResponse$Builder;
+
+    .line 2
+    invoke-virtual {v0, v1, v2}, Lcom/google/protobuf/GeneratedMessageV3$FieldAccessorTable;->new(Ljava/lang/Class;Ljava/lang/Class;)Lcom/google/protobuf/GeneratedMessageV3$FieldAccessorTable;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public final isInitialized()Z
+    .locals 2
+
+    .line 1
+    iget-byte v0, p0, Lcom/wsw/cospa/utils/analyzeUrl/Utils/protobuf/dmzj/novel/NovelChapterResponseOuterClass$NovelChapterVolumeResponse;->memoizedIsInitialized:B
+
+    const/4 v1, 0x1
+
+    if-ne v0, v1, :cond_0
+
+    return v1
+
+    :cond_0
+    if-nez v0, :cond_1
+
+    const/4 v0, 0x0
+
+    return v0
+
+    .line 2
+    :cond_1
+    iput-byte v1, p0, Lcom/wsw/cospa/utils/analyzeUrl/Utils/protobuf/dmzj/novel/NovelChapterResponseOuterClass$NovelChapterVolumeResponse;->memoizedIsInitialized:B
+
+    return v1
+.end method
+
+.method public bridge synthetic newBuilderForType()Lcom/google/protobuf/Message$Builder;
+    .locals 1
+
+    .line 1
+    invoke-virtual {p0}, Lcom/wsw/cospa/utils/analyzeUrl/Utils/protobuf/dmzj/novel/NovelChapterResponseOuterClass$NovelChapterVolumeResponse;->newBuilderForType()Lcom/wsw/cospa/utils/analyzeUrl/Utils/protobuf/dmzj/novel/NovelChapterResponseOuterClass$NovelChapterVolumeResponse$Builder;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public bridge synthetic newBuilderForType(Lcom/google/protobuf/GeneratedMessageV3$BuilderParent;)Lcom/google/protobuf/Message$Builder;
+    .locals 0
+
+    .line 2
+    invoke-virtual {p0, p1}, Lcom/wsw/cospa/utils/analyzeUrl/Utils/protobuf/dmzj/novel/NovelChapterResponseOuterClass$NovelChapterVolumeResponse;->newBuilderForType(Lcom/google/protobuf/GeneratedMessageV3$BuilderParent;)Lcom/wsw/cospa/utils/analyzeUrl/Utils/protobuf/dmzj/novel/NovelChapterResponseOuterClass$NovelChapterVolumeResponse$Builder;
+
+    move-result-object p1
+
+    return-object p1
+.end method
+
+.method public bridge synthetic newBuilderForType()Lcom/google/protobuf/MessageLite$Builder;
+    .locals 1
+
+    .line 3
+    invoke-virtual {p0}, Lcom/wsw/cospa/utils/analyzeUrl/Utils/protobuf/dmzj/novel/NovelChapterResponseOuterClass$NovelChapterVolumeResponse;->newBuilderForType()Lcom/wsw/cospa/utils/analyzeUrl/Utils/protobuf/dmzj/novel/NovelChapterResponseOuterClass$NovelChapterVolumeResponse$Builder;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public newBuilderForType()Lcom/wsw/cospa/utils/analyzeUrl/Utils/protobuf/dmzj/novel/NovelChapterResponseOuterClass$NovelChapterVolumeResponse$Builder;
+    .locals 1
+
+    .line 4
+    invoke-static {}, Lcom/wsw/cospa/utils/analyzeUrl/Utils/protobuf/dmzj/novel/NovelChapterResponseOuterClass$NovelChapterVolumeResponse;->newBuilder()Lcom/wsw/cospa/utils/analyzeUrl/Utils/protobuf/dmzj/novel/NovelChapterResponseOuterClass$NovelChapterVolumeResponse$Builder;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public newBuilderForType(Lcom/google/protobuf/GeneratedMessageV3$BuilderParent;)Lcom/wsw/cospa/utils/analyzeUrl/Utils/protobuf/dmzj/novel/NovelChapterResponseOuterClass$NovelChapterVolumeResponse$Builder;
+    .locals 2
+
+    .line 5
+    new-instance v0, Lcom/wsw/cospa/utils/analyzeUrl/Utils/protobuf/dmzj/novel/NovelChapterResponseOuterClass$NovelChapterVolumeResponse$Builder;
+
+    const/4 v1, 0x0
+
+    invoke-direct {v0, p1, v1}, Lcom/wsw/cospa/utils/analyzeUrl/Utils/protobuf/dmzj/novel/NovelChapterResponseOuterClass$NovelChapterVolumeResponse$Builder;-><init>(Lcom/google/protobuf/GeneratedMessageV3$BuilderParent;Lcom/wsw/cospa/utils/analyzeUrl/Utils/protobuf/dmzj/novel/NovelChapterResponseOuterClass$1;)V
+
+    return-object v0
+.end method
+
+.method public newInstance(Lcom/google/protobuf/GeneratedMessageV3$try;)Ljava/lang/Object;
+    .locals 0
+
+    .line 1
+    new-instance p1, Lcom/wsw/cospa/utils/analyzeUrl/Utils/protobuf/dmzj/novel/NovelChapterResponseOuterClass$NovelChapterVolumeResponse;
+
+    invoke-direct {p1}, Lcom/wsw/cospa/utils/analyzeUrl/Utils/protobuf/dmzj/novel/NovelChapterResponseOuterClass$NovelChapterVolumeResponse;-><init>()V
+
+    return-object p1
+.end method
+
+.method public bridge synthetic toBuilder()Lcom/google/protobuf/Message$Builder;
+    .locals 1
+
+    .line 1
+    invoke-virtual {p0}, Lcom/wsw/cospa/utils/analyzeUrl/Utils/protobuf/dmzj/novel/NovelChapterResponseOuterClass$NovelChapterVolumeResponse;->toBuilder()Lcom/wsw/cospa/utils/analyzeUrl/Utils/protobuf/dmzj/novel/NovelChapterResponseOuterClass$NovelChapterVolumeResponse$Builder;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public bridge synthetic toBuilder()Lcom/google/protobuf/MessageLite$Builder;
+    .locals 1
+
+    .line 2
+    invoke-virtual {p0}, Lcom/wsw/cospa/utils/analyzeUrl/Utils/protobuf/dmzj/novel/NovelChapterResponseOuterClass$NovelChapterVolumeResponse;->toBuilder()Lcom/wsw/cospa/utils/analyzeUrl/Utils/protobuf/dmzj/novel/NovelChapterResponseOuterClass$NovelChapterVolumeResponse$Builder;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public toBuilder()Lcom/wsw/cospa/utils/analyzeUrl/Utils/protobuf/dmzj/novel/NovelChapterResponseOuterClass$NovelChapterVolumeResponse$Builder;
+    .locals 2
+
+    .line 3
+    sget-object v0, Lcom/wsw/cospa/utils/analyzeUrl/Utils/protobuf/dmzj/novel/NovelChapterResponseOuterClass$NovelChapterVolumeResponse;->DEFAULT_INSTANCE:Lcom/wsw/cospa/utils/analyzeUrl/Utils/protobuf/dmzj/novel/NovelChapterResponseOuterClass$NovelChapterVolumeResponse;
+
+    const/4 v1, 0x0
+
+    if-ne p0, v0, :cond_0
+
+    .line 4
+    new-instance v0, Lcom/wsw/cospa/utils/analyzeUrl/Utils/protobuf/dmzj/novel/NovelChapterResponseOuterClass$NovelChapterVolumeResponse$Builder;
+
+    invoke-direct {v0, v1}, Lcom/wsw/cospa/utils/analyzeUrl/Utils/protobuf/dmzj/novel/NovelChapterResponseOuterClass$NovelChapterVolumeResponse$Builder;-><init>(Lcom/wsw/cospa/utils/analyzeUrl/Utils/protobuf/dmzj/novel/NovelChapterResponseOuterClass$1;)V
+
+    goto :goto_0
+
+    :cond_0
+    new-instance v0, Lcom/wsw/cospa/utils/analyzeUrl/Utils/protobuf/dmzj/novel/NovelChapterResponseOuterClass$NovelChapterVolumeResponse$Builder;
+
+    invoke-direct {v0, v1}, Lcom/wsw/cospa/utils/analyzeUrl/Utils/protobuf/dmzj/novel/NovelChapterResponseOuterClass$NovelChapterVolumeResponse$Builder;-><init>(Lcom/wsw/cospa/utils/analyzeUrl/Utils/protobuf/dmzj/novel/NovelChapterResponseOuterClass$1;)V
+
+    invoke-virtual {v0, p0}, Lcom/wsw/cospa/utils/analyzeUrl/Utils/protobuf/dmzj/novel/NovelChapterResponseOuterClass$NovelChapterVolumeResponse$Builder;->mergeFrom(Lcom/wsw/cospa/utils/analyzeUrl/Utils/protobuf/dmzj/novel/NovelChapterResponseOuterClass$NovelChapterVolumeResponse;)Lcom/wsw/cospa/utils/analyzeUrl/Utils/protobuf/dmzj/novel/NovelChapterResponseOuterClass$NovelChapterVolumeResponse$Builder;
+
+    move-result-object v0
+
+    :goto_0
+    return-object v0
+.end method
+
+.method public writeTo(Lcom/google/protobuf/native;)V
+    .locals 3
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/io/IOException;
+        }
+    .end annotation
+
+    .line 1
+    iget v0, p0, Lcom/wsw/cospa/utils/analyzeUrl/Utils/protobuf/dmzj/novel/NovelChapterResponseOuterClass$NovelChapterVolumeResponse;->volumeId_:I
+
+    if-eqz v0, :cond_0
+
+    const/4 v1, 0x1
+
+    .line 2
+    invoke-virtual {p1, v1, v0}, Lcom/google/protobuf/native;->writeInt32(II)V
+
+    .line 3
+    :cond_0
+    invoke-virtual {p0}, Lcom/wsw/cospa/utils/analyzeUrl/Utils/protobuf/dmzj/novel/NovelChapterResponseOuterClass$NovelChapterVolumeResponse;->getVolumeNameBytes()Lcom/google/protobuf/ByteString;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Lcom/google/protobuf/ByteString;->isEmpty()Z
+
+    move-result v0
+
+    if-nez v0, :cond_1
+
+    const/4 v0, 0x2
+
+    .line 4
+    iget-object v1, p0, Lcom/wsw/cospa/utils/analyzeUrl/Utils/protobuf/dmzj/novel/NovelChapterResponseOuterClass$NovelChapterVolumeResponse;->volumeName_:Ljava/lang/Object;
+
+    invoke-static {p1, v0, v1}, Lcom/google/protobuf/GeneratedMessageV3;->writeString(Lcom/google/protobuf/native;ILjava/lang/Object;)V
+
+    .line 5
+    :cond_1
+    iget v0, p0, Lcom/wsw/cospa/utils/analyzeUrl/Utils/protobuf/dmzj/novel/NovelChapterResponseOuterClass$NovelChapterVolumeResponse;->volumeOrder_:I
+
+    if-eqz v0, :cond_2
+
+    const/4 v1, 0x3
+
+    .line 6
+    invoke-virtual {p1, v1, v0}, Lcom/google/protobuf/native;->writeInt32(II)V
+
+    :cond_2
+    const/4 v0, 0x0
+
+    .line 7
+    :goto_0
+    iget-object v1, p0, Lcom/wsw/cospa/utils/analyzeUrl/Utils/protobuf/dmzj/novel/NovelChapterResponseOuterClass$NovelChapterVolumeResponse;->chapters_:Ljava/util/List;
+
+    invoke-interface {v1}, Ljava/util/List;->size()I
+
+    move-result v1
+
+    if-ge v0, v1, :cond_3
+
+    const/4 v1, 0x4
+
+    .line 8
+    iget-object v2, p0, Lcom/wsw/cospa/utils/analyzeUrl/Utils/protobuf/dmzj/novel/NovelChapterResponseOuterClass$NovelChapterVolumeResponse;->chapters_:Ljava/util/List;
+
+    invoke-interface {v2, v0}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    move-result-object v2
+
+    check-cast v2, Lcom/google/protobuf/MessageLite;
+
+    invoke-virtual {p1, v1, v2}, Lcom/google/protobuf/native;->f0(ILcom/google/protobuf/MessageLite;)V
+
+    add-int/lit8 v0, v0, 0x1
+
+    goto :goto_0
+
+    .line 9
+    :cond_3
+    iget-object v0, p0, Lcom/google/protobuf/GeneratedMessageV3;->unknownFields:Lcom/google/protobuf/t1;
+
+    invoke-virtual {v0, p1}, Lcom/google/protobuf/t1;->writeTo(Lcom/google/protobuf/native;)V
+
+    return-void
+.end method

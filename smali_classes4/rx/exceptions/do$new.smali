@@ -1,0 +1,54 @@
+.class final Lrx/exceptions/do$new;
+.super Lrx/exceptions/do$if;
+.source "SourceFile"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lrx/exceptions/do;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = "new"
+.end annotation
+
+
+# instance fields
+.field private final do:Ljava/io/PrintWriter;
+
+
+# direct methods
+.method public constructor <init>(Ljava/io/PrintWriter;)V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Lrx/exceptions/do$if;-><init>()V
+
+    .line 2
+    iput-object p1, p0, Lrx/exceptions/do$new;->do:Ljava/io/PrintWriter;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public do()Ljava/lang/Object;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lrx/exceptions/do$new;->do:Ljava/io/PrintWriter;
+
+    return-object v0
+.end method
+
+.method public if(Ljava/lang/Object;)V
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lrx/exceptions/do$new;->do:Ljava/io/PrintWriter;
+
+    invoke-virtual {v0, p1}, Ljava/io/PrintWriter;->println(Ljava/lang/Object;)V
+
+    return-void
+.end method

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/APKTOOL_DUPLICATE_id_0x7f0904f0" android:background="@color/APKTOOL_DUPLICATE_color_0x7f060378" android:layout_width="fill_parent" android:layout_height="@dimen/APKTOOL_DUPLICATE_dimen_0x7f0701f4" android:layout_above="@id/APKTOOL_DUPLICATE_id_0x7f0904f3">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/APKTOOL_DUPLICATE_id_0x7f090256" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <include android:id="@id/APKTOOL_DUPLICATE_id_0x7f090257" layout="@layout/APKTOOL_DUPLICATE_layout_0x7f0c012c" />
+        <include android:id="@id/APKTOOL_DUPLICATE_id_0x7f090258" layout="@layout/APKTOOL_DUPLICATE_layout_0x7f0c012d" />
+    </FrameLayout>
+    <ImageView android:background="@drawable/APKTOOL_DUPLICATE_drawable_0x7f0801d6" android:layout_width="fill_parent" android:layout_height="@dimen/APKTOOL_DUPLICATE_dimen_0x7f0701f2" android:layout_above="@id/APKTOOL_DUPLICATE_id_0x7f0904f3" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/APKTOOL_DUPLICATE_id_0x7f0904f3" android:background="@color/APKTOOL_DUPLICATE_color_0x7f060378" android:layout_width="fill_parent" android:layout_height="@dimen/APKTOOL_DUPLICATE_dimen_0x7f0701f5" android:baselineAligned="false" android:layout_alignParentBottom="true">
+        <FrameLayout android:id="@id/APKTOOL_DUPLICATE_id_0x7f0903d4" style="@style/APKTOOL_DUPLICATE_style_0x7f120362">
+            <ImageView android:id="@id/APKTOOL_DUPLICATE_id_0x7f090215" android:src="@drawable/APKTOOL_DUPLICATE_drawable_0x7f0801d4" style="@style/APKTOOL_DUPLICATE_style_0x7f12035f" />
+        </FrameLayout>
+        <FrameLayout android:id="@id/APKTOOL_DUPLICATE_id_0x7f0903d2" style="@style/APKTOOL_DUPLICATE_style_0x7f120362">
+            <ImageView android:id="@id/APKTOOL_DUPLICATE_id_0x7f090213" android:src="@drawable/APKTOOL_DUPLICATE_drawable_0x7f0801cd" style="@style/APKTOOL_DUPLICATE_style_0x7f12035f" />
+        </FrameLayout>
+        <FrameLayout android:id="@id/APKTOOL_DUPLICATE_id_0x7f0903d3" style="@style/APKTOOL_DUPLICATE_style_0x7f120362">
+            <ImageView android:id="@id/APKTOOL_DUPLICATE_id_0x7f090214" android:src="@drawable/APKTOOL_DUPLICATE_drawable_0x7f0801d3" style="@style/APKTOOL_DUPLICATE_style_0x7f12035f" />
+        </FrameLayout>
+    </LinearLayout>
+</merge>

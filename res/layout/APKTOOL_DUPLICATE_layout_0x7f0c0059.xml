@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="center" android:id="@id/APKTOOL_DUPLICATE_id_0x7f0901d0" android:layout_width="fill_parent" android:layout_height="45.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.wsw.cospa.widget.view.MarqueTextView android:textStyle="bold" android:textColor="@drawable/APKTOOL_DUPLICATE_drawable_0x7f0801b0" android:ellipsize="marquee" android:gravity="center" android:layout_gravity="center" android:id="@id/APKTOOL_DUPLICATE_id_0x7f090469" android:background="@color/APKTOOL_DUPLICATE_color_0x7f0600f8" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:adjustViewBounds="true" android:scrollHorizontally="true" android:singleLine="true" android:marqueeRepeatLimit="marquee_forever" />
+</LinearLayout>

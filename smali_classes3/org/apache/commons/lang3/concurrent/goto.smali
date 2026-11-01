@@ -1,0 +1,111 @@
+.class public abstract Lorg/apache/commons/lang3/concurrent/goto;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Lorg/apache/commons/lang3/concurrent/ConcurrentInitializer;
+
+
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "<T:",
+        "Ljava/lang/Object;",
+        ">",
+        "Ljava/lang/Object;",
+        "Lorg/apache/commons/lang3/concurrent/ConcurrentInitializer<",
+        "TT;>;"
+    }
+.end annotation
+
+
+# instance fields
+.field private volatile do:Ljava/lang/Object;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "TT;"
+        }
+    .end annotation
+.end field
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public abstract do()Ljava/lang/Object;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()TT;"
+        }
+    .end annotation
+
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Landroid/support/v4/mq;
+        }
+    .end annotation
+.end method
+
+.method public get()Ljava/lang/Object;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()TT;"
+        }
+    .end annotation
+
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Landroid/support/v4/mq;
+        }
+    .end annotation
+
+    .line 1
+    iget-object v0, p0, Lorg/apache/commons/lang3/concurrent/goto;->do:Ljava/lang/Object;
+
+    if-nez v0, :cond_1
+
+    .line 2
+    monitor-enter p0
+
+    .line 3
+    :try_start_0
+    iget-object v0, p0, Lorg/apache/commons/lang3/concurrent/goto;->do:Ljava/lang/Object;
+
+    if-nez v0, :cond_0
+
+    .line 4
+    invoke-virtual {p0}, Lorg/apache/commons/lang3/concurrent/goto;->do()Ljava/lang/Object;
+
+    move-result-object v0
+
+    iput-object v0, p0, Lorg/apache/commons/lang3/concurrent/goto;->do:Ljava/lang/Object;
+
+    .line 5
+    :cond_0
+    monitor-exit p0
+
+    goto :goto_0
+
+    :catchall_0
+    move-exception v0
+
+    monitor-exit p0
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    throw v0
+
+    :cond_1
+    :goto_0
+    return-object v0
+.end method

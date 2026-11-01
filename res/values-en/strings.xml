@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="APKTOOL_DUPLICATE_string_0x7f11005d">gif</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f1100ad">All audio</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f1100ae">Access to system recording permission denied</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f1100af">You can use system recordings to record audio</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f1100b0">The audio is corrupted</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f1100b1">Get system camera permission denied</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f1100b2">CameraRoll</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f1100b3">Cancel</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f1100b4">Completed</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f1100b5">Cancel</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f1100b6">Ok</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f1100b7">%1$d/%2$d Ok</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f1100b8">you can use your camera to take photos or videos</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f1100b9">"No audio file
+"</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f1100ba">"No video or photos
+"</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f1100bb">The picture is corrupted</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f1100bc">Read memory card access denied</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f1100bd">Long</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f1100be">You can choose the most%1$s Number Pictures</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f1100bf">You can choose%1$s videos at most</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f1100c0">Picture Selection Cannot%1$sNumber</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f1100c1">Video Selection Cannot%1$sNumber</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f1100c2">Pause</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f1100c3">Photograph</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f1100c4">Play</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f1100c5">Please later...</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f1100c6">Please Select</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f1100c7">Preview</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f1100c8">Prompt</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f1100c9">Do you want to save pictures to your phone?</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f1100ca">Quit</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f1100cb">Record Video</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f1100cc">not pictures or video</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f1100cd">Picture save failed</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f1100ce">Save picture successfully until</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f1100cf">Stop</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f1100d0">Shot</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f1100d1">Tape</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f1100d2">The video is corrupted</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f1100d3">Video not Preview</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f1100d4">Media files！</string>
+</resources>

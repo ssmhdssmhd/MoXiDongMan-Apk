@@ -1,0 +1,305 @@
+package org.jsoup.parser;
+
+import android.support.v4.hy1;
+import org.jsoup.helper.Validate;
+import org.jsoup.internal.StringUtil;
+
+/* loaded from: classes3.dex */
+public class TokenQueue {
+    private static final char ESC = '\\';
+    private int pos = 0;
+    private String queue;
+
+    public TokenQueue(String str) {
+        Validate.notNull(str);
+        this.queue = str;
+    }
+
+    private int remainingLength() {
+        return this.queue.length() - this.pos;
+    }
+
+    public static String unescape(String str) {
+        StringBuilder sbBorrowBuilder = StringUtil.borrowBuilder();
+        char[] charArray = str.toCharArray();
+        int length = charArray.length;
+        int i = 0;
+        char c = 0;
+        while (i < length) {
+            char c2 = charArray[i];
+            if (c2 != '\\') {
+                sbBorrowBuilder.append(c2);
+            } else if (c == '\\') {
+                sbBorrowBuilder.append(c2);
+            }
+            i++;
+            c = c2;
+        }
+        return StringUtil.releaseBuilder(sbBorrowBuilder);
+    }
+
+    @Deprecated
+    public void addFirst(Character ch) {
+        addFirst(ch.toString());
+    }
+
+    public void advance() {
+        if (isEmpty()) {
+            return;
+        }
+        this.pos++;
+    }
+
+    /* JADX WARN: Removed duplicated region for block: B:44:0x007c A[LOOP:0: B:3:0x0009->B:44:0x007c, LOOP_END] */
+    /* JADX WARN: Removed duplicated region for block: B:46:0x0055 A[EDGE_INSN: B:46:0x0055->B:38:0x0055 BREAK  A[LOOP:0: B:3:0x0009->B:44:0x007c], SYNTHETIC] */
+    /*
+        Code decompiled incorrectly, please refer to instructions dump.
+    */
+    public String chompBalanced(char c, char c2) {
+        char c3 = 0;
+        boolean z = false;
+        boolean z2 = false;
+        int i = -1;
+        int i2 = -1;
+        int i3 = 0;
+        boolean z3 = false;
+        while (!isEmpty()) {
+            char cConsume = consume();
+            if (c3 != '\\') {
+                if (cConsume == '\'' && cConsume != c && !z) {
+                    z2 = !z2;
+                } else if (cConsume == '\"' && cConsume != c && !z2) {
+                    z = !z;
+                }
+                if (!z2 && !z && !z3) {
+                    if (cConsume == c) {
+                        i3++;
+                        if (i == -1) {
+                            i = this.pos;
+                        }
+                    } else if (cConsume == c2) {
+                        i3--;
+                    }
+                }
+                if (i3 > 0) {
+                    break;
+                }
+                c3 = cConsume;
+            } else if (cConsume == 'Q') {
+                z3 = true;
+            } else if (cConsume == 'E') {
+                z3 = false;
+            }
+            if (i3 > 0 && c3 != 0) {
+                i2 = this.pos;
+            }
+            if (i3 > 0) {
+            }
+        }
+        String strSubstring = i2 >= 0 ? this.queue.substring(i, i2) : "";
+        if (i3 > 0) {
+            Validate.fail("Did not find balanced marker at '" + strSubstring + "'");
+        }
+        return strSubstring;
+    }
+
+    public String chompTo(String str) {
+        String strConsumeTo = consumeTo(str);
+        matchChomp(str);
+        return strConsumeTo;
+    }
+
+    public String chompToIgnoreCase(String str) {
+        String strConsumeToIgnoreCase = consumeToIgnoreCase(str);
+        matchChomp(str);
+        return strConsumeToIgnoreCase;
+    }
+
+    public char consume() {
+        String str = this.queue;
+        int i = this.pos;
+        this.pos = i + 1;
+        return str.charAt(i);
+    }
+
+    @Deprecated
+    public String consumeAttributeKey() {
+        int i = this.pos;
+        while (!isEmpty() && (matchesWord() || matchesAny(hy1.f2561for, '_', ':'))) {
+            this.pos++;
+        }
+        return this.queue.substring(i, this.pos);
+    }
+
+    public String consumeCssIdentifier() {
+        int i = this.pos;
+        while (!isEmpty() && (matchesWord() || matchesAny(hy1.f2561for, '_'))) {
+            this.pos++;
+        }
+        return this.queue.substring(i, this.pos);
+    }
+
+    public String consumeElementSelector() {
+        int i = this.pos;
+        while (!isEmpty() && (matchesWord() || matchesAny("*|", "|", "_", "-"))) {
+            this.pos++;
+        }
+        return this.queue.substring(i, this.pos);
+    }
+
+    @Deprecated
+    public String consumeTagName() {
+        int i = this.pos;
+        while (!isEmpty() && (matchesWord() || matchesAny(':', '_', hy1.f2561for))) {
+            this.pos++;
+        }
+        return this.queue.substring(i, this.pos);
+    }
+
+    public String consumeTo(String str) {
+        int iIndexOf = this.queue.indexOf(str, this.pos);
+        if (iIndexOf == -1) {
+            return remainder();
+        }
+        String strSubstring = this.queue.substring(this.pos, iIndexOf);
+        this.pos += strSubstring.length();
+        return strSubstring;
+    }
+
+    public String consumeToAny(String... strArr) {
+        int i = this.pos;
+        while (!isEmpty() && !matchesAny(strArr)) {
+            this.pos++;
+        }
+        return this.queue.substring(i, this.pos);
+    }
+
+    public String consumeToIgnoreCase(String str) {
+        int i = this.pos;
+        String strSubstring = str.substring(0, 1);
+        boolean zEquals = strSubstring.toLowerCase().equals(strSubstring.toUpperCase());
+        while (!isEmpty() && !matches(str)) {
+            if (zEquals) {
+                int iIndexOf = this.queue.indexOf(strSubstring, this.pos);
+                int i2 = this.pos;
+                int i3 = iIndexOf - i2;
+                if (i3 == 0) {
+                    this.pos = i2 + 1;
+                } else if (i3 < 0) {
+                    this.pos = this.queue.length();
+                } else {
+                    this.pos = i2 + i3;
+                }
+            } else {
+                this.pos++;
+            }
+        }
+        return this.queue.substring(i, this.pos);
+    }
+
+    public boolean consumeWhitespace() {
+        boolean z = false;
+        while (matchesWhitespace()) {
+            this.pos++;
+            z = true;
+        }
+        return z;
+    }
+
+    public String consumeWord() {
+        int i = this.pos;
+        while (matchesWord()) {
+            this.pos++;
+        }
+        return this.queue.substring(i, this.pos);
+    }
+
+    public boolean isEmpty() {
+        return remainingLength() == 0;
+    }
+
+    public boolean matchChomp(String str) {
+        if (!matches(str)) {
+            return false;
+        }
+        this.pos += str.length();
+        return true;
+    }
+
+    public boolean matches(String str) {
+        return this.queue.regionMatches(true, this.pos, str, 0, str.length());
+    }
+
+    public boolean matchesAny(String... strArr) {
+        for (String str : strArr) {
+            if (matches(str)) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    @Deprecated
+    public boolean matchesCS(String str) {
+        return this.queue.startsWith(str, this.pos);
+    }
+
+    @Deprecated
+    public boolean matchesStartTag() {
+        return remainingLength() >= 2 && this.queue.charAt(this.pos) == '<' && Character.isLetter(this.queue.charAt(this.pos + 1));
+    }
+
+    public boolean matchesWhitespace() {
+        return !isEmpty() && StringUtil.isWhitespace(this.queue.charAt(this.pos));
+    }
+
+    public boolean matchesWord() {
+        return !isEmpty() && Character.isLetterOrDigit(this.queue.charAt(this.pos));
+    }
+
+    @Deprecated
+    public char peek() {
+        if (isEmpty()) {
+            return (char) 0;
+        }
+        return this.queue.charAt(this.pos);
+    }
+
+    public String remainder() {
+        String strSubstring = this.queue.substring(this.pos);
+        this.pos = this.queue.length();
+        return strSubstring;
+    }
+
+    public String toString() {
+        return this.queue.substring(this.pos);
+    }
+
+    public void addFirst(String str) {
+        this.queue = str + this.queue.substring(this.pos);
+        this.pos = 0;
+    }
+
+    public void consume(String str) {
+        if (!matches(str)) {
+            throw new IllegalStateException("Queue did not match expected sequence");
+        }
+        int length = str.length();
+        if (length > remainingLength()) {
+            throw new IllegalStateException("Queue not long enough to consume sequence");
+        }
+        this.pos += length;
+    }
+
+    public boolean matchesAny(char... cArr) {
+        if (isEmpty()) {
+            return false;
+        }
+        for (char c : cArr) {
+            if (this.queue.charAt(this.pos) == c) {
+                return true;
+            }
+        }
+        return false;
+    }
+}

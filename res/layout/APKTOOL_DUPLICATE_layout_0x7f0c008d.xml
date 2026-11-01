@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/APKTOOL_DUPLICATE_id_0x7f0902a1" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.wang.avi.AVLoadingIndicatorView android:layout_gravity="center" android:id="@id/APKTOOL_DUPLICATE_id_0x7f0902a2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" app:APKTOOL_DUPLICATE_attr_0x7f040258="@color/APKTOOL_DUPLICATE_color_0x7f06008d" app:APKTOOL_DUPLICATE_attr_0x7f04025c="LineScalePulseOutRapidIndicator" style="@style/arg" />
+    <include layout="@layout/APKTOOL_DUPLICATE_layout_0x7f0c007a" />
+</RelativeLayout>

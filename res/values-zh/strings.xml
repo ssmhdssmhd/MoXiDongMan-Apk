@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="APKTOOL_DUPLICATE_string_0x7f110056">上下滑动控制游戏</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f110057">下拉开始游戏!</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f110058">释放立刻开始!</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f110059">游戏结束</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f11005a">玩个游戏解解闷</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f11005b">刷新失败</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f11005c">刷新完成</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f11005d">动图</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f110064">下拉刷新</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f110065">释放立即刷新</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f110066">上次更新时间：</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f110067">正在加载...</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f110068">加载完成</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f1100a3">没有了</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f1100ad">所有音频</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f1100ae">获取系统录音权限被拒绝</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f1100af">你可以使用系统录音录制音频</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f1100b0">音频已损坏</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f1100b1">获取系统相机权限被拒绝</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f1100b2">相机胶卷</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f1100b3">取消</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f1100b4">已完成</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f1100b5">确定</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f1100b6">完成</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f1100b7">%1$d/%2$d 完成</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f1100b8">你可以使用相机拍摄照片或视频</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f1100b9">"无音频文件
+"</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f1100ba">"无视频或照片
+"</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f1100bb">图片已损坏</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f1100bc">读取内存卡权限被拒绝</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f1100bd">长图</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f1100be">你最多可以选择%1$s张图片</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f1100bf">你最多可以选择%1$s个视频</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f1100c0">图片最低选择不能少于%1$s张</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f1100c1">视频最低选择不能少于%1$s个</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f1100c2">暂停</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f1100c3">拍照</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f1100c4">播放</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f1100c5">请稍候...</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f1100c6">请选择</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f1100c7">预览</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f1100c8">提示</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f1100c9">是否保存图片至手机？</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f1100ca">退出</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f1100cb">录视频</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f1100cc">不能同时选择图片或视频</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f1100cd">图片保存失败</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f1100ce">图片保存成功至</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f1100cf">停止</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f1100d0">拍摄</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f1100d1">录音</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f1100d2">视频已损坏</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f1100d3">视频不可预览</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f1100d4">暂无媒体文件！</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f1100d8">刷新完成</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f1100d9">正在刷新...</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f1100e6" formatted="false">"%s 虚假区域
+代表运行时拖动的高度【%.1fdp】 
+而不会显示任何东西"</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f1100e7">SmartRefreshLayout中没有找到内容视图。您是否忘记在xml布局文件中添加？</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f1100e8">加载失败</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f1100e9">加载完成</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f1100ea">正在加载…</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f1100eb">没有更多数据了</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f1100ec">上拉加载更多</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f1100ed">等待头部刷新完成…</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f1100ee">释放立即加载</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f1100ef">刷新失败</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f1100f0">刷新完成</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f1100f1">等待底部加载完成…</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f1100f2">下拉可以刷新</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f1100f3">正在刷新…</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f1100f4">释放立即刷新</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f1100f5">释放进入二楼</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f1100f6">上次更新 M-d HH:mm</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f11010b">裁剪</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f11010c">原始比例</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f11010d">裁剪</string>
+</resources>

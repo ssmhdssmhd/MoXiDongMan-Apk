@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="APKTOOL_DUPLICATE_style_0x7f12005d" parent="@style/APKTOOL_DUPLICATE_style_0x7f1200a5" />
+    <style name="APKTOOL_DUPLICATE_style_0x7f120064" parent="@style/APKTOOL_DUPLICATE_style_0x7f1200a6" />
+    <style name="APKTOOL_DUPLICATE_style_0x7f1200ea" parent="@style/APKTOOL_DUPLICATE_style_0x7f1200a7" />
+    <style name="APKTOOL_DUPLICATE_style_0x7f120102" parent="@style/APKTOOL_DUPLICATE_style_0x7f120015">
+        <item name="android:windowBackground">@color/APKTOOL_DUPLICATE_color_0x7f060141</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowAnimationStyle">@style/APKTOOL_DUPLICATE_style_0x7f120005</item>
+        <item name="android:windowCloseOnTouchOutside">false</item>
+        <item name="APKTOOL_DUPLICATE_attr_0x7f0406cd">true</item>
+    </style>
+    <style name="APKTOOL_DUPLICATE_style_0x7f120282" parent="@style/APKTOOL_DUPLICATE_style_0x7f12020e">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowCloseOnTouchOutside">false</item>
+        <item name="APKTOOL_DUPLICATE_attr_0x7f0406cd">true</item>
+    </style>
+    <style name="APKTOOL_DUPLICATE_style_0x7f1202cf" parent="@android:style/Widget">
+        <item name="android:background">?APKTOOL_DUPLICATE_attr_0x7f040124</item>
+        <item name="android:stateListAnimator">@animator/APKTOOL_DUPLICATE_animator_0x7f020000</item>
+        <item name="android:touchscreenBlocksFocus">true</item>
+        <item name="android:keyboardNavigationCluster">true</item>
+    </style>
+    <style name="APKTOOL_DUPLICATE_style_0x7f1200a5" parent="@style/APKTOOL_DUPLICATE_style_0x7f1200a3">
+        <item name="APKTOOL_DUPLICATE_attr_0x7f04011d">?android:colorError</item>
+    </style>
+    <style name="APKTOOL_DUPLICATE_style_0x7f1200a6" parent="@style/APKTOOL_DUPLICATE_style_0x7f1200a4">
+        <item name="APKTOOL_DUPLICATE_attr_0x7f04011d">?android:colorError</item>
+    </style>
+    <style name="APKTOOL_DUPLICATE_style_0x7f1200a7" parent="@style/APKTOOL_DUPLICATE_style_0x7f1200b1">
+        <item name="android:touchscreenBlocksFocus">true</item>
+        <item name="android:keyboardNavigationCluster">true</item>
+    </style>
+</resources>

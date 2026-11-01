@@ -1,0 +1,36 @@
+{
+  "easyGoVersion": "1.0",
+  "client": "com.wsw.cospa",
+  "logicEntities": [
+    {
+      "head": {
+        "function": "magicwindow",
+        "required": "true"
+      },
+      "body": {
+        "mode": "1",
+        "activityPairs": [
+          {
+            "from": "com.wsw.cospa.activity.HomeActivity",
+            "to": "*"
+          },
+          {
+            "from": "com.wsw.cospa.activity.SearchComicActivity",
+            "to": "com.wsw.cospa.activity.ComicDetailActivity"
+          }
+        ],
+        "Activities": [
+          {
+            "name": "com.wsw.cospa.activity.ChapterBrowseActivity",
+            "defaultFullScreen": "false"
+          }
+        ],
+        "UX": {
+          "supportRotationUxCompat": "true",
+          "isDraggable": "false",
+          "supportDraggingToFullScreen": "PAD|FOLD"
+        }
+      }
+    }
+  ]
+}

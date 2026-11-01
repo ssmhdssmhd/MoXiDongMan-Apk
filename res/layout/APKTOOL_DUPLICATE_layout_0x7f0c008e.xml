@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:typeface="monospace" android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:background="@drawable/APKTOOL_DUPLICATE_drawable_0x7f0800ab" android:paddingLeft="20.0dip" android:paddingTop="10.0dip" android:paddingRight="20.0dip" android:paddingBottom="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.appcompat.widget.AppCompatTextView android:textSize="15.0sp" android:typeface="monospace" android:textColor="@color/APKTOOL_DUPLICATE_color_0x7f060380" android:id="@id/APKTOOL_DUPLICATE_id_0x7f0902cc" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</LinearLayout>

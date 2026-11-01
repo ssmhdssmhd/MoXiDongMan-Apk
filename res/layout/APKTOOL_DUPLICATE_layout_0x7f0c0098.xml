@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/APKTOOL_DUPLICATE_id_0x7f0901c6" android:padding="3.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="16.0sp" android:textStyle="bold" android:id="@id/APKTOOL_DUPLICATE_id_0x7f0904b4" android:padding="9.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/APKTOOL_DUPLICATE_string_0x7f110021" android:singleLine="true" />
+    <com.google.android.flexbox.FlexboxLayout android:id="@id/APKTOOL_DUPLICATE_id_0x7f09043f" android:padding="9.0dip" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:overScrollMode="never" app:APKTOOL_DUPLICATE_attr_0x7f04017f="@drawable/APKTOOL_DUPLICATE_drawable_0x7f0801b8" app:APKTOOL_DUPLICATE_attr_0x7f040204="APKTOOL_DUPLICATE_id_0x7f090373" app:APKTOOL_DUPLICATE_attr_0x7f040205="APKTOOL_DUPLICATE_id_0x7f0904ec" app:APKTOOL_DUPLICATE_attr_0x7f040549="APKTOOL_DUPLICATE_id_0x7f0902cd" />
+</LinearLayout>

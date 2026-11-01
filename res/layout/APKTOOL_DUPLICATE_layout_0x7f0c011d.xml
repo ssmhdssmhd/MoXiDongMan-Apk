@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center_horizontal" android:id="@id/APKTOOL_DUPLICATE_id_0x7f0902f2" android:duplicateParentState="true" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_marginTop="@dimen/APKTOOL_DUPLICATE_dimen_0x7f070168" android:layout_marginBottom="@dimen/APKTOOL_DUPLICATE_dimen_0x7f070168" android:contentDescription="@null" />
+    <com.google.android.material.internal.BaselineLayout android:layout_gravity="bottom|center" android:id="@id/APKTOOL_DUPLICATE_id_0x7f0902f3" android:paddingBottom="@dimen/APKTOOL_DUPLICATE_dimen_0x7f0701dd" android:duplicateParentState="true" android:clipChildren="false" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/APKTOOL_DUPLICATE_dimen_0x7f0701df" android:ellipsize="end" android:id="@id/APKTOOL_DUPLICATE_id_0x7f0902f5" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" />
+        <TextView android:textSize="@dimen/APKTOOL_DUPLICATE_dimen_0x7f0701d7" android:ellipsize="end" android:id="@id/APKTOOL_DUPLICATE_id_0x7f0902f4" android:visibility="invisible" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" />
+    </com.google.android.material.internal.BaselineLayout>
+</merge>

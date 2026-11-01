@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="arg">服务器内部出错了</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f110001">Navigate home</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f110002">Navigate up</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f110003">More options</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f110004">Done</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f110005">See all</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f110006">Choose an app</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f110007">OFF</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f110008">ON</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f110009">Alt+</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f11000a">Ctrl+</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f11000b">delete</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f11000c">enter</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f11000d">Function+</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f11000e">Meta+</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f11000f">Shift+</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f110010">space</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f110011">Sym+</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f110012">Menu+</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f110013">Search…</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f110014">Clear query</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f110015">Search query</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f110016">Search</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f110017">Submit query</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f110018">Voice search</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f110019">Share with</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f11001a">Share with %s</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f11001b">Collapse</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f11001c">访问被拒绝，请先登录</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f11001d">访问网络出错</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f11001e">该账号已绑定其他用户，请先解绑</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f11001f">"\u0009\u0009\u00091. 所有资源均为网友上传或者通过网络收集，我们仅提供一个搜集、展示、介绍、浏览及网友交流的平台，我们不对其内容的准确性、正确性、正当性、及时性、安全性、合法性等负责，亦不承担任何法律责任。 
+
+\u0009\u0009\u00092. 鉴于本软件以非人工检索方式、根据您键入的关键字自动显示第三方网页的内容，除本软件注明之服务条款外，其他一切因使用本软件而可能遭致的意外、疏忽、侵权及其造成的损失（包括因下载被搜索链接到的第三方网站内容而感染电脑病毒），本软件对其概不负责，亦不承担任何法律责任。 
+
+\u0009\u0009\u00093. 本软件的搜索结果根据您键入的关键字自动搜索获得并生成，不代表本软件赞成被搜索链接到的第三方网页上的内容或立场。 
+
+\u0009\u0009\u00094. 您应该对使用本软件的结果自行承担风险，我们不做任何形式的保证。 
+
+\u0009\u0009\u00095. 任何单位或个人认为异次元提供服务的内容可能涉嫌侵犯其知识产权或信息网络传播权，应该及时向异次元提出书面权利通知投诉，并提供身份证明、权属证明及详细侵权情况证明。异次元在收到上述法律文件后，将会依法尽快断开相关链接内容。"</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f110020">\u0009\u0009\u0009异次元一款搜图神器+图片阅读器，自定义功能强大，可自由DIY，为广大的图片收藏者提供一种方便 、快捷舒适的阅读体验，再也不用担心找不到想看的图了，界面清新，纯净！</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f110021">异次元</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f110022">"\u0009\u0009\u0009异次元为免费软件，软件和图源只在QQ群和微信公众号更新，请不要在其余地方下载更新或者在淘宝，转转，闲鱼等网站购买。以免上当受骗，否则异次元概不负责！ 
+
+对于广告我想说的是： 
+1，我始终认为如果没有收益，APP维持不了多久，只有收益才能促进异次元良好的发展。 
+2，有的人说希望希望能够付费去广告，那我考虑的是异次元的用户绝大部分都是学生，也没有经济来源，第二点就是付费就需要账号系统，就需要服务器，这是一笔不小的费用，还有就是需要注册企业来申请支付宝和微信账号。 
+3，获取设备信息和定位权限，这是腾讯的广告SDK需要的，不过大家放心，腾讯要这些权限只是为了精准的推送广告，所以大家放心使用。 
+所以大家如果觉得一个启动页广告不会影响大家体验，还是希望大家能够多多支持一下把。"</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f110023">com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f110024">云端</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f110025">备份到云端</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f110026">备份收藏漫画到云端</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f110027">清除云端数据</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f110028">清除云端同步的漫画数据</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f110029">从云端恢复</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f11002a">从云端恢复收藏的漫画</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f11002b">自动同步</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f11002c">自动同步收藏到云</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f11002d">恢复</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f11002e">恢复漫画</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f11002f">恢复图源和书架</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f110030">没有找到备份文件</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f110031">备份漫画</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f110032">自动备份</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f110033">自动备份图源和书架</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f110034">备份图源和书架</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f110035">备份成功 共 %d 条记录</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f110036">错误的请求</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f110037">com.google.android.material.bottomsheet.BottomSheetBehavior</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f110038">Expand halfway</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f110039">取消</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f11003a">输入不能为空</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f11003b">编辑</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f11003c">完成</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f11003d">Characters entered %1$d of %2$d</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f11003e">Character limit exceeded %1$d of %2$d</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f11003f">%1$d/%2$d</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f110040">校验图源</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f110041">Chip text</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f110042">Clear text</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f110043">关闭</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f110044">数据为空</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f110045">返回的数据错误，请检查网络</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f110046">删除</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f110047">确认</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f110048">没有找到用户，请注册</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f110049">\u0009\u0009\u0009异次元是由多位大佬爱好漫画的大佬们共同开发制作，特别是源的制作以及图源的整理很费时间，同时心念各位大佬的付出。想请各位大佬喝杯饮料，吃包辣条。本身软件是免费使用的，所以我希望大家能每天领一下支付宝红包。我能获得红包的同时，大家也能获得红包。 这些收益我也会不定时的作为红包回馈各位制作图源，整理图源的大佬们。也是感谢各位大佬的辛苦付出。您的支持会让异次元发展的越来越好。这样才能让软件进入良性发展。如果异次元以后使用的人数多了，等稳定之后，也许会开发IOS版本。</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f11004a">暂无数据</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f11004b">解码失败</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f11004c">Error</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f11004d">无效的压缩包</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f11004e">越界</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f11004f">读取失败</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f110050">加载失败,服务器异常！</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f110051">Show dropdown menu</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f110052">com.google.android.material.transformation.FabTransformationScrimBehavior</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f110053">com.google.android.material.transformation.FabTransformationSheetBehavior</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f110054">删除失败</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f110055">RecyclerViewFastScroll</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f110056">Scroll to move handle</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f110057">Pull To Break Out!</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f110058">Release To Break Out!</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f110059">Game Over</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f11005a">Refreshing…</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f11005b">Refreshing Failed</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f11005c">Refreshing Finished</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f11005d">动图</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f11005e">com.google.android.material.behavior.HideBottomViewOnScrollBehavior</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f11005f" formatted="false">http://%s:%d</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f110060">Dialog Icon</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f110061">%1$s/%2$s</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f110062">无效代理</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f110063">Tab</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f110064">pull to refresh</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f110065">release to start refresh</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f110066">last update：</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f110067">loading...</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f110068">loading done</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f110069">:</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f11006a">Select AM or PM</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f11006b">Select hour</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f11006c">"%1$s o'clock"</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f11006d">Select minutes</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f11006e">%1$s minutes</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f11006f">cubic-bezier(0.4, 0.0, 1.0, 1.0)</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f110070">cubic-bezier(0.0, 0.0, 0.2, 1.0)</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f110071">path(M 0,0 C 0.05, 0, 0.133333, 0.06, 0.166666, 0.4 C 0.208333, 0.82, 0.25, 1, 1, 1)</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f110072">cubic-bezier(0.0, 0.0, 1.0, 1.0)</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f110073">cubic-bezier(0.4, 0.0, 0.2, 1.0)</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f110074">Range end,</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f110075">Range start,</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f110076">AM</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f110077">Switch to clock mode for the time input.</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f110078">Hour</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f110079">Minute</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f11007a">PM</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f11007b">Select time</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f11007c">Switch to text input mode for the time input.</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f11007d">New notification</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f11007e">Remove %1$s</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f11007f">More than %1$d new notifications</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f110080">%1$d%2$s</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f110081">Change to next month</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f110082">Change to previous month</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f110083">Current selection: %1$s</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f110084">@android:string/cancel</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f110085">@android:string/ok</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f110086">%1$s</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f110087">Select Date</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f110088">Selected date</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f110089">Column of days: %1$s</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f11008a">Invalid format.</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f11008b">Example: %1$s</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f11008c">Use: %1$s</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f11008d">Invalid range.</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f11008e">Navigate to year %1$s</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f11008f">Out of range: %1$s</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f110090">Start date – %1$s</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f110091">%1$s – End date</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f110092">%1$s – %2$s</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f110093">Select Range</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f110094">Start date – End date</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f110095">Save</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f110096">Date</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f110097">End date</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f110098">Start date</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f110099">d</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f11009a">m</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f11009b">y</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f11009c">Switch to calendar input mode</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f11009d">Tap to switch to selecting a day</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f11009e">Switch to text input mode</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f11009f">Tap to switch to selecting a year</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f1100a0">已选频道</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f1100a1">网络异常,请稍后再试！</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f1100a2">没有验证信息或者验证失败</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f1100a3">no more to be loaded</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f1100a4">未设置</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f1100a5">打开</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f1100a6">overScrollImage</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f1100a7">overScrollLabel</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f1100a8">Show password</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f1100a9">M12,4.5C7,4.5 2.73,7.61 1,12c1.73,4.39 6,7.5 11,7.5s9.27,-3.11 11,-7.5c-1.73,-4.39 -6,-7.5 -11,-7.5zM12,17c-2.76,0 -5,-2.24 -5,-5s2.24,-5 5,-5 5,2.24 5,5 -2.24,5 -5,5zM12,9c-1.66,0 -3,1.34 -3,3s1.34,3 3,3 3,-1.34 3,-3 -1.34,-3 -3,-3z</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f1100aa">M2,4.27 L19.73,22 L22.27,19.46 L4.54,1.73 L4.54,1 L23,1 L23,23 L1,23 L1,4.27 Z</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f1100ab">M2,4.27 L2,4.27 L4.54,1.73 L4.54,1.73 L4.54,1 L23,1 L23,23 L1,23 L1,4.27 Z</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f1100ac">M3.27,4.27 L19.74,20.74</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f1100ad">所有音频</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f1100ae">获取系统录音权限被拒绝</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f1100af">你可以使用系统录音录制音频</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f1100b0">音频已损坏</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f1100b1">获取系统相机权限被拒绝</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f1100b2">相机胶卷</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f1100b3">取消</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f1100b4">已完成</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f1100b5">确定</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f1100b6">完成</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f1100b7">%1$d/%2$d 完成</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f1100b8">你可以使用相机拍摄照片或视频</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f1100b9">"无音频文件
+"</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f1100ba">"无视频或照片
+"</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f1100bb">图片已损坏</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f1100bc">读取内存卡权限被拒绝</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f1100bd">长图</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f1100be">你最多可以选择%1$s张图片</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f1100bf">你最多可以选择%1$s个视频</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f1100c0">图片最低选择不能少于%1$s张</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f1100c1">视频最低选择不能少于%1$s个</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f1100c2">暂停</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f1100c3">拍照</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f1100c4">播放</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f1100c5">请稍候...</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f1100c6">请选择</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f1100c7">预览</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f1100c8">提示</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f1100c9">是否保存图片至手机？</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f1100ca">退出</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f1100cb">录视频</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f1100cc">不能同时选择图片或视频</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f1100cd">图片保存失败</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f1100ce">图片保存成功至</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f1100cf">停止</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f1100d0">拍摄</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f1100d1">录音</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f1100d2">视频已损坏</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f1100d3">视频不可预览</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f1100d4">暂无媒体文件！</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f1100d5">再按一次退出程序</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f1100d6" formatted="false">进度 %d/%d</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f1100d7">​</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f1100d8">refresh done</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f1100d9">refreshing...</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f1100da">请求方法不合适</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f1100db">请求次数太多，请稍后再试。</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f1100dc">资源不存在</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f1100dd">Search</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f1100de">全选</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f1100df">服务暂时失效</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f1100e0">按时间(升序)</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f1100e1">按时间(倒序)</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f1100e2">按名称(升序)</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f1100e3">按名称(倒序)</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f1100e4">按大小(升序)</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f1100e5">按大小(倒序)</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f1100e6" formatted="false">"%s falsify area,
+ Represents the height[%.1fdp] of drag at run time,
+ It does not show anything."</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f1100e7">The content view in SmartRefreshLayout is empty. Do you forget to add it in xml layout file?</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f1100e8">Load Failed</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f1100e9">Load Success</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f1100ea">Loading…</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f1100eb">No More Data</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f1100ec">Pull Up To Load More</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f1100ed">Wait For Refreshing…</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f1100ee">Release To Load More</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f1100ef">Refresh Failed</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f1100f0">Refresh Success</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f1100f1">Wait For Loading…</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f1100f2">Pull Down To Refresh</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f1100f3">Refreshing…</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f1100f4">Release To Refresh</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f1100f5">Release To Second Floor</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f1100f6">"'Last Update' M-d HH:mm"</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f1100f7">999+</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f1100f8" formatted="false"><Data>存储空间可用:&lt;font color=#ff0000>%s / 共 %s&lt;/font></Data></string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f1100f9">删除成功</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f1100fa">删除任务</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f1100fb">正在下载</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f1100fc">未选择任务</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f1100fd">下载错误</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f1100fe">下载完成</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f1100ff">继续阅读</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f110100">任务列表</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f110101">读取任务失败</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f110102">正在解析,请耐心等待！</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f110103">暂停下载</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f110104">阅读漫画</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f110105">排序</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f110106">等待下载</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f110107">连接超时！</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f110108">过多的请求</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f110109">zhi_jia_cover</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f11010a">Both input and output Uri must be specified</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f11010b">Edit Photo</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f11010c">Original</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f11010d">Crop</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f11010e">Therefore, override color resource (ucrop_color_toolbar_widget) in your app to make it work on pre-L devices</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f11010f">"1，添加cronet框架解决okhttp协议问题。
+2,修复坚果云备份无法恢复数据问题。
+3,修复添加图源界面的快捷键在安卓12中无法显示问题。
+4,修复当个源搜索漫画时无数据时进度条不停止问题。
+5,图源管理界面中搜索增加搜索备注，发现规则，搜索规则，正文规则，章节列表规则。
+6,优化搜索速度。
+7,修复已知bug,提高稳定性。"</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f110110">"%s版本更新内容：
+
+"</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f110111">web编辑图源</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f110112">web服务</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f110113">服务已启动</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f110114">"正在启动服务
+具体信息查看通知栏"</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f110115">正在启动服务</string>
+    <string name="APKTOOL_DUPLICATE_string_0x7f110116">您只有一个可登陆账号，不能再解绑</string>
+</resources>

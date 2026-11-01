@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/APKTOOL_DUPLICATE_color_0x7f0600f8" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.coordinatorlayout.widget.CoordinatorLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.google.android.material.appbar.AppBarLayout android:id="@id/APKTOOL_DUPLICATE_id_0x7f090299" android:layout_width="fill_parent" android:layout_height="wrap_content" app:APKTOOL_DUPLICATE_attr_0x7f0401ac="0.0dip">
+                <androidx.appcompat.widget.Toolbar android:id="@id/APKTOOL_DUPLICATE_id_0x7f0902ab" android:background="@drawable/APKTOOL_DUPLICATE_drawable_0x7f08005c" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="?APKTOOL_DUPLICATE_attr_0x7f040012" app:APKTOOL_DUPLICATE_attr_0x7f0403b7="@style/APKTOOL_DUPLICATE_style_0x7f120254" app:APKTOOL_DUPLICATE_attr_0x7f040632="@style/APKTOOL_DUPLICATE_style_0x7f120010" app:APKTOOL_DUPLICATE_attr_0x7f040657="@style/APKTOOL_DUPLICATE_style_0x7f120280" />
+            </com.google.android.material.appbar.AppBarLayout>
+            <com.scwang.smartrefresh.layout.SmartRefreshLayout android:id="@id/APKTOOL_DUPLICATE_id_0x7f09035c" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" app:APKTOOL_DUPLICATE_attr_0x7f040583="true">
+                <androidx.recyclerview.widget.RecyclerView android:id="@id/APKTOOL_DUPLICATE_id_0x7f0902a4" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+            <com.wsw.cospa.widget.view.ShadowLayout android:id="@id/APKTOOL_DUPLICATE_id_0x7f0902a9" android:background="@color/APKTOOL_DUPLICATE_color_0x7f0600f8" android:layout_width="fill_parent" android:layout_height="wrap_content" app:APKTOOL_DUPLICATE_attr_0x7f040052="@color/APKTOOL_DUPLICATE_color_0x7f0600f8" app:APKTOOL_DUPLICATE_attr_0x7f040530="#07000000" app:APKTOOL_DUPLICATE_attr_0x7f040537="10.0dip">
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@color/APKTOOL_DUPLICATE_color_0x7f0600f8" android:layout_width="fill_parent" android:layout_height="50.0dip">
+                    <TextView android:textSize="16.0sp" android:gravity="center" android:layout_gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" />
+                    <TextView android:textSize="16.0sp" android:textColor="@color/APKTOOL_DUPLICATE_color_0x7f060380" android:gravity="center" android:layout_gravity="center" android:id="@id/APKTOOL_DUPLICATE_id_0x7f09047c" android:background="@color/APKTOOL_DUPLICATE_color_0x7f0600e7" android:layout_width="120.0dip" android:layout_height="fill_parent" android:foreground="?APKTOOL_DUPLICATE_attr_0x7f040529" android:text="下载" />
+                </LinearLayout>
+            </com.wsw.cospa.widget.view.ShadowLayout>
+        </LinearLayout>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</RelativeLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="drawable" name="APKTOOL_DUPLICATE_drawable_0x7f08005c">#ff363636</item>
+    <item type="drawable" name="APKTOOL_DUPLICATE_drawable_0x7f080070">@drawable/APKTOOL_DUPLICATE_drawable_0x7f080072</item>
+    <item type="drawable" name="APKTOOL_DUPLICATE_drawable_0x7f0801a5">@drawable/APKTOOL_DUPLICATE_drawable_0x7f080093</item>
+    <item type="drawable" name="APKTOOL_DUPLICATE_drawable_0x7f0801a6">@drawable/APKTOOL_DUPLICATE_drawable_0x7f0801a4</item>
+</resources>

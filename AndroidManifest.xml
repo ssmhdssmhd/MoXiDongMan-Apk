@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:compileSdkVersion="30" android:compileSdkVersionCodename="11" package="com.wsw.cospa" platformBuildVersionCode="30" platformBuildVersionName="11">
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="android.permission.READ_LOGS"/>
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.FLASHLIGHT"/>
+    <uses-feature android:name="android.hardware.camera.autofocus" android:required="false"/>
+    <uses-feature android:name="android.hardware.camera.flash" android:required="false"/>
+    <application android:allowBackup="false" android:appComponentFactory="androidx.core.app.CoreComponentFactory" android:hasFragileUserData="true" android:icon="@mipmap/APKTOOL_DUPLICATE_mipmap_0x7f0e000b" android:label="异次元" android:largeHeap="true" android:maxAspectRatio="2.4" android:name="com.wsw.cospa.CartoonApplication" android:networkSecurityConfig="@xml/APKTOOL_DUPLICATE_xml_0x7f150002" android:preserveLegacyExternalStorage="true" android:requestLegacyExternalStorage="true" android:resizeableActivity="true" android:roundIcon="@mipmap/APKTOOL_DUPLICATE_mipmap_0x7f0e0004" android:supportsRtl="true" android:theme="@style/APKTOOL_DUPLICATE_style_0x7f120015" android:usesCleartextTraffic="true">
+        <uses-library android:name="org.apache.http.legacy" android:required="false"/>
+        <meta-data android:name="android.max_aspect" android:value="2.4"/>
+        <meta-data android:name="MTA_CHANNEL" android:value="KuAn"/>
+        <meta-data android:name="android.webkit.WebView.EnableSafeBrowsing" android:value="true"/>
+        <meta-data android:name="EasyGoClient" android:value="true"/>
+        <provider android:authorities="com.wsw.cospa.fileprovider" android:exported="false" android:grantUriPermissions="true" android:name="androidx.core.content.FileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/arg"/>
+        </provider>
+        <activity android:name="com.wsw.cospa.SplashActivity" android:theme="@style/APKTOOL_DUPLICATE_style_0x7f120195">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="orientation|screenSize|uiMode" android:launchMode="singleTop" android:name="com.wsw.cospa.activity.HomeActivity" android:screenOrientation="user" android:theme="@style/APKTOOL_DUPLICATE_style_0x7f120112" android:windowSoftInputMode="stateAlwaysHidden|stateAlwaysVisible|adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize|uiMode" android:launchMode="singleTask" android:name="com.wsw.cospa.activity.AboutMeActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize|uiMode" android:launchMode="singleTask" android:name="com.wsw.cospa.activity.SearchComicActivity" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize|uiMode" android:launchMode="singleTask" android:name="com.wsw.cospa.activity.ComicDetailActivity"/>
+        <activity android:configChanges="orientation|uiMode" android:launchMode="singleTask" android:name="com.wsw.cospa.activity.ComicManagerActivity" android:windowSoftInputMode="stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:scheme="file"/>
+                <data android:scheme="content"/>
+                <data android:mimeType="text/plain"/>
+                <data android:mimeType="application/json"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize|uiMode" android:launchMode="singleTask" android:name="com.wsw.cospa.activity.AddComicSourceActivity" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:configChanges="orientation|uiMode" android:launchMode="singleTask" android:name="com.wsw.cospa.activity.ChapterBrowseActivity" android:theme="@style/APKTOOL_DUPLICATE_style_0x7f120102" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize|uiMode" android:name="com.wsw.cospa.activity.QRCodeScanActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize|uiMode" android:launchMode="singleTask" android:name="com.wsw.cospa.activity.AppSettingActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize|uiMode" android:launchMode="standard" android:name="com.wsw.cospa.activity.FindComicDetailActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize|uiMode" android:launchMode="standard" android:name="com.wsw.cospa.activity.FindCategoryActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize|uiMode" android:launchMode="standard" android:name="com.wsw.cospa.activity.ChapterActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize|uiMode" android:launchMode="standard" android:name="com.wsw.cospa.activity.DownloadComicActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize|uiMode" android:launchMode="singleTask" android:name="com.wsw.cospa.activity.DownloadTaskActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize|uiMode" android:launchMode="singleTask" android:name="com.wsw.cospa.activity.SourceLoginActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize|uiMode" android:launchMode="singleTask" android:name="com.wsw.cospa.activity.SourceDebugActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize|uiMode" android:launchMode="singleTask" android:name="com.wsw.cospa.activity.WebViewActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize|uiMode" android:launchMode="singleTask" android:name="com.wsw.cospa.activity.BackupActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize|uiMode" android:launchMode="singleTask" android:name="com.wsw.cospa.activity.BigImageViewActivity" android:theme="@style/APKTOOL_DUPLICATE_style_0x7f120102"/>
+        <activity android:configChanges="keyboardHidden|locale|orientation|screenSize|uiMode" android:name="com.wsw.cospa.activity.VersionDialogActivity" android:theme="@style/APKTOOL_DUPLICATE_style_0x7f120282" android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize|uiMode" android:launchMode="singleTask" android:name="com.wsw.cospa.activity.DonateActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize|uiMode" android:launchMode="singleTask" android:name="com.wsw.cospa.activity.EncryptComicActivity" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize|uiMode" android:launchMode="singleTask" android:name="com.wsw.cospa.activity.OnkeyEncryptActivity" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:configChanges="orientation|uiMode" android:name="com.wsw.cospa.activity.AppFileActivity"/>
+        <activity android:configChanges="orientation|uiMode" android:name="com.wsw.cospa.activity.ComicSettingActivity"/>
+        <activity android:configChanges="orientation|uiMode" android:name="com.wsw.cospa.activity.FileSelectorActivity"/>
+        <activity android:configChanges="orientation|uiMode" android:name="com.wsw.cospa.activity.ZipFileManagerActivity"/>
+        <activity android:configChanges="orientation|uiMode" android:name="com.wsw.cospa.activity.LocalComicActivity"/>
+        <activity android:configChanges="orientation|uiMode" android:name="com.wsw.cospa.activity.FeedbackActivity"/>
+        <activity android:configChanges="orientation|uiMode" android:hardwareAccelerated="true" android:launchMode="singleTask" android:name="com.wsw.cospa.activity.LocalPreviewActivity" android:theme="@style/APKTOOL_DUPLICATE_style_0x7f120102"/>
+        <activity android:configChanges="orientation|uiMode" android:hardwareAccelerated="true" android:launchMode="singleTask" android:name="com.wsw.cospa.activity.LocalCompressActivity" android:theme="@style/APKTOOL_DUPLICATE_style_0x7f120102"/>
+        <activity android:configChanges="orientation|uiMode" android:name="com.wsw.cospa.activity.ChannelEditDialog"/>
+        <activity android:configChanges="orientation|uiMode" android:name="com.wsw.cospa.activity.AddBookShelfActivity"/>
+        <activity android:configChanges="orientation|uiMode" android:name="com.wsw.cospa.activity.ComicGroupManagerActivity"/>
+        <activity android:configChanges="orientation|uiMode" android:name="com.wsw.cospa.activity.ShopMallActivity"/>
+        <activity android:configChanges="orientation|uiMode" android:name="com.wsw.cospa.activity.ThemeConfigActivity"/>
+        <activity android:configChanges="orientation|uiMode" android:name="com.wsw.cospa.activity.AliPayPacketActivity"/>
+        <service android:name="com.wsw.cospa.service.DownloadService"/>
+        <service android:name="com.wsw.cospa.service.CheckSourceService"/>
+        <service android:name="com.wsw.cospa.service.WebService"/>
+        <provider android:authorities="com.wsw.cospa.provider" android:exported="false" android:grantUriPermissions="true" android:name="com.luck.picture.lib.PictureFileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/APKTOOL_DUPLICATE_xml_0x7f150001"/>
+        </provider>
+        <activity android:name="com.luck.picture.lib.PictureSelectorActivity" android:windowSoftInputMode="adjustPan"/>
+        <activity android:name="com.luck.picture.lib.PicturePreviewActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.luck.picture.lib.PictureVideoPlayActivity" android:screenOrientation="sensor"/>
+        <activity android:name="com.luck.picture.lib.PictureExternalPreviewActivity"/>
+        <activity android:name="com.yalantis.ucrop.UCropActivity"/>
+        <activity android:name="com.yalantis.ucrop.PictureMultiCuttingActivity"/>
+        <activity android:name="com.luck.picture.lib.PicturePlayAudioActivity"/>
+        <meta-data android:name="com.bumptech.glide.integration.okhttp3.OkHttpGlideModule" android:value="GlideModule"/>
+        <activity android:name="cc.shinichi.library.view.ImagePreviewActivity" android:theme="@style/APKTOOL_DUPLICATE_style_0x7f12021a"/>
+    </application>
+</manifest>

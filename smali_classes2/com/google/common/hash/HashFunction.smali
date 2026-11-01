@@ -1,0 +1,56 @@
+.class public interface abstract Lcom/google/common/hash/HashFunction;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# annotations
+.annotation runtime Landroid/support/v4/fm0;
+.end annotation
+
+.annotation build Landroid/support/v4/o8;
+.end annotation
+
+
+# virtual methods
+.method public abstract bits()I
+.end method
+
+.method public abstract hashBytes(Ljava/nio/ByteBuffer;)Lcom/google/common/hash/class;
+.end method
+
+.method public abstract hashBytes([B)Lcom/google/common/hash/class;
+.end method
+
+.method public abstract hashBytes([BII)Lcom/google/common/hash/class;
+.end method
+
+.method public abstract hashInt(I)Lcom/google/common/hash/class;
+.end method
+
+.method public abstract hashLong(J)Lcom/google/common/hash/class;
+.end method
+
+.method public abstract hashObject(Ljava/lang/Object;Lcom/google/common/hash/Funnel;)Lcom/google/common/hash/class;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "<T:",
+            "Ljava/lang/Object;",
+            ">(TT;",
+            "Lcom/google/common/hash/Funnel<",
+            "-TT;>;)",
+            "Lcom/google/common/hash/class;"
+        }
+    .end annotation
+.end method
+
+.method public abstract hashString(Ljava/lang/CharSequence;Ljava/nio/charset/Charset;)Lcom/google/common/hash/class;
+.end method
+
+.method public abstract hashUnencodedChars(Ljava/lang/CharSequence;)Lcom/google/common/hash/class;
+.end method
+
+.method public abstract newHasher()Lcom/google/common/hash/Hasher;
+.end method
+
+.method public abstract newHasher(I)Lcom/google/common/hash/Hasher;
+.end method

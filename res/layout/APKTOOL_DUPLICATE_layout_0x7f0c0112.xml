@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/APKTOOL_DUPLICATE_color_0x7f0600f8" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.core.widget.NestedScrollView android:visibility="gone" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="300.0dip">
+        <com.wsw.cospa.widget.view.FlowLayout android:id="@id/APKTOOL_DUPLICATE_id_0x7f0901d7" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" app:APKTOOL_DUPLICATE_attr_0x7f0400fa="APKTOOL_DUPLICATE_id_0x7f090302" app:APKTOOL_DUPLICATE_attr_0x7f04026a="5.0dip" app:APKTOOL_DUPLICATE_attr_0x7f040271="5.0dip" app:APKTOOL_DUPLICATE_attr_0x7f040274="5.0dip" app:APKTOOL_DUPLICATE_attr_0x7f040284="5.0dip" />
+    </androidx.core.widget.NestedScrollView>
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <androidx.appcompat.widget.SearchView android:id="@id/APKTOOL_DUPLICATE_id_0x7f090389" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginRight="15.0dip" android:imeOptions="actionSearch" app:APKTOOL_DUPLICATE_attr_0x7f04016f="搜索图源名" app:APKTOOL_DUPLICATE_attr_0x7f040524="@null" />
+        <com.wsw.cospa.widget.scroller.FastScrollRecyclerView android:id="@id/APKTOOL_DUPLICATE_id_0x7f0902a4" android:padding="5.0dip" android:paddingRight="20.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/APKTOOL_DUPLICATE_id_0x7f090389" app:APKTOOL_DUPLICATE_attr_0x7f0400aa="@color/APKTOOL_DUPLICATE_color_0x7f0600f4" app:APKTOOL_DUPLICATE_attr_0x7f0400ab="APKTOOL_DUPLICATE_id_0x7f0903af" app:APKTOOL_DUPLICATE_attr_0x7f0400ac="@color/APKTOOL_DUPLICATE_color_0x7f060380" app:APKTOOL_DUPLICATE_attr_0x7f04022f="@color/APKTOOL_DUPLICATE_color_0x7f0600f4" />
+        <include layout="@layout/APKTOOL_DUPLICATE_layout_0x7f0c008d" />
+    </RelativeLayout>
+    <View android:id="@id/APKTOOL_DUPLICATE_id_0x7f090103" android:background="#b3000000" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

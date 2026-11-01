@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/APKTOOL_DUPLICATE_id_0x7f09024c" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/APKTOOL_DUPLICATE_drawable_0x7f0801be" android:layout_centerInParent="true" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/APKTOOL_DUPLICATE_id_0x7f090296" android:background="@color/APKTOOL_DUPLICATE_color_0x7f060380" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="100.0dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+        <ImageView android:layout_gravity="center" android:id="@id/APKTOOL_DUPLICATE_id_0x7f090094" android:layout_width="50.0dip" android:layout_height="50.0dip" android:src="@mipmap/APKTOOL_DUPLICATE_mipmap_0x7f0e000b" />
+        <TextView android:textSize="36.0sp" android:textColor="@color/APKTOOL_DUPLICATE_color_0x7f0600ca" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="异次元" />
+    </LinearLayout>
+    <FrameLayout android:id="@id/APKTOOL_DUPLICATE_id_0x7f0903bd" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/APKTOOL_DUPLICATE_id_0x7f090296" />
+    <TextView android:textSize="14.0sp" android:textColor="@android:color/white" android:gravity="bottom" android:id="@id/APKTOOL_DUPLICATE_id_0x7f0903ac" android:paddingLeft="0.0dip" android:paddingTop="0.0dip" android:paddingRight="1.0dip" android:paddingBottom="0.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="17.0dip" android:layout_marginTop="20.0dip" android:layout_marginBottom="20.0dip" android:text="点击跳过 5" android:shadowColor="#cc000000" android:shadowDx="3.0" android:shadowDy="3.0" android:shadowRadius="3.0" android:layout_alignParentTop="true" android:layout_alignParentRight="true" android:layout_marginStart="20.0dip" android:layout_marginEnd="20.0dip" />
+</RelativeLayout>

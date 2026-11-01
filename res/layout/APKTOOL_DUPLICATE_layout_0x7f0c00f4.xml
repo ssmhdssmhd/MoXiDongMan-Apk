@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.luck.picture.lib.widget.SquareRelativeLayout android:gravity="center_vertical" android:orientation="vertical" android:background="@color/APKTOOL_DUPLICATE_color_0x7f06011b" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/APKTOOL_DUPLICATE_id_0x7f0900dc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/APKTOOL_DUPLICATE_drawable_0x7f0800bf" android:layout_centerHorizontal="true" />
+    <TextView android:textColor="@color/APKTOOL_DUPLICATE_color_0x7f060380" android:id="@id/APKTOOL_DUPLICATE_id_0x7f0904bf" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/APKTOOL_DUPLICATE_dimen_0x7f0700c3" android:text="@string/APKTOOL_DUPLICATE_string_0x7f1100d0" android:layout_below="@id/APKTOOL_DUPLICATE_id_0x7f0900dc" android:layout_centerHorizontal="true" />
+</com.luck.picture.lib.widget.SquareRelativeLayout>

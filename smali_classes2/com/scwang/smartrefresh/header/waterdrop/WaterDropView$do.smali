@@ -1,0 +1,63 @@
+.class Lcom/scwang/smartrefresh/header/waterdrop/WaterDropView$do;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Landroid/animation/ValueAnimator$AnimatorUpdateListener;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lcom/scwang/smartrefresh/header/waterdrop/WaterDropView;->do()Landroid/animation/ValueAnimator;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x1
+    name = null
+.end annotation
+
+
+# instance fields
+.field public final synthetic do:Lcom/scwang/smartrefresh/header/waterdrop/WaterDropView;
+
+
+# direct methods
+.method public constructor <init>(Lcom/scwang/smartrefresh/header/waterdrop/WaterDropView;)V
+    .locals 0
+
+    .line 1
+    iput-object p1, p0, Lcom/scwang/smartrefresh/header/waterdrop/WaterDropView$do;->do:Lcom/scwang/smartrefresh/header/waterdrop/WaterDropView;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public onAnimationUpdate(Landroid/animation/ValueAnimator;)V
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/scwang/smartrefresh/header/waterdrop/WaterDropView$do;->do:Lcom/scwang/smartrefresh/header/waterdrop/WaterDropView;
+
+    invoke-virtual {p1}, Landroid/animation/ValueAnimator;->getAnimatedValue()Ljava/lang/Object;
+
+    move-result-object p1
+
+    check-cast p1, Ljava/lang/Float;
+
+    invoke-virtual {p1}, Ljava/lang/Float;->floatValue()F
+
+    move-result p1
+
+    invoke-virtual {v0, p1}, Lcom/scwang/smartrefresh/header/waterdrop/WaterDropView;->for(F)V
+
+    .line 2
+    iget-object p1, p0, Lcom/scwang/smartrefresh/header/waterdrop/WaterDropView$do;->do:Lcom/scwang/smartrefresh/header/waterdrop/WaterDropView;
+
+    .line 3
+    invoke-virtual {p1}, Landroid/view/View;->postInvalidate()V
+
+    return-void
+.end method

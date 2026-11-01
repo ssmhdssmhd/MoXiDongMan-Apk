@@ -1,0 +1,62 @@
+.class public Landroid/support/v4/bc1;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Lorg/bouncycastle/crypto/CipherParameters;
+
+
+# instance fields
+.field private do:[B
+
+.field private if:Lorg/bouncycastle/crypto/CipherParameters;
+
+
+# direct methods
+.method public constructor <init>(Lorg/bouncycastle/crypto/CipherParameters;[B)V
+    .locals 2
+
+    array-length v0, p2
+
+    const/4 v1, 0x0
+
+    invoke-direct {p0, p1, p2, v1, v0}, Landroid/support/v4/bc1;-><init>(Lorg/bouncycastle/crypto/CipherParameters;[BII)V
+
+    return-void
+.end method
+
+.method public constructor <init>(Lorg/bouncycastle/crypto/CipherParameters;[BII)V
+    .locals 1
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    new-array v0, p4, [B
+
+    iput-object v0, p0, Landroid/support/v4/bc1;->do:[B
+
+    iput-object p1, p0, Landroid/support/v4/bc1;->if:Lorg/bouncycastle/crypto/CipherParameters;
+
+    const/4 p1, 0x0
+
+    invoke-static {p2, p3, v0, p1, p4}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public do()[B
+    .locals 1
+
+    iget-object v0, p0, Landroid/support/v4/bc1;->do:[B
+
+    return-object v0
+.end method
+
+.method public if()Lorg/bouncycastle/crypto/CipherParameters;
+    .locals 1
+
+    iget-object v0, p0, Landroid/support/v4/bc1;->if:Lorg/bouncycastle/crypto/CipherParameters;
+
+    return-object v0
+.end method

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:icon="@drawable/APKTOOL_DUPLICATE_drawable_0x7f0800ce" android:id="@id/APKTOOL_DUPLICATE_id_0x7f090127" android:title="调试图源" app:APKTOOL_DUPLICATE_attr_0x7f040546="APKTOOL_DUPLICATE_id_0x7f09020b" />
+    <item android:icon="@drawable/APKTOOL_DUPLICATE_drawable_0x7f0800f7" android:id="@id/APKTOOL_DUPLICATE_id_0x7f090087" android:title="保存" app:APKTOOL_DUPLICATE_attr_0x7f040546="APKTOOL_DUPLICATE_id_0x7f09020b" />
+    <item android:icon="@drawable/APKTOOL_DUPLICATE_drawable_0x7f0800b4" android:id="@id/APKTOOL_DUPLICATE_id_0x7f09031f" android:title="粘贴图源" app:APKTOOL_DUPLICATE_attr_0x7f040546="APKTOOL_DUPLICATE_id_0x7f0902f8" />
+    <item android:icon="@drawable/APKTOOL_DUPLICATE_drawable_0x7f0800b4" android:id="@id/APKTOOL_DUPLICATE_id_0x7f09011c" android:title="拷贝图源" app:APKTOOL_DUPLICATE_attr_0x7f040546="APKTOOL_DUPLICATE_id_0x7f0902f8" />
+    <item android:icon="@drawable/APKTOOL_DUPLICATE_drawable_0x7f0800b4" android:id="@id/APKTOOL_DUPLICATE_id_0x7f0901a9" android:title="导出图源" app:APKTOOL_DUPLICATE_attr_0x7f040546="APKTOOL_DUPLICATE_id_0x7f0902f8" />
+    <item android:icon="@drawable/APKTOOL_DUPLICATE_drawable_0x7f0800b4" android:id="@id/APKTOOL_DUPLICATE_id_0x7f09039e" android:title="分享图源" app:APKTOOL_DUPLICATE_attr_0x7f040546="APKTOOL_DUPLICATE_id_0x7f0902f8" />
+    <item android:icon="@drawable/APKTOOL_DUPLICATE_drawable_0x7f0800b4" android:id="@id/APKTOOL_DUPLICATE_id_0x7f090360" android:title="正则替换" app:APKTOOL_DUPLICATE_attr_0x7f040546="APKTOOL_DUPLICATE_id_0x7f0902f8" />
+    <item android:icon="@drawable/APKTOOL_DUPLICATE_drawable_0x7f0800b4" android:id="@id/APKTOOL_DUPLICATE_id_0x7f090163" android:title="加密正文" app:APKTOOL_DUPLICATE_attr_0x7f040546="APKTOOL_DUPLICATE_id_0x7f0902f8" />
+    <item android:icon="@drawable/APKTOOL_DUPLICATE_drawable_0x7f0800b4" android:id="@id/APKTOOL_DUPLICATE_id_0x7f090162" android:title="加密章节列表" app:APKTOOL_DUPLICATE_attr_0x7f040546="APKTOOL_DUPLICATE_id_0x7f0902f8" />
+    <item android:icon="@drawable/APKTOOL_DUPLICATE_drawable_0x7f0800ed" android:id="@id/APKTOOL_DUPLICATE_id_0x7f090313" android:title="打开网站" app:APKTOOL_DUPLICATE_attr_0x7f040546="APKTOOL_DUPLICATE_id_0x7f0902f8" />
+    <item android:icon="@drawable/APKTOOL_DUPLICATE_drawable_0x7f0800e5" android:id="@id/APKTOOL_DUPLICATE_id_0x7f090295" android:title="登录" app:APKTOOL_DUPLICATE_attr_0x7f040546="APKTOOL_DUPLICATE_id_0x7f0902f8" />
+</menu>

@@ -1,0 +1,17 @@
+package android.support.v4;
+
+import org.jsoup.select.Elements;
+import org.seimicrawler.xpath.core.AxisSelector;
+
+/* loaded from: classes.dex */
+public class s4 implements AxisSelector {
+    @Override // org.seimicrawler.xpath.core.AxisSelector
+    public dj2 apply(Elements elements) {
+        return dj2.m1362break(null).m1371goto();
+    }
+
+    @Override // org.seimicrawler.xpath.core.AxisSelector
+    public String name() {
+        return "attribute";
+    }
+}

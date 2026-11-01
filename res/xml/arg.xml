@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <external-files-path name="extfiles" path="comicdatecache/" />
+    <external-cache-path name="extcachs" path="comicdatecache/" />
+    <cache-path name="intcachs" path="comicdatecache/" />
+    <root-path name="root_path" path="." />
+    <external-path name="external_files" path="." />
+    <external-cache-path name="gdt_sdk_download_path1" path="com_qq_e_download" />
+    <cache-path name="gdt_sdk_download_path2" path="com_qq_e_download" />
+</resources>

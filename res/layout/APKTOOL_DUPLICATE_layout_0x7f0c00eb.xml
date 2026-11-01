@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/APKTOOL_DUPLICATE_color_0x7f0600ca" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/APKTOOL_DUPLICATE_id_0x7f09036d" android:background="?APKTOOL_DUPLICATE_attr_0x7f040394" android:layout_width="fill_parent" android:layout_height="48.0dip">
+        <ImageButton android:id="@id/APKTOOL_DUPLICATE_id_0x7f09025b" android:background="@color/APKTOOL_DUPLICATE_color_0x7f060362" android:visibility="visible" android:layout_width="48.0dip" android:layout_height="fill_parent" android:src="?APKTOOL_DUPLICATE_attr_0x7f0403a1" android:layout_centerVertical="true" />
+        <TextView android:textSize="18.0sp" android:textColor="?APKTOOL_DUPLICATE_attr_0x7f040395" android:ellipsize="end" android:id="@id/APKTOOL_DUPLICATE_id_0x7f090329" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxEms="11" android:layout_centerInParent="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <com.luck.picture.lib.widget.PreviewViewPager android:id="@id/APKTOOL_DUPLICATE_id_0x7f090334" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

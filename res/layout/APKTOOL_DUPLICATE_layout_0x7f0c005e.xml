@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.cheng.channel.ChannelView android:id="@id/APKTOOL_DUPLICATE_id_0x7f0900ea" android:layout_width="fill_parent" android:layout_height="fill_parent" app:APKTOOL_DUPLICATE_attr_0x7f04006d="true" app:APKTOOL_DUPLICATE_attr_0x7f040294="@string/APKTOOL_DUPLICATE_string_0x7f110037" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

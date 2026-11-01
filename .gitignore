@@ -1,0 +1,20 @@
+# Build & IDE
+.gradle/
+build/
+local.properties
+.idea/
+*.iml
+.DS_Store
+Thumbs.db
+
+# Tools
+*.jar
+*.apk
+*.ap_
+
+# Logs
+*.log
+
+# OS
+*.swp
+*.swo

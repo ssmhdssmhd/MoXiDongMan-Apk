@@ -1,0 +1,40 @@
+.class Lcom/wsw/cospa/utils/public$do;
+.super Lcom/google/gson/reflect/TypeToken;
+.source "SourceFile"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lcom/wsw/cospa/utils/public;->else(Ljava/lang/String;)V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x1
+    name = null
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Lcom/google/gson/reflect/TypeToken<",
+        "Ljava/util/List<",
+        "Lcom/wsw/cospa/bean/HistoryComicBean;",
+        ">;>;"
+    }
+.end annotation
+
+
+# instance fields
+.field public final synthetic do:Lcom/wsw/cospa/utils/public;
+
+
+# direct methods
+.method public constructor <init>(Lcom/wsw/cospa/utils/public;)V
+    .locals 0
+
+    .line 1
+    iput-object p1, p0, Lcom/wsw/cospa/utils/public$do;->do:Lcom/wsw/cospa/utils/public;
+
+    invoke-direct {p0}, Lcom/google/gson/reflect/TypeToken;-><init>()V
+
+    return-void
+.end method

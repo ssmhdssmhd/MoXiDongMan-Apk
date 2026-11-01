@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/APKTOOL_DUPLICATE_color_0x7f060380" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.flyco.tablayout.SlidingTabLayout android:id="@id/APKTOOL_DUPLICATE_id_0x7f09040f" android:tag="skin:skin_title_color:background" android:background="@drawable/APKTOOL_DUPLICATE_drawable_0x7f080062" android:paddingBottom="2.0dip" android:layout_width="fill_parent" android:layout_height="40.0dip" app:APKTOOL_DUPLICATE_attr_0x7f040667="false" app:APKTOOL_DUPLICATE_attr_0x7f04066c="@color/APKTOOL_DUPLICATE_color_0x7f060380" app:APKTOOL_DUPLICATE_attr_0x7f04066d="1.5dip" app:APKTOOL_DUPLICATE_attr_0x7f04066f="3.0dip" app:APKTOOL_DUPLICATE_attr_0x7f040670="2.0dip" app:APKTOOL_DUPLICATE_attr_0x7f040675="15.0dip" app:APKTOOL_DUPLICATE_attr_0x7f04067c="@color/APKTOOL_DUPLICATE_color_0x7f060380" app:APKTOOL_DUPLICATE_attr_0x7f04067d="@color/APKTOOL_DUPLICATE_color_0x7f060380" app:APKTOOL_DUPLICATE_attr_0x7f04067e="14.0sp" />
+    <androidx.viewpager.widget.ViewPager android:id="@id/APKTOOL_DUPLICATE_id_0x7f090117" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" />
+</LinearLayout>

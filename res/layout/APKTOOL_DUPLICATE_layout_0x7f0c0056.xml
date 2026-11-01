@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto">
+    <com.wsw.cospa.widget.subscaleview.SubsamplingScaleImageView android:id="@id/APKTOOL_DUPLICATE_id_0x7f090235" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <TextView android:textSize="40.0sp" android:textColor="@color/APKTOOL_DUPLICATE_color_0x7f060344" android:id="@id/APKTOOL_DUPLICATE_id_0x7f090491" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true" />
+    <ImageView android:id="@id/APKTOOL_DUPLICATE_id_0x7f090240" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/APKTOOL_DUPLICATE_drawable_0x7f0800aa" android:layout_centerInParent="true" android:layout_centerHorizontal="true" />
+</RelativeLayout>

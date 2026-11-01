@@ -1,0 +1,19 @@
+.class public interface abstract Lcom/wsw/cospa/widget/view/RecyclerViewPager$OnPageChangedListener;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/wsw/cospa/widget/view/RecyclerViewPager;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x609
+    name = "OnPageChangedListener"
+.end annotation
+
+
+# virtual methods
+.method public abstract OnPageChanged(II)V
+.end method

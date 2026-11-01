@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="APKTOOL_DUPLICATE_style_0x7f12005d" parent="@style/APKTOOL_DUPLICATE_style_0x7f1200a8" />
+    <style name="APKTOOL_DUPLICATE_style_0x7f120064" parent="@style/APKTOOL_DUPLICATE_style_0x7f1200a9" />
+    <style name="APKTOOL_DUPLICATE_style_0x7f120096" parent="@style/APKTOOL_DUPLICATE_style_0x7f120253">
+        <item name="android:backgroundDimAmount">0.32</item>
+        <item name="android:checkedTextViewStyle">@style/APKTOOL_DUPLICATE_style_0x7f1202fd</item>
+        <item name="android:dialogCornerRadius">@null</item>
+        <item name="APKTOOL_DUPLICATE_attr_0x7f040034">@style/APKTOOL_DUPLICATE_style_0x7f12011b</item>
+        <item name="APKTOOL_DUPLICATE_attr_0x7f0400ae">@style/APKTOOL_DUPLICATE_style_0x7f1202f5</item>
+        <item name="APKTOOL_DUPLICATE_attr_0x7f0400af">@style/APKTOOL_DUPLICATE_style_0x7f1202f5</item>
+        <item name="APKTOOL_DUPLICATE_attr_0x7f0400b0">@style/APKTOOL_DUPLICATE_style_0x7f1202f6</item>
+        <item name="APKTOOL_DUPLICATE_attr_0x7f0400b1">@style/APKTOOL_DUPLICATE_style_0x7f1202f5</item>
+        <item name="APKTOOL_DUPLICATE_attr_0x7f0402fa">@style/APKTOOL_DUPLICATE_style_0x7f12011c</item>
+    </style>
+    <style name="APKTOOL_DUPLICATE_style_0x7f1200a8" parent="@style/APKTOOL_DUPLICATE_style_0x7f1200a5">
+        <item name="APKTOOL_DUPLICATE_attr_0x7f040179">?android:dialogCornerRadius</item>
+    </style>
+    <style name="APKTOOL_DUPLICATE_style_0x7f1200a9" parent="@style/APKTOOL_DUPLICATE_style_0x7f1200a6">
+        <item name="APKTOOL_DUPLICATE_attr_0x7f040179">?android:dialogCornerRadius</item>
+    </style>
+</resources>
