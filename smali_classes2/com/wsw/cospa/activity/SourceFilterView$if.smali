@@ -153,7 +153,7 @@
     :cond_1
     iget-object p1, p0, Lcom/wsw/cospa/activity/SourceFilterView$if;->do:Lcom/wsw/cospa/activity/SourceFilterView;
 
-    const-string v0, "\u6682\u65e0\u56fe\u6e90\uff0c\u8bf7\u5173\u6ce8\u5f02\u6b21\u5143\u5fae\u4fe1\u516c\u4f17\u53f7\uff1a\u641c\u7d22\u3010\u5f02\u6b21\u5143APP\u8f6f\u4ef6\u3011\u6216\u8005\u626b\u63cf\u5173\u4e8e\u754c\u9762\u4e2d\u7684\u4e8c\u7ef4\u7801\u83b7\u53d6\u56fe\u6e90"
+    const-string v0, "\u6682\u65e0\u56fe\u6e90"
 
     invoke-virtual {p1, v0}, Lcom/wsw/cospa/activity/SourceFilterView;->extends(Ljava/lang/String;)V
 

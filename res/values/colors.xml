@@ -141,8 +141,8 @@
     <color name="APKTOOL_DUPLICATE_color_0x7f06008a">#ffff6347</color>
     <color name="APKTOOL_DUPLICATE_color_0x7f06008b">#00000000</color>
     <color name="APKTOOL_DUPLICATE_color_0x7f06008c">#ff40e0d0</color>
-    <color name="APKTOOL_DUPLICATE_color_0x7f06008d">#ff1d8ce0</color>
-    <color name="APKTOOL_DUPLICATE_color_0x7f06008e">#ff58b7ff</color>
+    <color name="APKTOOL_DUPLICATE_color_0x7f06008d">#ff6c5ce7</color>
+    <color name="APKTOOL_DUPLICATE_color_0x7f06008e">#ffa29bfe</color>
     <color name="APKTOOL_DUPLICATE_color_0x7f06008f">#ffee82ee</color>
     <color name="APKTOOL_DUPLICATE_color_0x7f060090">#fff5deb3</color>
     <color name="APKTOOL_DUPLICATE_color_0x7f060091">#ffffffff</color>
@@ -224,12 +224,12 @@
     <color name="APKTOOL_DUPLICATE_color_0x7f0600f1">#ff7fff00</color>
     <color name="APKTOOL_DUPLICATE_color_0x7f0600f3">#ffd2691e</color>
     <color name="APKTOOL_DUPLICATE_color_0x7f0600f4">@color/APKTOOL_DUPLICATE_color_0x7f06008d</color>
-    <color name="APKTOOL_DUPLICATE_color_0x7f0600f8">#ffffffff</color>
+    <color name="APKTOOL_DUPLICATE_color_0x7f0600f8">#f0f4faff</color>
     <color name="APKTOOL_DUPLICATE_color_0x7f0600f9">@color/APKTOOL_DUPLICATE_color_0x7f060316</color>
     <color name="APKTOOL_DUPLICATE_color_0x7f0600fa">#ffffffff</color>
     <color name="APKTOOL_DUPLICATE_color_0x7f0600fb">#ffffffff</color>
     <color name="APKTOOL_DUPLICATE_color_0x7f0600fc">#ffdddddd</color>
-    <color name="APKTOOL_DUPLICATE_color_0x7f0600fd">#ffffffff</color>
+    <color name="APKTOOL_DUPLICATE_color_0x7f0600fd">#f7faffff</color>
     <color name="APKTOOL_DUPLICATE_color_0x7f060100">#29acacac</color>
     <color name="APKTOOL_DUPLICATE_color_0x7f060101">#29efefef</color>
     <color name="APKTOOL_DUPLICATE_color_0x7f060102">#ff4a4a4a</color>
@@ -399,7 +399,7 @@
     <color name="APKTOOL_DUPLICATE_color_0x7f0601b4">#bf000000</color>
     <color name="APKTOOL_DUPLICATE_color_0x7f0601b5">#ffffd700</color>
     <color name="APKTOOL_DUPLICATE_color_0x7f0601b6">#ffdaa520</color>
-    <color name="APKTOOL_DUPLICATE_color_0x7f0601b7">#ff808080</color>
+    <color name="APKTOOL_DUPLICATE_color_0x7f0601b7">#ff565670</color>
     <color name="APKTOOL_DUPLICATE_color_0x7f0601b8">#ffb9b9b9</color>
     <color name="APKTOOL_DUPLICATE_color_0x7f0601b9">#fff9f9f9</color>
     <color name="APKTOOL_DUPLICATE_color_0x7f0601ba">#ff999999</color>
@@ -674,7 +674,7 @@
     <color name="APKTOOL_DUPLICATE_color_0x7f060313">#ffd9d9d9</color>
     <color name="APKTOOL_DUPLICATE_color_0x7f060314">#ff00ff7f</color>
     <color name="APKTOOL_DUPLICATE_color_0x7f060315">#ff9a84a3</color>
-    <color name="APKTOOL_DUPLICATE_color_0x7f060316">#fff2f2f2</color>
+    <color name="APKTOOL_DUPLICATE_color_0x7f060316">#e4e9f6ff</color>
     <color name="APKTOOL_DUPLICATE_color_0x7f060317">#80f2f2f2</color>
     <color name="APKTOOL_DUPLICATE_color_0x7f060318">#fff9f9f9</color>
     <color name="APKTOOL_DUPLICATE_color_0x7f060319">#ff11b190</color>

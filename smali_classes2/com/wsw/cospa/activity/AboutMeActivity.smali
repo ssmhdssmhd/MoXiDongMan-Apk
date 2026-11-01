@@ -558,9 +558,9 @@
     goto :goto_0
 
     :sswitch_2
-    const-string p1, "\u89c4\u5219\u6559\u7a0b"
+    const-string p1, "\u68c0\u67e5\u66f4\u65b0"
 
-    const-string v0, "https://cdn.jsdelivr.net/gh/mabDc/cartoon-rule@master/RuleSupport.md"
+    const-string v0, "https://ghfast.top/https://github.com/ssmhdssmhd/Yiciyuan-Apk/releases"
 
     .line 37
     invoke-static {p0, p1, v0}, Lcom/wsw/cospa/activity/WebViewActivity;->synchronized(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;)V
