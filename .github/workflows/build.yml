@@ -1,0 +1,71 @@
+name: Build APK
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Java 17
+        uses: actions/setup-java@v4
+        with:
+          java-version: '17'
+          distribution: 'temurin'
+
+      - name: Download Apktool
+        run: |
+          wget -q https://github.com/iBotPeaches/Apktool/releases/download/v2.11.1/apktool_2.11.1.jar -O apktool.jar
+          echo "apktool 下载完成"
+
+      - name: Build APK (apktool)
+        run: |
+          java -jar apktool.jar b . -o app-unsigned.apk
+          ls -la app-unsigned.apk
+
+      - name: Setup Android SDK (build-tools)
+        uses: android-actions/setup-android@v3
+
+      - name: Sign APK
+        env:
+          KEYSTORE_BASE64: ${{ secrets.KEYSTORE_BASE64 }}
+          KEYSTORE_PASSWORD: ${{ secrets.KEYSTORE_PASSWORD }}
+          KEY_ALIAS: ${{ secrets.KEY_ALIAS }}
+          KEY_PASSWORD: ${{ secrets.KEY_PASSWORD }}
+        run: |
+          # 恢复签名密钥
+          echo "$KEYSTORE_BASE64" | base64 -d > moxi.keystore
+
+          # 对齐
+          BUILD_TOOLS=$(ls -d $ANDROID_HOME/build-tools/* | head -1)
+          "$BUILD_TOOLS/zipalign" -f -p 4 app-unsigned.apk app-aligned.apk
+
+          # 生成时间戳 文件名: 沫兮动漫.v2.4.4_YYYYMMDDHHMM.apk
+          TIMESTAMP=$(date +%Y%m%d%H%M)
+          APK_NAME="沫兮动漫.v2.4.4_${TIMESTAMP}.apk"
+
+          # 签名
+          "$BUILD_TOOLS/apksigner" sign \
+            --ks moxi.keystore \
+            --ks-pass pass:"$KEYSTORE_PASSWORD" \
+            --ks-key-alias "$KEY_ALIAS" \
+            --key-pass pass:"$KEY_PASSWORD" \
+            --out "$APK_NAME" \
+            app-aligned.apk
+
+          # 验证签名
+          "$BUILD_TOOLS/apksigner" verify --verbose "$APK_NAME"
+
+          echo "APK_NAME=$APK_NAME" >> $GITHUB_ENV
+          ls -la "$APK_NAME"
+
+      - name: Upload APK artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: moxi-dongman-apk
+          path: ${{ env.APK_NAME }}
