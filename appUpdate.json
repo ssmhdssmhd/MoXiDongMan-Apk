@@ -1,11 +1,11 @@
 {
   "appName": "沫兮动漫",
   "appPackage": "com.moxidx.app",
-  "appVersionName": "2.4.9",
-  "appVersionCode": 120,
+  "appVersionName": "2.4.10",
+  "appVersionCode": 121,
   "appSize": 0,
   "forceUpdate": 0,
   "showUpdate": true,
-  "appChangeLog": "1. 新增启动壁纸：启动页自动从仓库拉取壁纸并按天轮换（8 张）<br>2. 壁纸采用 jsDelivr 主线路 + ghfast 备用线路，加载成功自动本地缓存<br>3. 网络不可用时保持原有启动页，不影响启动速度<br>4. 版本更新至 v2.4.9",
-  "appUrl": "https://ghfast.top/https://github.com/ssmhdssmhd/MoXiDongMan-Apk/releases/download/v2.4.9/moxi.dongman.v2.4.9.apk"
+  "appChangeLog": "1. 内置 26 个经实测可用的图源，首次启动自动离线导入，无需联网同步<br>2. 图源可用性测试覆盖 97 个源，仅保留首页可访问且规则有效的源<br>3. 已有图源的用户不受影响，不会重复导入或覆盖自定义图源<br>4. 版本更新至 v2.4.10",
+  "appUrl": "https://ghfast.top/https://github.com/ssmhdssmhd/MoXiDongMan-Apk/releases/download/v2.4.10/moxi.dongman.v2.4.10.apk"
 }

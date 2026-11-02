@@ -260,6 +260,8 @@
 
     invoke-virtual {v1, p0}, Lcom/wsw/cospa/dao/new;->else(Landroid/content/Context;)V
 
+    invoke-static {p0}, Lcom/wsw/cospa/utils/BuiltinSources;->do(Landroid/content/Context;)V
+
     const-string v1, "CONFIG"
 
     const/4 v2, 0x0

@@ -4,10 +4,23 @@
 
 - 仓库地址：https://github.com/ssmhdssmhd/MoXiDongMan-Apk
 - 包名：`com.moxidx.app`
-- 当前版本：**v2.4.9(120)**
+- 当前版本：**v2.4.10(121)**
 - 下载地址：https://github.com/ssmhdssmhd/MoXiDongMan-Apk/releases
 
 ## 版本更新日志
+
+### v2.4.10(121) — 内置实测可用图源
+
+- **更新时间**：2026-11-02
+- **APK 版本**：v2.4.10(121)
+- **更新内容**：
+  - 对全部 97 个图源逐一进行网络可用性测试（首页可达性 + 搜索接口验证）
+  - 筛选出 26 个实测可用图源，打包进 `assets/sources.json`
+  - 首次启动时自动从 APK 内置资源离线导入图源，无需联网、无需手动同步
+  - 已有图源的用户不受影响：数据库非空时跳过导入，不覆盖自定义图源
+  - 保留「从 GitHub 同步」与启动壁纸功能
+  - versionCode: 120 → 121
+  - versionName: 2.4.9 → 2.4.10
 
 ### v2.4.9(120) — 启动壁纸（仓库图源）
 
@@ -96,11 +109,11 @@ MoXiDongMan-Apk/
 ├── smali_classes3/          # classes3.dex smali
 ├── smali_classes4/          # classes4.dex smali
 ├── res/                     # 资源文件（布局/图片/字符串等）
-├── assets/                  # 资产文件
+├── assets/                  # 资产文件（含内置图源 sources.json）
 ├── lib/                     # Native 库（.so）
 ├── original/                # 原始清单与签名信息（仅参考）
 ├── sources/
-│   └── all_sources.json     # 内置图源（97 个），供「从 GitHub 同步」使用
+│   └── all_sources.json     # 全部图源（97 个），供「从 GitHub 同步」使用
 ├── wallpapers/              # 启动壁纸（8 张，CDN 远程加载）
 └── .github/workflows/
     └── build.yml            # Apktool 打包 + 签名 + Release 发布
@@ -112,7 +125,7 @@ MoXiDongMan-Apk/
 |------|------|
 | 应用名称 | 沫兮动漫 |
 | 包名 | com.moxidx.app |
-| 版本号 | v2.4.9(120) |
+| 版本号 | v2.4.10(121) |
 | 最低版本 | Android 4.4 (API 19) |
 | 目标版本 | Android 11 (API 30) |
 | 用户界面语言 | 简体中文 |
@@ -148,6 +161,48 @@ MoXiDongMan-Apk/
 - 加载成功后写入 `cacheDir/splash.w.NN.jpg`，后续启动直接读缓存
 - 最长等待 2 秒；网络不可用或超时则保持原启动页，不阻塞进入主界面
 
+## 内置图源（离线可用）
+
+APK 内置 `assets/sources.json`，包含 26 个经实测可用的漫画图源：
+
+- **导入时机**：应用首次启动时，后台线程读取内置图源并写入本地数据库
+- **导入条件**：数据库为空时才导入；已有图源的用户不会重复导入，也不会覆盖自定义图源
+- **完全离线**：不依赖网络与 GitHub，安装后即可直接搜索漫画
+- **幂等标记**：导入成功后写入 `BUILTIN_SOURCES/imported` 标记，后续启动不再重复执行
+- **测试范围**：97 个源逐一验证首页可达性、响应内容与搜索接口，剔除 502/SSL 失败、Cloudflare 拦截、跳转到无关页面及搜索失效的源
+
+内置源清单（26 个）：
+
+| 图源 | 地址 |
+|------|------|
+| GMANHUA | http://www.gmanhua.com |
+| MangaHasu | http://mangahasu.se |
+| naver | https://m.comic.naver.com/index.nhn |
+| ◯ YYDS | http://www.yydsmh.com |
+| ◯ 包子漫画 | https://cn.bzmanga.com |
+| 仙漫网 / 仙漫网-M | https://www.gaonaojin.com / https://m.gaonaojin.com |
+| 动漫啦 | http://www.dongman.la |
+| 动漫星空 | http://acg.gamersky.com/manhua |
+| 包子漫画cw | https://cn.webmota.com |
+| 咚漫-M | https://m.dongmanmanhua.cn |
+| 奇漫屋₁ | http://m.qmanwu2.com |
+| 崩坏3漫画 | https://comic.bh3.com |
+| 极速漫画 | http://www.1kkk.com |
+| 波洞 | https://ymcdnyfqdapp.ikmmh.com |
+| 漫客栈w | https://www.mkzhan.com |
+| 漫本 | http://www.manben.com |
+| 看漫画-M | https://m.kanman.com |
+| 知音漫客-M | https://m.zymk.cn |
+| 聚合漫画屋 | https://www.52hah.com |
+| 腾讯漫画 | https://m.ac.qq.com |
+| 风之动漫 | https://manhua.fffdm.com |
+| 动漫屋 | https://m.dm5.com |
+| 漫画人 | http://www.manhuaren.com |
+| 漫画柜 | https://www.manhuagui.com |
+| 漫畫狗 | https://dogemanga.com |
+
+> 站点可用性会随时间变化，内置清单按本次测试结果筛选；如需更多图源，仍可通过「从 GitHub 同步」导入全部 97 个源。
+
 ## 图源同步
 
 图源管理页菜单「校验图源」下方新增「从 GitHub 同步」：
@@ -179,9 +234,9 @@ MoXiDongMan-Apk/
 2. zipalign 对齐
 3. apksigner 签名（使用仓库 Secrets 中的固定签名密钥）
 4. 上传构建产物 Artifact
-5. 创建/更新 GitHub Release，发布 `moxi.dongman.v2.4.9.apk`
+5. 创建/更新 GitHub Release，发布 `moxi.dongman.v2.4.10.apk`
 
-产物文件名格式：`沫兮动漫.v2.4.9_YYYYMMDDHHMM.apk`
+产物文件名格式：`沫兮动漫.v2.4.10_YYYYMMDDHHMM.apk`
 
 签名相关 Secrets：
 
