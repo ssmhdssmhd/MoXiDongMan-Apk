@@ -4,10 +4,22 @@
 
 - 仓库地址：https://github.com/ssmhdssmhd/MoXiDongMan-Apk
 - 包名：`com.moxidx.app`
-- 当前版本：**v2.4.11(122)**
+- 当前版本：**v2.4.12(123)**
 - 下载地址：https://github.com/ssmhdssmhd/MoXiDongMan-Apk/releases
 
 ## 版本更新日志
+
+### v2.4.12(123) — 启动页品牌清理
+
+- **更新时间**：2026-11-02
+- **APK 版本**：v2.4.12(123)
+- **更新内容**：
+  - 修复首次启动隐私弹窗仍显示「异次元APP隐私政策」「感谢您选择异次元APP」的问题，统一改为「沫兮动漫」
+  - 更换启动页底层图片（`drawable-xxhdpi` 两张启动图），去除旧的异次元插画与底部「异次元」水印
+  - 启动页默认底图改用新壁纸，断网/首启时也不再出现旧品牌画面
+  - 联网后仍按自然日切换到当天壁纸（jsDelivr 主线路 / ghfast 备用线路）
+  - versionCode: 122 → 123
+  - versionName: 2.4.11 → 2.4.12
 
 ### v2.4.11(122) — 版本入口迁移、GitHub 反馈
 
@@ -139,7 +151,7 @@ MoXiDongMan-Apk/
 |------|------|
 | 应用名称 | 沫兮动漫 |
 | 包名 | com.moxidx.app |
-| 版本号 | v2.4.11(122) |
+| 版本号 | v2.4.12(123) |
 | 最低版本 | Android 4.4 (API 19) |
 | 目标版本 | Android 11 (API 30) |
 | 用户界面语言 | 简体中文 |
@@ -250,9 +262,9 @@ APK 内置 `assets/sources.json`，包含 26 个经实测可用的漫画图源�
 2. zipalign 对齐
 3. apksigner 签名（使用仓库 Secrets 中的固定签名密钥）
 4. 上传构建产物 Artifact
-5. 创建/更新 GitHub Release，发布 `moxi.dongman.v2.4.11.apk`
+5. 创建/更新 GitHub Release，发布 `moxi.dongman.v2.4.12.apk`
 
-产物文件名格式：`沫兮动漫.v2.4.11_YYYYMMDDHHMM.apk`
+产物文件名格式：`沫兮动漫.v2.4.12_YYYYMMDDHHMM.apk`
 
 签名相关 Secrets：
 

@@ -54,9 +54,9 @@ jobs:
           # 对齐
           "$BUILD_TOOLS/zipalign" -f -p 4 app-unsigned.apk app-aligned.apk
 
-          # 生成时间戳 文件名: 沫兮动漫.v2.4.11_YYYYMMDDHHMM.apk
+          # 生成时间戳 文件名: 沫兮动漫.v2.4.12_YYYYMMDDHHMM.apk
           TIMESTAMP=$(date +%Y%m%d%H%M)
-          APK_NAME="沫兮动漫.v2.4.11_${TIMESTAMP}.apk"
+          APK_NAME="沫兮动漫.v2.4.12_${TIMESTAMP}.apk"
 
           # 签名
           "$BUILD_TOOLS/apksigner" sign \
@@ -81,21 +81,20 @@ jobs:
 
       - name: Prepare release asset
         run: |
-          cp "$APK_NAME" "moxi.dongman.v2.4.11.apk"
-          ls -la moxi.dongman.v2.4.11.apk
+          cp "$APK_NAME" "moxi.dongman.v2.4.12.apk"
+          ls -la moxi.dongman.v2.4.12.apk
 
       - name: Create Release
         uses: softprops/action-gh-release@v2
         with:
-          tag_name: v2.4.11
-          name: 沫兮动漫 v2.4.11
+          tag_name: v2.4.12
+          name: 沫兮动漫 v2.4.12
           body: |
-            ## 沫兮动漫 v2.4.11
+            ## 沫兮动漫 v2.4.12
 
-            - 侧边栏版本入口移至设置页「清理缓存」上方，显示当前版本与最新版本
-            - 点击版本行即可检测更新，更新包走 ghfast 加速下载
-            - 侧边栏「反馈」改为 GitHub Issues 问题反馈
-            - 关于页与设置页的检测更新均指向当前仓库
-            - versionCode 121 → 122，versionName 2.4.10 → 2.4.11
-          files: moxi.dongman.v2.4.11.apk
+            - 修复首次启动隐私弹窗仍显示「异次元」字样，统一改为「沫兮动漫」
+            - 更换启动页底层图片，去除旧异次元插画与底部水印
+            - 启动页默认底图改用新壁纸，联网后按天切换当日壁纸
+            - versionCode 122 → 123，versionName 2.4.11 → 2.4.12
+          files: moxi.dongman.v2.4.12.apk
           token: ${{ secrets.GITHUB_TOKEN }}

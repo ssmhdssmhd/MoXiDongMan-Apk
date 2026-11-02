@@ -1,11 +1,11 @@
 {
   "appName": "沫兮动漫",
   "appPackage": "com.moxidx.app",
-  "appVersionName": "2.4.11",
-  "appVersionCode": 122,
+  "appVersionName": "2.4.12",
+  "appVersionCode": 123,
   "appSize": 0,
   "forceUpdate": 0,
   "showUpdate": true,
-  "appChangeLog": "1. 侧边栏版本入口移至设置页「清理缓存」上方，直接显示当前版本与最新版本<br>2. 点击版本行即可检测更新，更新包走 ghfast 加速线路，国内下载更快<br>3. 侧边栏「反馈」改为 GitHub Issues 问题反馈<br>4. 关于页与设置页的检测更新均指向当前仓库<br>5. 版本更新至 v2.4.11",
-  "appUrl": "https://ghfast.top/https://github.com/ssmhdssmhd/MoXiDongMan-Apk/releases/download/v2.4.11/moxi.dongman.v2.4.11.apk"
+  "appChangeLog": "1. 修复首次启动隐私弹窗仍显示「异次元」字样的问题，统一改为「沫兮动漫」<br>2. 更换启动页底层图片，去除旧的异次元插画与底部水印<br>3. 启动页默认底图改用新壁纸，联网后再按天切换到当日壁纸<br>4. 版本更新至 v2.4.12",
+  "appUrl": "https://ghfast.top/https://github.com/ssmhdssmhd/MoXiDongMan-Apk/releases/download/v2.4.12/moxi.dongman.v2.4.12.apk"
 }
