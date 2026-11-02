@@ -15,6 +15,11 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      - name: Purge jsDelivr cache
+        run: |
+          curl -s "https://purge.jsdelivr.net/gh/ssmhdssmhd/MoXiDongMan-Apk@main/appUpdate.json" || true
+          curl -s "https://purge.jsdelivr.net/gh/ssmhdssmhd/MoXiDongMan-Apk@main/sources/all_sources.json" || true
+
       - name: Setup Java 17
         uses: actions/setup-java@v4
         with:

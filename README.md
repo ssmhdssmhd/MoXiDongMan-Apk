@@ -114,6 +114,8 @@ MoXiDongMan-Apk/
 4. 下载地址使用 `ghfast.top` 加速的 GitHub Release 链接，国内/海外均可下载；
 5. 无新版本时提示「已是最新版本」。
 
+> jsDelivr 对 `@main` 分支有缓存，工作流在每次推送后会调用 `purge.jsdelivr.net` 刷新 `appUpdate.json`，确保客户端立即读取到最新版本信息。
+
 维护新版本时，只需同步修改以下位置：
 
 - `apktool.yml` 的 `versionCode` / `versionName`
