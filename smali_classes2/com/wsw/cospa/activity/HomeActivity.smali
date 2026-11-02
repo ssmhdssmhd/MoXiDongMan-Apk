@@ -3044,7 +3044,7 @@
 
     :sswitch_3
     :try_start_0
-    const-string p1, "https://support.qq.com/products/75833"
+    const-string p1, "https://github.com/ssmhdssmhd/MoXiDongMan-Apk/issues"
 
     .line 5
     invoke-static {p1}, Landroid/net/Uri;->parse(Ljava/lang/String;)Landroid/net/Uri;

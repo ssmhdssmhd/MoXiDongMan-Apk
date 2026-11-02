@@ -4,10 +4,24 @@
 
 - 仓库地址：https://github.com/ssmhdssmhd/MoXiDongMan-Apk
 - 包名：`com.moxidx.app`
-- 当前版本：**v2.4.10(121)**
+- 当前版本：**v2.4.11(122)**
 - 下载地址：https://github.com/ssmhdssmhd/MoXiDongMan-Apk/releases
 
 ## 版本更新日志
+
+### v2.4.11(122) — 版本入口迁移、GitHub 反馈
+
+- **更新时间**：2026-11-02
+- **APK 版本**：v2.4.11(122)
+- **更新内容**：
+  - 侧边栏「版本」入口移至设置页「清理缓存」上方
+  - 版本行直接显示当前版本与最新版本，打开设置页自动获取最新版本
+  - 点击版本行即可检测更新，有新版本时弹出更新弹窗，更新包使用 ghfast 加速线路下载
+  - 侧边栏「反馈」改为「GitHub 反馈」，点击打开仓库 Issues 页面
+  - 反馈页面统一改为 GitHub Issues（https://github.com/ssmhdssmhd/MoXiDongMan-Apk/issues）
+  - 关于页与设置页的检测更新均指向当前仓库
+  - versionCode: 121 → 122
+  - versionName: 2.4.10 → 2.4.11
 
 ### v2.4.10(121) — 内置实测可用图源
 
@@ -125,20 +139,22 @@ MoXiDongMan-Apk/
 |------|------|
 | 应用名称 | 沫兮动漫 |
 | 包名 | com.moxidx.app |
-| 版本号 | v2.4.10(121) |
+| 版本号 | v2.4.11(122) |
 | 最低版本 | Android 4.4 (API 19) |
 | 目标版本 | Android 11 (API 30) |
 | 用户界面语言 | 简体中文 |
 
 ## 在线更新机制
 
-客户端「关于」页点击版本号，或通过菜单进入检查更新时：
+客户端「关于」页点击版本号，或进入「设置」页点击「清理缓存」上方的版本行时：
 
 1. 读取 `appUpdate.json`（主线路 jsDelivr，失败自动切换 ghfast.top 备用线路）；
 2. 比较 `appVersionCode` 与本地版本；
 3. 有新版本时打开更新弹窗，显示版本号、更新内容与下载按钮；
 4. 下载地址使用 `ghfast.top` 加速的 GitHub Release 链接，国内/海外均可下载；
 5. 无新版本时提示「已是最新版本」。
+
+设置页版本行会实时展示「当前 vX · 最新 vY（可更新 / 已是最新）」，打开页面即自动从双线路获取最新版本信息。
 
 > jsDelivr 对 `@main` 分支有缓存，工作流在每次推送后会调用 `purge.jsdelivr.net` 刷新 `appUpdate.json`，确保客户端立即读取到最新版本信息。
 
@@ -234,9 +250,9 @@ APK 内置 `assets/sources.json`，包含 26 个经实测可用的漫画图源�
 2. zipalign 对齐
 3. apksigner 签名（使用仓库 Secrets 中的固定签名密钥）
 4. 上传构建产物 Artifact
-5. 创建/更新 GitHub Release，发布 `moxi.dongman.v2.4.10.apk`
+5. 创建/更新 GitHub Release，发布 `moxi.dongman.v2.4.11.apk`
 
-产物文件名格式：`沫兮动漫.v2.4.10_YYYYMMDDHHMM.apk`
+产物文件名格式：`沫兮动漫.v2.4.11_YYYYMMDDHHMM.apk`
 
 签名相关 Secrets：
 

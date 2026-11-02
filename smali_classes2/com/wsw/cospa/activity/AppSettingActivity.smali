@@ -334,9 +334,18 @@
 
     goto :goto_0
 
-    .line 10
+    .line 11
     :sswitch_8
     invoke-static {p0}, Lcom/wsw/cospa/activity/BackupActivity;->interface(Landroid/content/Context;)V
+
+    goto :goto_0
+
+    :sswitch_9
+    const/4 p1, 0x1
+
+    invoke-static {p0, p1}, Lcom/wsw/cospa/utils/else;->try(Landroid/content/Context;Z)V
+
+    goto :goto_0
 
     :goto_0
     return-void
@@ -352,6 +361,7 @@
         0x7f0901df -> :sswitch_2
         0x7f09027e -> :sswitch_1
         0x7f090287 -> :sswitch_0
+        0x7f090291 -> :sswitch_9
     .end sparse-switch
 .end method
 
@@ -550,6 +560,26 @@
     iget-object v1, p0, Lcom/wsw/cospa/activity/AppSettingActivity;->tvCacheSize:Landroid/widget/TextView;
 
     invoke-virtual {v1, v0}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+
+    .line 19
+    const v0, 0x7f090291
+
+    invoke-virtual {p0, v0}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
+
+    move-result-object v0
+
+    invoke-virtual {v0, p0}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+
+    .line 20
+    const v0, 0x7f0904c4
+
+    invoke-virtual {p0, v0}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
+
+    move-result-object v0
+
+    check-cast v0, Landroid/widget/TextView;
+
+    invoke-static {p0, v0}, Lcom/wsw/cospa/utils/VersionBadge;->do(Landroid/content/Context;Landroid/widget/TextView;)V
 
     return-void
 .end method

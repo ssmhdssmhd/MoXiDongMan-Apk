@@ -301,13 +301,9 @@
     .line 19
     iget-object v1, p0, Lcom/wsw/cospa/activity/FeedbackActivity;->mWebView:Landroid/webkit/WebView;
 
-    invoke-virtual {v0}, Ljava/lang/String;->getBytes()[B
+    const-string v2, "https://github.com/ssmhdssmhd/MoXiDongMan-Apk/issues"
 
-    move-result-object v0
-
-    const-string v2, "https://support.qq.com/products/75833"
-
-    invoke-virtual {v1, v2, v0}, Landroid/webkit/WebView;->postUrl(Ljava/lang/String;[B)V
+    invoke-virtual {v1, v2}, Landroid/webkit/WebView;->loadUrl(Ljava/lang/String;)V
 
     return-void
 .end method
