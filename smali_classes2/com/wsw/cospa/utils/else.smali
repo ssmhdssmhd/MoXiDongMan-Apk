@@ -428,17 +428,51 @@
     return-object p0
 .end method
 
+.method public static throws(Ljava/lang/String;)Ljava/lang/String;
+    .locals 4
+
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+
+    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    const-string v1, "?t="
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
+
+    move-result-wide v1
+
+    invoke-virtual {v0, v1, v2}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
 .method public static try(Landroid/content/Context;Z)V
     .locals 3
 
     .line 1
-    const-string v0, "https://cdn.jsdelivr.net/gh/ssmhdssmhd/MoXiDongMan-Apk@main/appUpdate.json"
+    const-string v0, "https://ghfast.top/https://raw.githubusercontent.com/ssmhdssmhd/MoXiDongMan-Apk/main/appUpdate.json"
+
+    invoke-static {v0}, Lcom/wsw/cospa/utils/else;->throws(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v0
 
     invoke-static {v0}, Lcom/wsw/cospa/utils/else;->for(Ljava/lang/String;)Lio/reactivex/new;
 
     move-result-object v0
 
-    const-string v1, "https://ghfast.top/https://raw.githubusercontent.com/ssmhdssmhd/MoXiDongMan-Apk/main/appUpdate.json"
+    const-string v1, "https://cdn.jsdelivr.net/gh/ssmhdssmhd/MoXiDongMan-Apk@main/appUpdate.json"
+
+    invoke-static {v1}, Lcom/wsw/cospa/utils/else;->throws(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v1
 
     .line 2
     invoke-static {v1}, Lcom/wsw/cospa/utils/else;->for(Ljava/lang/String;)Lio/reactivex/new;

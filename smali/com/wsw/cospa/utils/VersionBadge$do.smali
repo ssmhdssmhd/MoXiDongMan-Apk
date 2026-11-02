@@ -128,7 +128,11 @@
 .method public run()V
     .locals 8
 
-    const-string v0, "https://cdn.jsdelivr.net/gh/ssmhdssmhd/MoXiDongMan-Apk@main/appUpdate.json"
+    const-string v0, "https://ghfast.top/https://raw.githubusercontent.com/ssmhdssmhd/MoXiDongMan-Apk/main/appUpdate.json"
+
+    invoke-static {v0}, Lcom/wsw/cospa/utils/else;->throws(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v0
 
     invoke-static {v0}, Lcom/wsw/cospa/utils/VersionBadge$do;->fetch(Ljava/lang/String;)Ljava/lang/String;
 
@@ -136,7 +140,11 @@
 
     if-nez v0, :cond_0
 
-    const-string v1, "https://ghfast.top/https://raw.githubusercontent.com/ssmhdssmhd/MoXiDongMan-Apk/main/appUpdate.json"
+    const-string v1, "https://cdn.jsdelivr.net/gh/ssmhdssmhd/MoXiDongMan-Apk@main/appUpdate.json"
+
+    invoke-static {v1}, Lcom/wsw/cospa/utils/else;->throws(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v1
 
     invoke-static {v1}, Lcom/wsw/cospa/utils/VersionBadge$do;->fetch(Ljava/lang/String;)Ljava/lang/String;
 

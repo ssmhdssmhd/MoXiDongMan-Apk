@@ -341,7 +341,7 @@
     goto :goto_0
 
     :sswitch_9
-    const/4 p1, 0x1
+    const/4 p1, 0x0
 
     invoke-static {p0, p1}, Lcom/wsw/cospa/utils/else;->try(Landroid/content/Context;Z)V
 

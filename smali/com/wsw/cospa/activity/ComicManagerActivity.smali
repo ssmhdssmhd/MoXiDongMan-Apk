@@ -809,34 +809,13 @@
 .end method
 
 .method private interface()V
-    .locals 4
+    .locals 2
 
-    .line 1
-    new-instance v0, Lcom/wsw/cospa/utils/DialogTool$new;
+    const-string v0, "https://ghfast.top/https://raw.githubusercontent.com/lin686/legado-comic-sources/main/legado-comic-sources-merged.json"
 
-    const-string v1, "\u8f93\u5165\u7f51\u5740"
+    const-string v1, "https://cdn.jsdelivr.net/gh/lin686/legado-comic-sources@main/legado-comic-sources-merged.json"
 
-    const/4 v2, 0x0
-
-    invoke-direct {v0, v1, v2, v2}, Lcom/wsw/cospa/utils/DialogTool$new;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
-
-    .line 2
-    new-instance v1, Lcom/wsw/cospa/utils/DialogTool$try;
-
-    const-string v2, "\u786e\u8ba4"
-
-    const-string v3, "\u53d6\u6d88"
-
-    invoke-direct {v1, v2, v3}, Lcom/wsw/cospa/utils/DialogTool$try;-><init>(Ljava/lang/String;Ljava/lang/String;)V
-
-    .line 3
-    new-instance v2, Lcom/wsw/cospa/activity/ComicManagerActivity$this;
-
-    invoke-direct {v2, p0}, Lcom/wsw/cospa/activity/ComicManagerActivity$this;-><init>(Lcom/wsw/cospa/activity/ComicManagerActivity;)V
-
-    const-string v3, "\u8bf7\u8f93\u5165\u7f51\u7edc\u56fe\u6e90\u7684\u5730\u5740"
-
-    invoke-static {p0, v0, v1, v3, v2}, Lcom/wsw/cospa/utils/DialogTool;->r(Landroid/app/Activity;Lcom/wsw/cospa/utils/DialogTool$new;Lcom/wsw/cospa/utils/DialogTool$try;Ljava/lang/String;Lcom/wsw/cospa/utils/DialogTool$EditDialogOptcb;)V
+    invoke-virtual {p0, v0, v1}, Lcom/wsw/cospa/activity/ComicManagerActivity;->b(Ljava/lang/String;Ljava/lang/String;)V
 
     return-void
 .end method
