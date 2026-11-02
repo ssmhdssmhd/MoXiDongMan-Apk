@@ -4,10 +4,22 @@
 
 - 仓库地址：https://github.com/ssmhdssmhd/MoXiDongMan-Apk
 - 包名：`com.moxidx.app`
-- 当前版本：**v2.4.8(119)**
+- 当前版本：**v2.4.9(120)**
 - 下载地址：https://github.com/ssmhdssmhd/MoXiDongMan-Apk/releases
 
 ## 版本更新日志
+
+### v2.4.9(120) — 启动壁纸（仓库图源）
+
+- **更新时间**：2026-11-02
+- **APK 版本**：v2.4.9(120)
+- **更新内容**：
+  - 新增 8 张启动壁纸，存放于仓库 `wallpapers/` 目录
+  - 启动页自动从仓库获取壁纸，按天轮换（`wallpaper.01.jpg` ~ `wallpaper.08.jpg`）
+  - 主线路 jsDelivr，失败自动切换 ghfast.top 备用线路
+  - 加载成功后写入应用缓存，后续启动秒开；网络不可用时保持原启动页，不阻塞启动
+  - versionCode: 119 → 120
+  - versionName: 2.4.8 → 2.4.9
 
 ### v2.4.8(119) — 启动报错与版本检测修复
 
@@ -89,6 +101,7 @@ MoXiDongMan-Apk/
 ├── original/                # 原始清单与签名信息（仅参考）
 ├── sources/
 │   └── all_sources.json     # 内置图源（97 个），供「从 GitHub 同步」使用
+├── wallpapers/              # 启动壁纸（8 张，CDN 远程加载）
 └── .github/workflows/
     └── build.yml            # Apktool 打包 + 签名 + Release 发布
 ```
@@ -99,7 +112,7 @@ MoXiDongMan-Apk/
 |------|------|
 | 应用名称 | 沫兮动漫 |
 | 包名 | com.moxidx.app |
-| 版本号 | v2.4.8(119) |
+| 版本号 | v2.4.9(120) |
 | 最低版本 | Android 4.4 (API 19) |
 | 目标版本 | Android 11 (API 30) |
 | 用户界面语言 | 简体中文 |
@@ -121,6 +134,19 @@ MoXiDongMan-Apk/
 - `apktool.yml` 的 `versionCode` / `versionName`
 - `appUpdate.json` 的 `appVersionCode` / `appVersionName` / `appChangeLog` / `appUrl`
 - `.github/workflows/build.yml` 中的版本号、APK 文件名与 Release tag
+
+## 启动壁纸
+
+启动页（`SplashActivity`）会在进入主界面前从仓库拉取当天的壁纸：
+
+| 线路 | 链接 |
+|------|------|
+| jsDelivr（主线路） | `https://cdn.jsdelivr.net/gh/ssmhdssmhd/MoXiDongMan-Apk@main/wallpapers/wallpaper.0N.jpg` |
+| ghfast 加速（备用） | `https://ghfast.top/https://raw.githubusercontent.com/ssmhdssmhd/MoXiDongMan-Apk/main/wallpapers/wallpaper.0N.jpg` |
+
+- `N` 为 1~8，按自然日轮换（`wallpaper.01.jpg` ~ `wallpaper.08.jpg`）
+- 加载成功后写入 `cacheDir/splash.w.NN.jpg`，后续启动直接读缓存
+- 最长等待 2 秒；网络不可用或超时则保持原启动页，不阻塞进入主界面
 
 ## 图源同步
 
@@ -153,9 +179,9 @@ MoXiDongMan-Apk/
 2. zipalign 对齐
 3. apksigner 签名（使用仓库 Secrets 中的固定签名密钥）
 4. 上传构建产物 Artifact
-5. 创建/更新 GitHub Release，发布 `moxi.dongman.v2.4.8.apk`
+5. 创建/更新 GitHub Release，发布 `moxi.dongman.v2.4.9.apk`
 
-产物文件名格式：`沫兮动漫.v2.4.8_YYYYMMDDHHMM.apk`
+产物文件名格式：`沫兮动漫.v2.4.9_YYYYMMDDHHMM.apk`
 
 签名相关 Secrets：
 

@@ -401,9 +401,7 @@
 
     invoke-direct {v0, p0}, Lcom/wsw/cospa/SplashActivity$if;-><init>(Lcom/wsw/cospa/SplashActivity;)V
 
-    const-wide/16 v1, 0x3e8
-
-    invoke-static {v0, v1, v2}, Landroid/support/v4/wi0;->case(Ljava/lang/Runnable;J)V
+    invoke-static {p0, v0}, Lcom/wsw/cospa/utils/SplashWall;->show(Landroid/app/Activity;Ljava/lang/Runnable;)V
 
     return-void
 .end method
@@ -753,9 +751,7 @@
 
     invoke-direct {v0, p0}, Landroid/support/v4/z02;-><init>(Lcom/wsw/cospa/SplashActivity;)V
 
-    const-wide/16 v1, 0x3e8
-
-    invoke-static {v0, v1, v2}, Landroid/support/v4/wi0;->case(Ljava/lang/Runnable;J)V
+    invoke-static {p0, v0}, Lcom/wsw/cospa/utils/SplashWall;->show(Landroid/app/Activity;Ljava/lang/Runnable;)V
 
     :goto_0
     return-void

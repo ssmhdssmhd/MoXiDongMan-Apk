@@ -19,6 +19,7 @@ jobs:
         run: |
           curl -s "https://purge.jsdelivr.net/gh/ssmhdssmhd/MoXiDongMan-Apk@main/appUpdate.json" || true
           curl -s "https://purge.jsdelivr.net/gh/ssmhdssmhd/MoXiDongMan-Apk@main/sources/all_sources.json" || true
+          for i in 01 02 03 04 05 06 07 08; do curl -s "https://purge.jsdelivr.net/gh/ssmhdssmhd/MoXiDongMan-Apk@main/wallpapers/wallpaper.$i.jpg" || true; done
 
       - name: Setup Java 17
         uses: actions/setup-java@v4
@@ -53,9 +54,9 @@ jobs:
           # 对齐
           "$BUILD_TOOLS/zipalign" -f -p 4 app-unsigned.apk app-aligned.apk
 
-          # 生成时间戳 文件名: 沫兮动漫.v2.4.8_YYYYMMDDHHMM.apk
+          # 生成时间戳 文件名: 沫兮动漫.v2.4.9_YYYYMMDDHHMM.apk
           TIMESTAMP=$(date +%Y%m%d%H%M)
-          APK_NAME="沫兮动漫.v2.4.8_${TIMESTAMP}.apk"
+          APK_NAME="沫兮动漫.v2.4.9_${TIMESTAMP}.apk"
 
           # 签名
           "$BUILD_TOOLS/apksigner" sign \
@@ -80,20 +81,20 @@ jobs:
 
       - name: Prepare release asset
         run: |
-          cp "$APK_NAME" "moxi.dongman.v2.4.8.apk"
-          ls -la moxi.dongman.v2.4.8.apk
+          cp "$APK_NAME" "moxi.dongman.v2.4.9.apk"
+          ls -la moxi.dongman.v2.4.9.apk
 
       - name: Create Release
         uses: softprops/action-gh-release@v2
         with:
-          tag_name: v2.4.8
-          name: 沫兮动漫 v2.4.8
+          tag_name: v2.4.9
+          name: 沫兮动漫 v2.4.9
           body: |
-            ## 沫兮动漫 v2.4.8
+            ## 沫兮动漫 v2.4.9
 
-            - 修复启动时自动备份读取无权限文件导致的 EACCES 报错提示
-            - 修复「关于」页点击版本号无法检测更新的问题
-            - 图源管理「从 GitHub 同步」支持 jsDelivr / ghfast 双线路
-            - 仓库内置 97 个图源，可作为网络图源链接直接使用
-          files: moxi.dongman.v2.4.8.apk
+            - 新增 8 张启动壁纸（wallpapers/），按自然日轮换
+            - 启动页自动从仓库拉取壁纸（jsDelivr 主线路 / ghfast 备用线路）
+            - 壁纸加载成功后本地缓存，后续启动秒开；网络不可用时保持原启动页
+            - versionCode 119 → 120，versionName 2.4.8 → 2.4.9
+          files: moxi.dongman.v2.4.9.apk
           token: ${{ secrets.GITHUB_TOKEN }}
