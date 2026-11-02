@@ -48,9 +48,9 @@ jobs:
           # 对齐
           "$BUILD_TOOLS/zipalign" -f -p 4 app-unsigned.apk app-aligned.apk
 
-          # 生成时间戳 文件名: 沫兮动漫.v2.4.7_YYYYMMDDHHMM.apk
+          # 生成时间戳 文件名: 沫兮动漫.v2.4.8_YYYYMMDDHHMM.apk
           TIMESTAMP=$(date +%Y%m%d%H%M)
-          APK_NAME="沫兮动漫.v2.4.7_${TIMESTAMP}.apk"
+          APK_NAME="沫兮动漫.v2.4.8_${TIMESTAMP}.apk"
 
           # 签名
           "$BUILD_TOOLS/apksigner" sign \
@@ -75,20 +75,20 @@ jobs:
 
       - name: Prepare release asset
         run: |
-          cp "$APK_NAME" "moxi.dongman.v2.4.7.apk"
-          ls -la moxi.dongman.v2.4.7.apk
+          cp "$APK_NAME" "moxi.dongman.v2.4.8.apk"
+          ls -la moxi.dongman.v2.4.8.apk
 
       - name: Create Release
         uses: softprops/action-gh-release@v2
         with:
-          tag_name: v2.4.7
-          name: 沫兮动漫 v2.4.7
+          tag_name: v2.4.8
+          name: 沫兮动漫 v2.4.8
           body: |
-            ## 沫兮动漫 v2.4.7
+            ## 沫兮动漫 v2.4.8
 
-            - 修复启动时文件权限导致的报错提示
-            - 关于页点击版本即可检测更新（国内/海外双线路）
-            - 图源管理新增「从 GitHub 同步」
-            - 更新内置图源（97 个）
-          files: moxi.dongman.v2.4.7.apk
+            - 修复启动时自动备份读取无权限文件导致的 EACCES 报错提示
+            - 修复「关于」页点击版本号无法检测更新的问题
+            - 图源管理「从 GitHub 同步」支持 jsDelivr / ghfast 双线路
+            - 仓库内置 97 个图源，可作为网络图源链接直接使用
+          files: moxi.dongman.v2.4.8.apk
           token: ${{ secrets.GITHUB_TOKEN }}

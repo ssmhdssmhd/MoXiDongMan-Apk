@@ -1418,13 +1418,6 @@
     .line 17
     invoke-virtual {p1}, Ljava/lang/Exception;->printStackTrace()V
 
-    .line 18
-    new-instance v0, Landroid/support/v4/lw;
-
-    invoke-direct {v0, p1}, Landroid/support/v4/lw;-><init>(Ljava/lang/Exception;)V
-
-    invoke-static {v0}, Landroid/support/v4/wi0;->try(Ljava/lang/Runnable;)V
-
     :cond_0
     :goto_0
     return-void

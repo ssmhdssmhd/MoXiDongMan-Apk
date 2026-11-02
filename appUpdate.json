@@ -1,11 +1,11 @@
 {
   "appName": "沫兮动漫",
   "appPackage": "com.moxidx.app",
-  "appVersionName": "2.4.7",
-  "appVersionCode": 118,
+  "appVersionName": "2.4.8",
+  "appVersionCode": 119,
   "appSize": 0,
   "forceUpdate": 0,
   "showUpdate": true,
-  "appChangeLog": "1. 修复启动时文件权限导致的报错提示<br>2. 关于页点击版本号即可检查更新，国内/海外双线路<br>3. 图源管理新增「从 GitHub 同步」<br>4. 版本更新至 v2.4.7",
-  "appUrl": "https://ghfast.top/https://github.com/ssmhdssmhd/MoXiDongMan-Apk/releases/download/v2.4.7/moxi.dongman.v2.4.7.apk"
+  "appChangeLog": "1. 修复启动时文件权限导致的报错提示<br>2. 修复关于页点击版本无法检测更新的问题<br>3. 仓库内置图源可作网络图源使用（jsDelivr/ghfast 双线路）<br>4. 版本更新至 v2.4.8",
+  "appUrl": "https://ghfast.top/https://github.com/ssmhdssmhd/MoXiDongMan-Apk/releases/download/v2.4.8/moxi.dongman.v2.4.8.apk"
 }

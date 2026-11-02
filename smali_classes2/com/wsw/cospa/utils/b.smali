@@ -1400,6 +1400,15 @@
 
     .line 12
     :cond_5
+    invoke-virtual {p0}, Ljava/io/File;->canRead()Z
+
+    move-result v3
+
+    if-nez v3, :cond_read_ok
+
+    return v1
+
+    :cond_read_ok
     new-instance v0, Ljava/lang/SecurityManager;
 
     invoke-direct {v0}, Ljava/lang/SecurityManager;-><init>()V

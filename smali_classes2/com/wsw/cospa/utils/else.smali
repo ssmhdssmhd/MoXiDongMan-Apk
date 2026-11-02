@@ -242,7 +242,7 @@
 .method private static synthetic else(Landroid/content/Context;ZLcom/wsw/cospa/bean/AppUpdateInfo;)V
     .locals 4
 
-    if-nez p2, :cond_3
+    if-eqz p2, :cond_3
 
     .line 1
     :try_start_0

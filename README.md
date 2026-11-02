@@ -4,10 +4,22 @@
 
 - 仓库地址：https://github.com/ssmhdssmhd/MoXiDongMan-Apk
 - 包名：`com.moxidx.app`
-- 当前版本：**v2.4.7(118)**
+- 当前版本：**v2.4.8(119)**
 - 下载地址：https://github.com/ssmhdssmhd/MoXiDongMan-Apk/releases
 
 ## 版本更新日志
+
+### v2.4.8(119) — 启动报错与版本检测修复
+
+- **更新时间**：2026-11-02
+- **APK 版本**：v2.4.8(119)
+- **更新内容**：
+  - 修复启动时自动备份读取无权限文件（`ComicSourceByte.json`）导致的 `EACCES` 报错提示
+  - 备份打包时自动跳过不可读文件，避免云端备份失败弹窗
+  - 修复「关于」页点击版本号无法检测更新的问题（更新信息判空逻辑错误）
+  - 图源仓库链接支持 jsDelivr / ghfast 双线路，可作为网络图源直接导入
+  - versionCode: 118 → 119
+  - versionName: 2.4.7 → 2.4.8
 
 ### v2.4.7(118) — 启动报错修复、实时更新、GitHub 图源同步
 
@@ -87,7 +99,7 @@ MoXiDongMan-Apk/
 |------|------|
 | 应用名称 | 沫兮动漫 |
 | 包名 | com.moxidx.app |
-| 版本号 | v2.4.7(118) |
+| 版本号 | v2.4.8(119) |
 | 最低版本 | Android 4.4 (API 19) |
 | 目标版本 | Android 11 (API 30) |
 | 用户界面语言 | 简体中文 |
@@ -117,6 +129,18 @@ MoXiDongMan-Apk/
 
 同步内容为 `sources/all_sources.json`（97 个图源），导入过程中会自动去重并刷新图源列表。
 
+### 网络图源链接
+
+`sources/all_sources.json` 为标准 JSON 数组，可直接作为「网络图源」链接导入：
+
+| 线路 | 链接 |
+|------|------|
+| jsDelivr（国内可访问） | `https://cdn.jsdelivr.net/gh/ssmhdssmhd/MoXiDongMan-Apk@main/sources/all_sources.json` |
+| ghfast 加速 | `https://ghfast.top/https://raw.githubusercontent.com/ssmhdssmhd/MoXiDongMan-Apk/main/sources/all_sources.json` |
+| GitHub Raw（海外） | `https://raw.githubusercontent.com/ssmhdssmhd/MoXiDongMan-Apk/main/sources/all_sources.json` |
+
+> 国内网络优先使用 jsDelivr 或 ghfast 线路，GitHub 直链在海外网络可正常访问。
+
 ## 编译打包
 
 ### 方式一：GitHub Actions 云端编译（推荐）
@@ -127,9 +151,9 @@ MoXiDongMan-Apk/
 2. zipalign 对齐
 3. apksigner 签名（使用仓库 Secrets 中的固定签名密钥）
 4. 上传构建产物 Artifact
-5. 创建/更新 GitHub Release，发布 `moxi.dongman.v2.4.7.apk`
+5. 创建/更新 GitHub Release，发布 `moxi.dongman.v2.4.8.apk`
 
-产物文件名格式：`沫兮动漫.v2.4.7_YYYYMMDDHHMM.apk`
+产物文件名格式：`沫兮动漫.v2.4.8_YYYYMMDDHHMM.apk`
 
 签名相关 Secrets：
 
