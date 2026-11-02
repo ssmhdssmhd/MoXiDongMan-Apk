@@ -1,81 +1,84 @@
-# 沫兮动漫 (MoxiDongman) - 反编译源码
+# 沫兮动漫 (MoXiDongMan-Apk)
 
-> 本仓库为「异次元 v2.4.3(114)」APK 的反编译产物，已更名为「沫兮动漫」，包含 smali 字节码与 jadx 还原的 Java 源码，支持 GitHub Actions 云端编译打包。
+> 「沫兮动漫」Android 客户端，基于反编译工程维护的 smali 源码仓库，支持 GitHub Actions 云端编译、签名、发布与在线更新。
+
+- 仓库地址：https://github.com/ssmhdssmhd/MoXiDongMan-Apk
+- 包名：`com.moxidx.app`
+- 当前版本：**v2.4.7(118)**
+- 下载地址：https://github.com/ssmhdssmhd/MoXiDongMan-Apk/releases
 
 ## 版本更新日志
 
-### v2.4.6(117) — Logo更新、隐私政策、检查更新、图源文案、液态玻璃UI
+### v2.4.7(118) — 启动报错修复、实时更新、GitHub 图源同步
 
 - **更新时间**：2026-11-02
-- **APK 版本**：v2.4.6(117)
-- **包名**：`com.moxidx.app`
-- **应用名**：沫兮动漫
+- **APK 版本**：v2.4.7(118)
+- **更新内容**：
+  - 修复启动时自动备份导致的 `EACCES (Permission denied)` 报错提示（Android 11+ 未授予「所有文件访问」权限时跳过自动备份）
+  - 「关于」页点击版本号即可检测更新
+  - 更新检测改为 GitHub 双线路：主线路 `cdn.jsdelivr.net`，备用线路 `ghfast.top` 加速，国内/海外均可访问
+  - 检测到新版本后弹出更新弹窗，支持应用内直接下载安装
+  - 图源管理菜单在「校验图源」下新增「从 GitHub 同步」，一键同步仓库内置 97 个图源（jsDelivr + ghfast 双线路）
+  - 新增 `appUpdate.json` 版本描述文件，版本信息实时从 GitHub 读取
+  - GitHub Actions 增加 Release 自动发布，固定下载文件名 `moxi.dongman.v2.4.7.apk`
+  - versionCode: 117 → 118
+  - versionName: 2.4.6 → 2.4.7
+
+### v2.4.6(117) — Logo、隐私政策、检查更新、图源文案、液态玻璃 UI
+
+- **更新时间**：2026-11-02
 - **更新内容**：
   - 更换应用 Logo（使用 MXLOGO 仓库图标）
-  - 隐私政策去除"异次元"相关字样
-  - "关于"页面改为"检查更新"页面，点击跳转 GitHub Releases（使用 ghfast.top 国内加速代理）
-  - 隐藏原页面 QQ群/微信公众号/友链等推广内容
-  - "暂无图源，请关注异次元微信公众号…"等文案统一简化为"暂无图源"
-  - 全局 UI 液态玻璃（毛玻璃）美化：主题背景改为渐变、卡片半透明玻璃质感、顶部栏紫色渐变、文字配色优化
+  - 隐私政策去除「异次元」相关字样
+  - 「关于」页面改为版本与更新入口
+  - 隐藏原页面 QQ 群 / 微信公众号 / 友链等推广内容
+  - 「暂无图源」等文案统一简化
+  - 全局 UI 液态玻璃（毛玻璃）美化
   - versionCode: 116 → 117
-  - versionName: 2.4.5 → 2.4.6
 
 ### v2.4.5(116) — 包名修改
 
 - **更新时间**：2026-11-02
-- **APK 版本**：v2.4.5(116)
-- **包名**：`com.moxidx.app`（原 `com.wsw.cospa`）
-- **应用名**：沫兮动漫
 - **更新内容**：
   - 包名由 `com.wsw.cospa` 修改为 `com.moxidx.app`
   - FileProvider authorities 同步修改
-  - 类名（android:name）保持不变，确保组件正常加载
+  - 类名保持不变，确保组件正常加载
   - versionCode: 115 → 116
-  - versionName: 2.4.4 → 2.4.5
 
 ### v2.4.4(115) — 沫兮动漫
 
 - **更新时间**：2026-11-02
-- **APK 版本**：v2.4.4(115)
-- **包名**：`com.wsw.cospa`
-- **应用名**：沫兮动漫（原"异次元"）
-- **编译方式**：GitHub Actions 云端编译（Apktool + apksigner）
 - **更新内容**：
-  - 应用名称由"异次元"修改为"沫兮动漫"
-  - versionCode: 114 → 115
-  - versionName: 2.4.3 → 2.4.4
+  - 应用名称由「异次元」修改为「沫兮动漫」
   - 新增 GitHub Actions 自动打包签名工作流
   - 配置固定签名密钥，避免签名冲突
+  - versionCode: 114 → 115
 
 ### v2.4.3(114)
 
 - **更新时间**：2026-11-02
-- **APK 版本**：v2.4.3(114)
-- **包名**：`com.wsw.cospa`
-- **反编译工具**：
-  - Apktool v2.11.1（smali / 资源 / Manifest）
-  - Jadx v1.5.2（Java 源码还原）
-- **初始提交**：完成 APK 反编译并上传仓库
+- **更新内容**：
+  - 初始反编译工程（Apktool v2.11.1 + Jadx v1.5.2）并上传仓库
 
 ## 项目结构
 
 ```
-Yiciyuan-Apk/
-├── AndroidManifest.xml      # 应用清单文件
+MoXiDongMan-Apk/
+├── AndroidManifest.xml      # 应用清单
 ├── apktool.yml              # Apktool 配置（版本号等）
-├── java/                    # Jadx 还原的 Java 源码（应用 + 第三方库）
-│   └── com/wsw/cospa/       # 应用自身核心代码（activity/presenter/model/utils 等）
-├── smali/                   # classes.dex 的 smali 字节码
-├── smali_classes2/          # classes2.dex 的 smali
-├── smali_classes3/          # classes3.dex 的 smali
-├── smali_classes4/          # classes4.dex 的 smali
+├── appUpdate.json           # 在线更新描述文件（客户端实时读取）
+├── smali/                   # classes.dex smali
+├── smali_classes2/          # classes2.dex smali
+├── smali_classes3/          # classes3.dex smali
+├── smali_classes4/          # classes4.dex smali
 ├── res/                     # 资源文件（布局/图片/字符串等）
 ├── assets/                  # 资产文件
 ├── lib/                     # Native 库（.so）
-├── original/                # 原始签名与 META-INF
-├── unknown/                 # 未知文件
-└── .github/workflows/       # GitHub Actions 云端编译工作流
-    └── build.yml            # apktool 打包 + apksigner 签名
+├── original/                # 原始清单与签名信息（仅参考）
+├── sources/
+│   └── all_sources.json     # 内置图源（97 个），供「从 GitHub 同步」使用
+└── .github/workflows/
+    └── build.yml            # Apktool 打包 + 签名 + Release 发布
 ```
 
 ## 应用信息
@@ -84,49 +87,58 @@ Yiciyuan-Apk/
 |------|------|
 | 应用名称 | 沫兮动漫 |
 | 包名 | com.moxidx.app |
-| 版本号 | v2.4.6(117) |
-| 反编译 Java 文件数 | 10870 |
-| smali 文件数 | 23450 |
+| 版本号 | v2.4.7(118) |
+| 最低版本 | Android 4.4 (API 19) |
+| 目标版本 | Android 11 (API 30) |
+| 用户界面语言 | 简体中文 |
 
-## 核心代码包结构
+## 在线更新机制
 
-```
-com.wsw.cospa
-├── activity/        # Activity 页面
-├── fragment/        # Fragment 页面
-├── presenter/       # MVP Presenter
-├── model/           # 数据模型
-├── contract/        # 契约接口
-├── utils/           # 工具类
-│   ├── analyzeUrl/  # 链接解析（含 dmzj protobuf）
-│   ├── download/    # 下载管理
-│   ├── cronetUtils/ # Cronet 网络库封装
-│   └── notchtools/  # 刘海屏适配
-├── web/             # WebView 相关
-├── service/         # 后台服务
-├── dao/             # 数据访问
-├── event/           # 事件总线
-├── base/            # 基础类
-└── listener/        # 监听器
-```
+客户端「关于」页点击版本号，或通过菜单进入检查更新时：
 
-## 说明
+1. 读取 `appUpdate.json`（主线路 jsDelivr，失败自动切换 ghfast.top 备用线路）；
+2. 比较 `appVersionCode` 与本地版本；
+3. 有新版本时打开更新弹窗，显示版本号、更新内容与下载按钮；
+4. 下载地址使用 `ghfast.top` 加速的 GitHub Release 链接，国内/海外均可下载；
+5. 无新版本时提示「已是最新版本」。
 
-- 本仓库内容为反编译产物，**非原始源代码**，Java 代码由 Jadx 自动还原，部分混淆代码可能无法完全还原。
-- `java/` 目录包含应用自身代码及所有依赖的第三方库（androidx、okhttp3、retrofit2、umeng 等）。
-- `smali/` 目录为可直接用于重打包的字节码。
-- 资源文件 `res/` 已由 Apktool 解码为可读格式。
+维护新版本时，只需同步修改以下位置：
+
+- `apktool.yml` 的 `versionCode` / `versionName`
+- `appUpdate.json` 的 `appVersionCode` / `appVersionName` / `appChangeLog` / `appUrl`
+- `.github/workflows/build.yml` 中的版本号、APK 文件名与 Release tag
+
+## 图源同步
+
+图源管理页菜单「校验图源」下方新增「从 GitHub 同步」：
+
+- 主线路：`https://cdn.jsdelivr.net/gh/ssmhdssmhd/MoXiDongMan-Apk@main/sources/all_sources.json`
+- 备用线路：`https://ghfast.top/https://raw.githubusercontent.com/ssmhdssmhd/MoXiDongMan-Apk/main/sources/all_sources.json`
+
+同步内容为 `sources/all_sources.json`（97 个图源），导入过程中会自动去重并刷新图源列表。
 
 ## 编译打包
 
 ### 方式一：GitHub Actions 云端编译（推荐）
 
-推送代码到 `main` 分支后，GitHub Actions 会自动执行：
+推送代码到 `main` 分支后，工作流自动执行：
+
 1. Apktool 打包（smali → dex → apk）
 2. zipalign 对齐
-3. apksigner 签名（使用仓库 Secrets 中配置的固定签名密钥）
+3. apksigner 签名（使用仓库 Secrets 中的固定签名密钥）
+4. 上传构建产物 Artifact
+5. 创建/更新 GitHub Release，发布 `moxi.dongman.v2.4.7.apk`
 
-构建产物在 Actions 页面的 Artifacts 中下载，文件名格式：`沫兮动漫.v2.4.6_YYYYMMDDHHMM.apk`
+产物文件名格式：`沫兮动漫.v2.4.7_YYYYMMDDHHMM.apk`
+
+签名相关 Secrets：
+
+| Secret | 说明 |
+|--------|------|
+| `KEYSTORE_BASE64` | 签名密钥库的 Base64 |
+| `KEYSTORE_PASSWORD` | 密钥库密码 |
+| `KEY_ALIAS` | 密钥别名 |
+| `KEY_PASSWORD` | 密钥密码 |
 
 也可在仓库 Actions 页面手动触发 `Build APK` 工作流。
 
@@ -136,11 +148,13 @@ com.wsw.cospa
 # 使用 apktool 重新打包
 apktool b . -o moxi-dongman.apk
 
-# 签名（需要签名密钥）
+# 对齐与签名
 zipalign -f 4 moxi-dongman.apk moxi-aligned.apk
 apksigner sign --ks moxi.keystore --ks-key-alias moxi --out 沫兮动漫.apk moxi-aligned.apk
 ```
 
----
+## 说明
 
-*本仓库仅供学习研究使用。*
+- 本仓库为反编译维护工程，**非原始源代码**，仅保留可直接重打包的 smali 与资源。
+- 请勿将签名密钥、访问令牌等敏感信息提交到仓库。
+- 本仓库仅供学习研究使用，请支持正版。

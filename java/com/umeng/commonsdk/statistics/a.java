@@ -1,8 +1,0 @@
-package com.umeng.commonsdk.statistics;
-
-/* loaded from: classes2.dex */
-public class a {
-    public static String a = "native";
-    public static String b = "";
-    public static int c;
-}

@@ -17,5 +17,6 @@
     <item android:id="@id/APKTOOL_DUPLICATE_id_0x7f09030f" android:title="一键加密章节列表和正文" app:APKTOOL_DUPLICATE_attr_0x7f040546="APKTOOL_DUPLICATE_id_0x7f0902f8" />
     <item android:id="@id/APKTOOL_DUPLICATE_id_0x7f090310" android:title="一键解密图源" app:APKTOOL_DUPLICATE_attr_0x7f040546="APKTOOL_DUPLICATE_id_0x7f0902f8" />
     <item android:id="@id/APKTOOL_DUPLICATE_id_0x7f0900f0" android:title="校验图源" app:APKTOOL_DUPLICATE_attr_0x7f040546="APKTOOL_DUPLICATE_id_0x7f0902f8" />
+    <item android:id="@id/APKTOOL_DUPLICATE_id_0x7f0904fb" android:title="从 GitHub 同步" app:APKTOOL_DUPLICATE_attr_0x7f040546="APKTOOL_DUPLICATE_id_0x7f0902f8" />
     <item android:id="@id/APKTOOL_DUPLICATE_id_0x7f0904e4" android:title="开启Web服务" app:APKTOOL_DUPLICATE_attr_0x7f040546="APKTOOL_DUPLICATE_id_0x7f0902f8" />
 </menu>

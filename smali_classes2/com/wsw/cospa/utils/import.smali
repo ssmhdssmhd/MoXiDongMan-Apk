@@ -378,6 +378,25 @@
     .end annotation
 
     .line 1
+    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
+
+    const/16 v1, 0x1e
+
+    if-ge v0, v1, :cond_perm_ok
+
+    invoke-static {}, Landroid/os/Environment;->isExternalStorageManager()Z
+
+    move-result v0
+
+    if-nez v0, :cond_perm_ok
+
+    sget-object v0, Ljava/lang/Boolean;->FALSE:Ljava/lang/Boolean;
+
+    invoke-interface {p2, v0}, Lio/reactivex/SingleEmitter;->onSuccess(Ljava/lang/Object;)V
+
+    return-void
+
+    :cond_perm_ok
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
     move-result-wide v0

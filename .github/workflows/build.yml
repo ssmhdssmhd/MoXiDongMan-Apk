@@ -5,6 +5,9 @@ on:
     branches: [ main ]
   workflow_dispatch:
 
+permissions:
+  contents: write
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -45,9 +48,9 @@ jobs:
           # 对齐
           "$BUILD_TOOLS/zipalign" -f -p 4 app-unsigned.apk app-aligned.apk
 
-          # 生成时间戳 文件名: 沫兮动漫.v2.4.6_YYYYMMDDHHMM.apk
+          # 生成时间戳 文件名: 沫兮动漫.v2.4.7_YYYYMMDDHHMM.apk
           TIMESTAMP=$(date +%Y%m%d%H%M)
-          APK_NAME="沫兮动漫.v2.4.6_${TIMESTAMP}.apk"
+          APK_NAME="沫兮动漫.v2.4.7_${TIMESTAMP}.apk"
 
           # 签名
           "$BUILD_TOOLS/apksigner" sign \
@@ -69,3 +72,23 @@ jobs:
         with:
           name: moxi-dongman-apk
           path: ${{ env.APK_NAME }}
+
+      - name: Prepare release asset
+        run: |
+          cp "$APK_NAME" "moxi.dongman.v2.4.7.apk"
+          ls -la moxi.dongman.v2.4.7.apk
+
+      - name: Create Release
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: v2.4.7
+          name: 沫兮动漫 v2.4.7
+          body: |
+            ## 沫兮动漫 v2.4.7
+
+            - 修复启动时文件权限导致的报错提示
+            - 关于页点击版本即可检测更新（国内/海外双线路）
+            - 图源管理新增「从 GitHub 同步」
+            - 更新内置图源（97 个）
+          files: moxi.dongman.v2.4.7.apk
+          token: ${{ secrets.GITHUB_TOKEN }}

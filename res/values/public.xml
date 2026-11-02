@@ -5037,6 +5037,7 @@
     <public type="id" name="APKTOOL_DUPLICATE_id_0x7f0904f8" id="0x7f0904f8" />
     <public type="id" name="APKTOOL_DUPLICATE_id_0x7f0904f9" id="0x7f0904f9" />
     <public type="id" name="APKTOOL_DUPLICATE_id_0x7f0904fa" id="0x7f0904fa" />
+    <public type="id" name="APKTOOL_DUPLICATE_id_0x7f0904fb" id="0x7f0904fb" />
     <public type="integer" name="arg" id="0x7f0a0000" />
     <public type="integer" name="APKTOOL_DUPLICATE_integer_0x7f0a0001" id="0x7f0a0001" />
     <public type="integer" name="APKTOOL_DUPLICATE_integer_0x7f0a0002" id="0x7f0a0002" />

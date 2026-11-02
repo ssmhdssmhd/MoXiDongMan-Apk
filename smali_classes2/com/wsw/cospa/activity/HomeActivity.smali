@@ -3113,7 +3113,7 @@
     const/4 p1, 0x1
 
     .line 15
-    invoke-static {p0, p1}, Lcom/wsw/cospa/utils/else;->try(Lcom/wsw/cospa/activity/HomeActivity;Z)V
+    invoke-static {p0, p1}, Lcom/wsw/cospa/utils/else;->try(Landroid/content/Context;Z)V
 
     goto :goto_0
 
@@ -4302,7 +4302,7 @@
     if-nez v0, :cond_1
 
     .line 30
-    invoke-static {p0, v1}, Lcom/wsw/cospa/utils/else;->try(Lcom/wsw/cospa/activity/HomeActivity;Z)V
+    invoke-static {p0, v1}, Lcom/wsw/cospa/utils/else;->try(Landroid/content/Context;Z)V
 
     .line 31
     iget-object v0, p0, Lcom/wsw/cospa/activity/HomeActivity;->ll_version:Landroid/widget/LinearLayout;

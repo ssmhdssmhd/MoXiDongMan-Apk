@@ -558,12 +558,10 @@
     goto :goto_0
 
     :sswitch_2
-    const-string p1, "\u68c0\u67e5\u66f4\u65b0"
-
-    const-string v0, "https://ghfast.top/https://github.com/ssmhdssmhd/Yiciyuan-Apk/releases"
+    const/4 p1, 0x1
 
     .line 37
-    invoke-static {p0, p1, v0}, Lcom/wsw/cospa/activity/WebViewActivity;->synchronized(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {p0, p1}, Lcom/wsw/cospa/utils/else;->try(Landroid/content/Context;Z)V
 
     goto :goto_0
 
@@ -677,6 +675,7 @@
         0x7f0902b0 -> :sswitch_4
         0x7f090388 -> :sswitch_3
         0x7f0904a8 -> :sswitch_2
+        0x7f0904c4 -> :sswitch_2
         0x7f0904d5 -> :sswitch_1
         0x7f0904f9 -> :sswitch_0
     .end sparse-switch
@@ -764,6 +763,8 @@
     move-result-object v1
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+
+    invoke-virtual {v0, p0}, Landroid/widget/TextView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 4
     iget-object v0, p0, Lcom/wsw/cospa/activity/AboutMeActivity;->doutuApp:Landroid/widget/LinearLayout;

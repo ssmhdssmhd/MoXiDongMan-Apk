@@ -1961,6 +1961,76 @@
     return-void
 .end method
 
+.method public b(Ljava/lang/String;Ljava/lang/String;)V
+    .locals 2
+
+    .line 1
+    :try_start_0
+    new-instance v0, Ljava/net/URL;
+
+    invoke-direct {v0, p1}, Ljava/net/URL;-><init>(Ljava/lang/String;)V
+
+    new-instance v0, Ljava/net/URL;
+
+    invoke-direct {v0, p2}, Ljava/net/URL;-><init>(Ljava/lang/String;)V
+    :try_end_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+
+    .line 2
+    invoke-static {p1}, Lcom/wsw/cospa/model/do;->implements(Ljava/lang/String;)Lio/reactivex/new;
+
+    move-result-object v0
+
+    invoke-static {p2}, Lcom/wsw/cospa/model/do;->implements(Ljava/lang/String;)Lio/reactivex/new;
+
+    move-result-object v1
+
+    .line 3
+    invoke-virtual {v0, v1}, Lio/reactivex/new;->onErrorResumeNext(Lio/reactivex/ObservableSource;)Lio/reactivex/new;
+
+    move-result-object p1
+
+    sget-object v0, Landroid/support/v4/b0;->do:Landroid/support/v4/b0;
+
+    .line 4
+    invoke-virtual {p1, v0}, Lio/reactivex/new;->compose(Lio/reactivex/ObservableTransformer;)Lio/reactivex/new;
+
+    move-result-object p1
+
+    .line 5
+    invoke-static {p0}, Landroid/support/v4/mp1;->do(Landroidx/lifecycle/LifecycleOwner;)Lcom/uber/autodispose/AutoDisposeConverter;
+
+    move-result-object v0
+
+    invoke-virtual {p1, v0}, Lio/reactivex/new;->as(Lio/reactivex/ObservableConverter;)Ljava/lang/Object;
+
+    move-result-object p1
+
+    check-cast p1, Lcom/uber/autodispose/ObservableSubscribeProxy;
+
+    new-instance v0, Lcom/wsw/cospa/activity/ComicManagerActivity$else;
+
+    invoke-direct {v0, p0}, Lcom/wsw/cospa/activity/ComicManagerActivity$else;-><init>(Lcom/wsw/cospa/activity/ComicManagerActivity;)V
+
+    .line 6
+    invoke-interface {p1, v0}, Lcom/uber/autodispose/ObservableSubscribeProxy;->subscribe(Lio/reactivex/Observer;)V
+
+    return-void
+
+    :catch_0
+    move-exception p1
+
+    .line 7
+    invoke-virtual {p1}, Ljava/lang/Exception;->printStackTrace()V
+
+    const-string p1, "URL\u683c\u5f0f\u4e0d\u5bf9"
+
+    .line 8
+    invoke-static {p1}, Landroid/support/v4/v72;->if(Ljava/lang/String;)V
+
+    return-void
+.end method
+
 .method public case()V
     .locals 4
 
@@ -2994,6 +3064,16 @@
 
     goto :goto_2
 
+    .line 40
+    :sswitch_d
+    const-string v0, "https://cdn.jsdelivr.net/gh/ssmhdssmhd/MoXiDongMan-Apk@main/sources/all_sources.json"
+
+    const-string v1, "https://ghfast.top/https://raw.githubusercontent.com/ssmhdssmhd/MoXiDongMan-Apk/main/sources/all_sources.json"
+
+    invoke-virtual {p0, v0, v1}, Lcom/wsw/cospa/activity/ComicManagerActivity;->b(Ljava/lang/String;Ljava/lang/String;)V
+
+    goto/16 :goto_2
+
     .line 37
     :sswitch_b
     iput-boolean v2, p0, Lcom/wsw/cospa/activity/ComicManagerActivity;->final:Z
@@ -3053,6 +3133,7 @@
         0x7f09039f -> :sswitch_2
         0x7f0903b4 -> :sswitch_1
         0x7f0904e4 -> :sswitch_0
+        0x7f0904fb -> :sswitch_d
     .end sparse-switch
 .end method
 

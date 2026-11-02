@@ -1,8 +1,0 @@
-package org.mozilla.javascript.ast;
-
-/* loaded from: classes3.dex */
-public interface DestructuringForm {
-    boolean isDestructuring();
-
-    void setIsDestructuring(boolean z);
-}

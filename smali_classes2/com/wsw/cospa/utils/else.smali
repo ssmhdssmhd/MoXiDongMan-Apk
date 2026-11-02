@@ -59,7 +59,7 @@
 .end method
 
 .method private static synthetic case(ZLretrofit2/Response;)Lio/reactivex/ObservableSource;
-    .locals 0
+    .locals 1
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/Exception;
@@ -73,6 +73,17 @@
 
     check-cast p1, Ljava/lang/String;
 
+    if-nez p1, :cond_0
+
+    new-instance p1, Ljava/lang/RuntimeException;
+
+    const-string v0, "empty body"
+
+    invoke-direct {p1, v0}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/String;)V
+
+    throw p1
+
+    :cond_0
     invoke-static {p1, p0}, Lcom/wsw/cospa/utils/else;->this(Ljava/lang/String;Z)Lio/reactivex/new;
 
     move-result-object p0
@@ -228,9 +239,75 @@
     return-void
 .end method
 
-.method private static synthetic else(Lcom/wsw/cospa/activity/HomeActivity;ZLcom/wsw/cospa/bean/AppUpdateInfo;)V
-    .locals 0
+.method private static synthetic else(Landroid/content/Context;ZLcom/wsw/cospa/bean/AppUpdateInfo;)V
+    .locals 4
 
+    if-nez p2, :cond_3
+
+    .line 1
+    :try_start_0
+    invoke-virtual {p0}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
+
+    move-result-object v0
+
+    invoke-virtual {p0}, Landroid/content/Context;->getPackageName()Ljava/lang/String;
+
+    move-result-object v1
+
+    const/4 v2, 0x0
+
+    invoke-virtual {v0, v1, v2}, Landroid/content/pm/PackageManager;->getPackageInfo(Ljava/lang/String;I)Landroid/content/pm/PackageInfo;
+
+    move-result-object v0
+
+    iget v0, v0, Landroid/content/pm/PackageInfo;->versionCode:I
+    :try_end_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+
+    goto :goto_0
+
+    :catch_0
+    move-exception v0
+
+    const/4 v0, 0x0
+
+    :goto_0
+    invoke-virtual {p2}, Lcom/wsw/cospa/bean/AppUpdateInfo;->getAppVersionCode()I
+
+    move-result v1
+
+    if-le v1, v0, :cond_1
+
+    .line 2
+    new-instance v0, Landroid/content/Intent;
+
+    invoke-direct {v0}, Landroid/content/Intent;-><init>()V
+
+    const-class v1, Lcom/wsw/cospa/activity/VersionDialogActivity;
+
+    invoke-virtual {v0, p0, v1}, Landroid/content/Intent;->setClass(Landroid/content/Context;Ljava/lang/Class;)Landroid/content/Intent;
+
+    const-string v1, ""
+
+    invoke-virtual {v0, v1, p2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Landroid/os/Parcelable;)Landroid/content/Intent;
+
+    const/high16 v1, 0x10000000
+
+    invoke-virtual {v0, v1}, Landroid/content/Intent;->addFlags(I)Landroid/content/Intent;
+
+    invoke-virtual {p0, v0}, Landroid/content/Context;->startActivity(Landroid/content/Intent;)V
+
+    return-void
+
+    :cond_1
+    if-nez p1, :cond_3
+
+    .line 3
+    const-string v0, "\u5df2\u662f\u6700\u65b0\u7248\u672c"
+
+    invoke-static {v0}, Landroid/support/v4/v72;->if(Ljava/lang/String;)V
+
+    :cond_3
     return-void
 .end method
 
@@ -309,10 +386,10 @@
     return-void
 .end method
 
-.method public static synthetic if(Lcom/wsw/cospa/activity/HomeActivity;ZLcom/wsw/cospa/bean/AppUpdateInfo;)V
+.method public static synthetic if(Landroid/content/Context;ZLcom/wsw/cospa/bean/AppUpdateInfo;)V
     .locals 0
 
-    invoke-static {p0, p1, p2}, Lcom/wsw/cospa/utils/else;->else(Lcom/wsw/cospa/activity/HomeActivity;ZLcom/wsw/cospa/bean/AppUpdateInfo;)V
+    invoke-static {p0, p1, p2}, Lcom/wsw/cospa/utils/else;->else(Landroid/content/Context;ZLcom/wsw/cospa/bean/AppUpdateInfo;)V
 
     return-void
 .end method
@@ -351,15 +428,77 @@
     return-object p0
 .end method
 
-.method public static try(Lcom/wsw/cospa/activity/HomeActivity;Z)V
+.method public static try(Landroid/content/Context;Z)V
     .locals 3
+
+    .line 1
+    const-string v0, "https://cdn.jsdelivr.net/gh/ssmhdssmhd/MoXiDongMan-Apk@main/appUpdate.json"
+
+    invoke-static {v0}, Lcom/wsw/cospa/utils/else;->for(Ljava/lang/String;)Lio/reactivex/new;
+
+    move-result-object v0
+
+    const-string v1, "https://ghfast.top/https://raw.githubusercontent.com/ssmhdssmhd/MoXiDongMan-Apk/main/appUpdate.json"
+
+    .line 2
+    invoke-static {v1}, Lcom/wsw/cospa/utils/else;->for(Ljava/lang/String;)Lio/reactivex/new;
+
+    move-result-object v1
+
+    invoke-virtual {v0, v1}, Lio/reactivex/new;->onErrorResumeNext(Lio/reactivex/ObservableSource;)Lio/reactivex/new;
+
+    move-result-object v0
+
+    new-instance v1, Landroid/support/v4/n6;
+
+    invoke-direct {v1, p1}, Landroid/support/v4/n6;-><init>(Z)V
+
+    .line 3
+    invoke-virtual {v0, v1}, Lio/reactivex/new;->flatMap(Lio/reactivex/functions/Function;)Lio/reactivex/new;
+
+    move-result-object v0
+
+    sget-object v1, Landroid/support/v4/b0;->do:Landroid/support/v4/b0;
+
+    .line 4
+    invoke-virtual {v0, v1}, Lio/reactivex/new;->compose(Lio/reactivex/ObservableTransformer;)Lio/reactivex/new;
+
+    move-result-object v0
+
+    new-instance v1, Landroid/support/v4/m6;
+
+    invoke-direct {v1, p0, p1}, Landroid/support/v4/m6;-><init>(Landroid/content/Context;Z)V
+
+    new-instance v2, Lcom/wsw/cospa/utils/else$new;
+
+    invoke-direct {v2, p1}, Lcom/wsw/cospa/utils/else$new;-><init>(Z)V
+
+    .line 5
+    invoke-virtual {v0, v1, v2}, Lio/reactivex/new;->subscribe(Lio/reactivex/functions/Consumer;Lio/reactivex/functions/Consumer;)Lio/reactivex/disposables/Disposable;
+
+    return-void
+.end method
+
+.method private static for(Ljava/lang/String;)Lio/reactivex/new;
+    .locals 2
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/lang/String;",
+            ")",
+            "Lio/reactivex/new<",
+            "Lretrofit2/Response<",
+            "Ljava/lang/String;",
+            ">;>;"
+        }
+    .end annotation
 
     .line 1
     invoke-static {}, Lcom/wsw/cospa/model/impl/if;->break()Lcom/wsw/cospa/model/impl/if;
 
     move-result-object v0
 
-    const-string v1, "https://yiciyuan.coding.net/p/ycy/d/ycy/"
+    const-string v1, "https://cdn.jsdelivr.net/"
 
     invoke-virtual {v0, v1}, Lcom/wsw/cospa/model/impl/if;->class(Ljava/lang/String;)Lretrofit2/Retrofit;
 
@@ -381,34 +520,9 @@
 
     move-result-object v1
 
-    const-string v2, "git/raw/master/appUpdate"
+    invoke-interface {v0, p0, v1}, Lcom/wsw/cospa/utils/analyzeUrl/impl/IHttpGetApi;->getWebContent(Ljava/lang/String;Ljava/util/Map;)Lio/reactivex/new;
 
-    invoke-interface {v0, v2, v1}, Lcom/wsw/cospa/utils/analyzeUrl/impl/IHttpGetApi;->getWebContent(Ljava/lang/String;Ljava/util/Map;)Lio/reactivex/new;
+    move-result-object p0
 
-    move-result-object v0
-
-    new-instance v1, Landroid/support/v4/n6;
-
-    invoke-direct {v1, p1}, Landroid/support/v4/n6;-><init>(Z)V
-
-    .line 4
-    invoke-virtual {v0, v1}, Lio/reactivex/new;->flatMap(Lio/reactivex/functions/Function;)Lio/reactivex/new;
-
-    move-result-object v0
-
-    sget-object v1, Landroid/support/v4/b0;->do:Landroid/support/v4/b0;
-
-    .line 5
-    invoke-virtual {v0, v1}, Lio/reactivex/new;->compose(Lio/reactivex/ObservableTransformer;)Lio/reactivex/new;
-
-    move-result-object v0
-
-    new-instance v1, Landroid/support/v4/m6;
-
-    invoke-direct {v1, p0, p1}, Landroid/support/v4/m6;-><init>(Lcom/wsw/cospa/activity/HomeActivity;Z)V
-
-    .line 6
-    invoke-virtual {v0, v1}, Lio/reactivex/new;->subscribe(Lio/reactivex/functions/Consumer;)Lio/reactivex/disposables/Disposable;
-
-    return-void
+    return-object p0
 .end method
