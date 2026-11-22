@@ -94,6 +94,7 @@
         <item name="android:textColorPrimary">@color/APKTOOL_DUPLICATE_color_0x7f060114</item>
         <item name="android:textColorSecondary">@color/APKTOOL_DUPLICATE_color_0x7f060116</item>
         <item name="android:windowBackground">@drawable/bg_app_gradient</item>
+        <item name="android:statusBarColor">#D96C5CE7</item>
         <item name="android:windowAnimationStyle">@style/APKTOOL_DUPLICATE_style_0x7f120005</item>
         <item name="android:itemTextAppearance">@style/APKTOOL_DUPLICATE_style_0x7f120127</item>
         <item name="android:itemBackground">@color/APKTOOL_DUPLICATE_color_0x7f0600c0</item>

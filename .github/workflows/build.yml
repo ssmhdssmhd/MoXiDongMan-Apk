@@ -54,9 +54,9 @@ jobs:
           # 对齐
           "$BUILD_TOOLS/zipalign" -f -p 4 app-unsigned.apk app-aligned.apk
 
-          # 生成时间戳 文件名: 沫兮动漫.v2.4.15_YYYYMMDDHHMM.apk
+          # 生成时间戳 文件名: 沫兮动漫.v2.4.16_YYYYMMDDHHMM.apk
           TIMESTAMP=$(date +%Y%m%d%H%M)
-          APK_NAME="沫兮动漫.v2.4.15_${TIMESTAMP}.apk"
+          APK_NAME="沫兮动漫.v2.4.16_${TIMESTAMP}.apk"
 
           # 签名
           "$BUILD_TOOLS/apksigner" sign \
@@ -81,20 +81,20 @@ jobs:
 
       - name: Prepare release asset
         run: |
-          cp "$APK_NAME" "moxi.dongman.v2.4.15.apk"
-          ls -la moxi.dongman.v2.4.15.apk
+          cp "$APK_NAME" "moxi.dongman.v2.4.16.apk"
+          ls -la moxi.dongman.v2.4.16.apk
 
       - name: Create Release
         uses: softprops/action-gh-release@v2
         with:
-          tag_name: v2.4.15
-          name: 沫兮动漫 v2.4.15
+          tag_name: v2.4.16
+          name: 沫兮动漫 v2.4.16
           body: |
-            ## 沫兮动漫 v2.4.15
+            ## 沫兮动漫 v2.4.16
 
-            - 修复图源域名失效时错误页直接暴露「连接失败，请重试 + 原始 URL」
-            - 网络类错误改为可操作提示：当前图源暂时无法访问，请点击「请重试」或切换其他图源
-            - 全局网络异常文案优化：连接失败 / 无效 host / 连接超时 / 网络断开
-            - versionCode 125 → 126，versionName 2.4.14 → 2.4.15
-          files: moxi.dongman.v2.4.15.apk
+            - 修复顶部工具栏在浅色玻璃下白字白底看不见的问题，恢复品牌紫玻璃并提升对比度
+            - 状态栏统一为半透明品牌紫，深色图标/文案清晰可见
+            - 底部导航栏改为玻璃质感，页面渐变光晕更明显
+            - versionCode 126 → 127，versionName 2.4.15 → 2.4.16
+          files: moxi.dongman.v2.4.16.apk
           token: ${{ secrets.GITHUB_TOKEN }}

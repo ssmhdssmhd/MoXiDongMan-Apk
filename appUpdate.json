@@ -1,11 +1,11 @@
 {
   "appName": "沫兮动漫",
   "appPackage": "com.moxidx.app",
-  "appVersionName": "2.4.15",
-  "appVersionCode": 126,
+  "appVersionName": "2.4.16",
+  "appVersionCode": 127,
   "appSize": 0,
   "forceUpdate": 0,
   "showUpdate": true,
-  "appChangeLog": "1. 修复图源域名失效时错误页直接暴露「连接失败，请重试 + 原始 URL」的问题<br>2. 网络类错误统一改为可操作提示：当前图源暂时无法访问，请点击「请重试」或切换其他图源<br>3. 全局网络异常文案优化：连接失败 / 无效 host / 连接超时 / 网络断开<br>4. 解析类错误仍保留原始 URL，便于定位图源规则问题<br>5. 版本更新至 v2.4.15",
-  "appUrl": "https://ghfast.top/https://github.com/ssmhdssmhd/MoXiDongMan-Apk/releases/download/v2.4.15/moxi.dongman.v2.4.15.apk"
+  "appChangeLog": "1. 修复顶部工具栏白字白底看不见的问题，恢复品牌紫半透明玻璃并提升对比度<br>2. 状态栏统一为半透明品牌紫，图标与文案清晰可见<br>3. 底部导航栏改为玻璃质感背景（日间/夜间自适应）<br>4. 页面背景渐变光晕加深，液体玻璃质感更明显<br>5. 深色模式工具栏改为深紫玻璃，白字可读<br>6. 版本更新至 v2.4.16",
+  "appUrl": "https://ghfast.top/https://github.com/ssmhdssmhd/MoXiDongMan-Apk/releases/download/v2.4.16/moxi.dongman.v2.4.16.apk"
 }
