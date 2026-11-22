@@ -47,7 +47,7 @@
 
     move-result v0
 
-    const-string v1, "\u7f51\u7edc\u4e2d\u65ad\uff0c\u8bf7\u68c0\u67e5\u7f51\u7edc\u72b6\u6001\uff01"
+    const-string v1, "\u7f51\u7edc\u5df2\u65ad\u5f00\uff0c\u8bf7\u68c0\u67e5\u7f51\u7edc\u8fde\u63a5\u540e\u91cd\u8bd5"
 
     const/16 v2, 0x3ee
 
@@ -193,7 +193,7 @@
 
     invoke-direct {v0, p0, v1}, Landroid/support/v4/q80$if;-><init>(Ljava/lang/Throwable;I)V
 
-    const-string p0, "\u8fde\u63a5\u5931\u8d25\uff0c\u8bf7\u91cd\u8bd5"
+    const-string p0, "\u56fe\u6e90\u8fde\u63a5\u5931\u8d25\uff0c\u53ef\u80fd\u57df\u540d\u5df2\u5931\u6548\u6216\u7f51\u7edc\u5f02\u5e38\uff0c\u8bf7\u5207\u6362\u5176\u4ed6\u56fe\u6e90\u540e\u91cd\u8bd5"
 
     .line 19
     iput-object p0, v0, Landroid/support/v4/q80$if;->message:Ljava/lang/String;
@@ -231,7 +231,7 @@
 
     invoke-direct {v0, p0, v2}, Landroid/support/v4/q80$if;-><init>(Ljava/lang/Throwable;I)V
 
-    const-string p0, "\u8fde\u63a5\u8d85\u65f6\uff0c\u8bf7\u68c0\u67e5\u5f53\u524d\u7f51\u7edc\uff01"
+    const-string p0, "\u8fde\u63a5\u8d85\u65f6\uff0c\u8bf7\u68c0\u67e5\u7f51\u7edc\u6216\u5207\u6362\u5176\u4ed6\u56fe\u6e90\u540e\u91cd\u8bd5"
 
     .line 25
     iput-object p0, v0, Landroid/support/v4/q80$if;->message:Ljava/lang/String;
@@ -249,7 +249,7 @@
 
     invoke-direct {v0, p0, v2}, Landroid/support/v4/q80$if;-><init>(Ljava/lang/Throwable;I)V
 
-    const-string p0, "\u65e0\u6548\u7684host\uff0c\u8bf7\u68c0\u67e5\u6e90\u7684\u57df\u540d"
+    const-string p0, "\u56fe\u6e90\u57df\u540d\u65e0\u6548\u6216\u5df2\u5931\u6548\uff0c\u8bf7\u66f4\u65b0\u56fe\u6e90\u6216\u5207\u6362\u5176\u4ed6\u56fe\u6e90"
 
     .line 28
     iput-object p0, v0, Landroid/support/v4/q80$if;->message:Ljava/lang/String;

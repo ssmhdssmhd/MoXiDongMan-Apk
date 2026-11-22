@@ -1,11 +1,11 @@
 {
   "appName": "沫兮动漫",
   "appPackage": "com.moxidx.app",
-  "appVersionName": "2.4.14",
-  "appVersionCode": 125,
+  "appVersionName": "2.4.15",
+  "appVersionCode": 126,
   "appSize": 0,
   "forceUpdate": 0,
   "showUpdate": true,
-  "appChangeLog": "1. 启动自动检测更新：发现新版本自动弹出更新弹窗，已是最新时不再打扰<br>2. 图源列表新增红绿灯状态：绿=校验可用，红=校验失效，黄=待维护/未校验（基于本地校验记录）<br>3. 图源「网络导入」连续点击 4 次可打开自定义 URL 导入，支持任意图源 JSON 直链<br>4. 全局液体玻璃主题：页面、工具栏、弹窗均为半透明磨砂质感<br>5. 书架、历史、图源等列表改为玻璃卡片布局<br>6. 版本更新至 v2.4.14",
-  "appUrl": "https://ghfast.top/https://github.com/ssmhdssmhd/MoXiDongMan-Apk/releases/download/v2.4.14/moxi.dongman.v2.4.14.apk"
+  "appChangeLog": "1. 修复图源域名失效时错误页直接暴露「连接失败，请重试 + 原始 URL」的问题<br>2. 网络类错误统一改为可操作提示：当前图源暂时无法访问，请点击「请重试」或切换其他图源<br>3. 全局网络异常文案优化：连接失败 / 无效 host / 连接超时 / 网络断开<br>4. 解析类错误仍保留原始 URL，便于定位图源规则问题<br>5. 版本更新至 v2.4.15",
+  "appUrl": "https://ghfast.top/https://github.com/ssmhdssmhd/MoXiDongMan-Apk/releases/download/v2.4.15/moxi.dongman.v2.4.15.apk"
 }

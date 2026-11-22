@@ -101,72 +101,70 @@
 
     .line 6
     :cond_0
-    iget-object v1, p0, Lcom/wsw/cospa/fragment/FindColumnFragment$do;->do:Lcom/wsw/cospa/fragment/FindColumnFragment;
-
-    invoke-static {v1}, Lcom/wsw/cospa/fragment/FindColumnFragment;->const(Lcom/wsw/cospa/fragment/FindColumnFragment;)I
+    invoke-static {p1}, Lcom/wsw/cospa/fragment/FindColumnFragment;->isNetError(Ljava/lang/String;)Z
 
     move-result v1
 
-    const/4 v2, 0x1
+    if-eqz v1, :cond_1
 
-    const-string v3, "\n"
-
-    if-ne v1, v2, :cond_1
-
-    .line 7
-    iget-object v1, p0, Lcom/wsw/cospa/fragment/FindColumnFragment$do;->do:Lcom/wsw/cospa/fragment/FindColumnFragment;
-
-    iget-object v1, v1, Lcom/wsw/cospa/fragment/FindColumnFragment;->refreshLayout:Lcom/scwang/smartrefresh/layout/SmartRefreshLayout;
-
-    invoke-virtual {v1}, Lcom/scwang/smartrefresh/layout/SmartRefreshLayout;->finishRefresh()Lcom/scwang/smartrefresh/layout/api/RefreshLayout;
-
-    .line 8
-    iget-object v1, p0, Lcom/wsw/cospa/fragment/FindColumnFragment$do;->do:Lcom/wsw/cospa/fragment/FindColumnFragment;
-
-    new-instance v2, Ljava/lang/StringBuilder;
-
-    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
-
-    invoke-virtual {v2, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object p1
-
-    invoke-virtual {v1, p1}, Lcom/wsw/cospa/fragment/FindColumnFragment;->continue(Ljava/lang/String;)V
+    const-string v1, "当前图源暂时无法访问\n可能该图源域名已失效或网络异常\n请点击「请重试」，或点击顶部图源名称切换其他图源"
 
     goto :goto_0
 
-    .line 9
     :cond_1
-    iget-object v1, p0, Lcom/wsw/cospa/fragment/FindColumnFragment$do;->do:Lcom/wsw/cospa/fragment/FindColumnFragment;
-
-    iget-object v1, v1, Lcom/wsw/cospa/fragment/FindColumnFragment;->refreshLayout:Lcom/scwang/smartrefresh/layout/SmartRefreshLayout;
-
-    invoke-virtual {v1}, Lcom/scwang/smartrefresh/layout/SmartRefreshLayout;->finishLoadMore()Lcom/scwang/smartrefresh/layout/api/RefreshLayout;
-
-    .line 10
     new-instance v1, Ljava/lang/StringBuilder;
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
 
     invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v1, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    const-string v2, "\n"
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    move-result-object p1
+    move-result-object v1
 
-    invoke-static {p1}, Landroid/support/v4/v72;->if(Ljava/lang/String;)V
-
+    .line 7
     :goto_0
+    iget-object v2, p0, Lcom/wsw/cospa/fragment/FindColumnFragment$do;->do:Lcom/wsw/cospa/fragment/FindColumnFragment;
+
+    invoke-static {v2}, Lcom/wsw/cospa/fragment/FindColumnFragment;->const(Lcom/wsw/cospa/fragment/FindColumnFragment;)I
+
+    move-result v2
+
+    const/4 v3, 0x1
+
+    if-ne v2, v3, :cond_2
+
+    .line 8
+    iget-object v2, p0, Lcom/wsw/cospa/fragment/FindColumnFragment$do;->do:Lcom/wsw/cospa/fragment/FindColumnFragment;
+
+    iget-object v2, v2, Lcom/wsw/cospa/fragment/FindColumnFragment;->refreshLayout:Lcom/scwang/smartrefresh/layout/SmartRefreshLayout;
+
+    invoke-virtual {v2}, Lcom/scwang/smartrefresh/layout/SmartRefreshLayout;->finishRefresh()Lcom/scwang/smartrefresh/layout/api/RefreshLayout;
+
+    .line 9
+    iget-object v2, p0, Lcom/wsw/cospa/fragment/FindColumnFragment$do;->do:Lcom/wsw/cospa/fragment/FindColumnFragment;
+
+    invoke-virtual {v2, v1}, Lcom/wsw/cospa/fragment/FindColumnFragment;->continue(Ljava/lang/String;)V
+
+    return-void
+
+    .line 10
+    :cond_2
+    iget-object v2, p0, Lcom/wsw/cospa/fragment/FindColumnFragment$do;->do:Lcom/wsw/cospa/fragment/FindColumnFragment;
+
+    iget-object v2, v2, Lcom/wsw/cospa/fragment/FindColumnFragment;->refreshLayout:Lcom/scwang/smartrefresh/layout/SmartRefreshLayout;
+
+    invoke-virtual {v2}, Lcom/scwang/smartrefresh/layout/SmartRefreshLayout;->finishLoadMore()Lcom/scwang/smartrefresh/layout/api/RefreshLayout;
+
+    .line 11
+    invoke-static {v1}, Landroid/support/v4/v72;->if(Ljava/lang/String;)V
+
     return-void
 .end method
 
