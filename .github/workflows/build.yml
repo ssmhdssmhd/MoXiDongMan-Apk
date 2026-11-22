@@ -54,9 +54,9 @@ jobs:
           # 对齐
           "$BUILD_TOOLS/zipalign" -f -p 4 app-unsigned.apk app-aligned.apk
 
-          # 生成时间戳 文件名: 沫兮动漫.v2.4.13_YYYYMMDDHHMM.apk
+          # 生成时间戳 文件名: 沫兮动漫.v2.4.14_YYYYMMDDHHMM.apk
           TIMESTAMP=$(date +%Y%m%d%H%M)
-          APK_NAME="沫兮动漫.v2.4.13_${TIMESTAMP}.apk"
+          APK_NAME="沫兮动漫.v2.4.14_${TIMESTAMP}.apk"
 
           # 签名
           "$BUILD_TOOLS/apksigner" sign \
@@ -81,20 +81,21 @@ jobs:
 
       - name: Prepare release asset
         run: |
-          cp "$APK_NAME" "moxi.dongman.v2.4.13.apk"
-          ls -la moxi.dongman.v2.4.13.apk
+          cp "$APK_NAME" "moxi.dongman.v2.4.14.apk"
+          ls -la moxi.dongman.v2.4.14.apk
 
       - name: Create Release
         uses: softprops/action-gh-release@v2
         with:
-          tag_name: v2.4.13
-          name: 沫兮动漫 v2.4.13
+          tag_name: v2.4.14
+          name: 沫兮动漫 v2.4.14
           body: |
-            ## 沫兮动漫 v2.4.13
+            ## 沫兮动漫 v2.4.14
 
-            - 修复设置页版本行点击无反应，点击后会检测并提示更新结果
-            - 版本信息使用 ghfast 实时通道并加时间戳，避免 CDN 缓存旧版本
-            - 图源「网络导入」一键从 lin686/legado-comic-sources 获取 104 条图源
-            - versionCode 123 → 124，versionName 2.4.12 → 2.4.13
-          files: moxi.dongman.v2.4.13.apk
+            - 启动自动检测更新：有新版本自动弹窗，已是最新不再提示
+            - 图源列表红绿灯状态：绿=可用、红=失效、黄=待维护
+            - 「网络导入」连点 4 次打开自定义 URL 导入
+            - 全局液体玻璃主题 + 卡片式列表布局
+            - versionCode 124 → 125，versionName 2.4.13 → 2.4.14
+          files: moxi.dongman.v2.4.14.apk
           token: ${{ secrets.GITHUB_TOKEN }}

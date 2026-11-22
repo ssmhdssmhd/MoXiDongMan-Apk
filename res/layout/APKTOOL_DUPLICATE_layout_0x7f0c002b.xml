@@ -7,7 +7,7 @@
         </androidx.appcompat.widget.Toolbar>
     </com.google.android.material.appbar.AppBarLayout>
     <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
-        <com.wsw.cospa.widget.scroller.FastScrollRecyclerView android:id="@id/APKTOOL_DUPLICATE_id_0x7f0902a4" android:layout_width="fill_parent" android:layout_height="fill_parent" app:APKTOOL_DUPLICATE_attr_0x7f0400aa="@color/APKTOOL_DUPLICATE_color_0x7f0601c2" app:APKTOOL_DUPLICATE_attr_0x7f0400ab="APKTOOL_DUPLICATE_id_0x7f0903af" app:APKTOOL_DUPLICATE_attr_0x7f0400ac="@color/APKTOOL_DUPLICATE_color_0x7f060380" app:APKTOOL_DUPLICATE_attr_0x7f04022f="@color/APKTOOL_DUPLICATE_color_0x7f0601c2" />
+        <com.wsw.cospa.widget.scroller.FastScrollRecyclerView android:id="@id/APKTOOL_DUPLICATE_id_0x7f0902a4" android:clipToPadding="false" android:paddingTop="4.0dip" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" app:APKTOOL_DUPLICATE_attr_0x7f0400aa="@color/APKTOOL_DUPLICATE_color_0x7f0601c2" app:APKTOOL_DUPLICATE_attr_0x7f0400ab="APKTOOL_DUPLICATE_id_0x7f0903af" app:APKTOOL_DUPLICATE_attr_0x7f0400ac="@color/APKTOOL_DUPLICATE_color_0x7f060380" app:APKTOOL_DUPLICATE_attr_0x7f04022f="@color/APKTOOL_DUPLICATE_color_0x7f0601c2" />
         <include layout="@layout/APKTOOL_DUPLICATE_layout_0x7f0c007a" />
     </RelativeLayout>
 </LinearLayout>

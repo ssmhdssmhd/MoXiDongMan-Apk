@@ -686,7 +686,7 @@
 .end method
 
 .method public default(Lcom/wsw/cospa/adapter/ComicSourceAdapter$SourceViewHolder;I)V
-    .locals 3
+    .locals 4
     .param p1    # Lcom/wsw/cospa/adapter/ComicSourceAdapter$SourceViewHolder;
         .annotation build Landroidx/annotation/NonNull;
         .end annotation
@@ -709,6 +709,8 @@
     move-result-object v2
 
     invoke-virtual {v1, v2}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+
+    invoke-direct {p0, v1, v0}, Lcom/wsw/cospa/adapter/ComicSourceAdapter;->setStatus(Landroid/widget/TextView;Lcom/wsw/cospa/bean/ComicSourceBean;)V
 
     .line 3
     iget-object v1, p1, Lcom/wsw/cospa/adapter/ComicSourceAdapter$SourceViewHolder;->checkbox:Landroid/widget/CheckBox;
@@ -817,6 +819,8 @@
     move-result-object v1
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+
+    invoke-direct {p0, v0, p3}, Lcom/wsw/cospa/adapter/ComicSourceAdapter;->setStatus(Landroid/widget/TextView;Lcom/wsw/cospa/bean/ComicSourceBean;)V
 
     .line 5
     iget-object v0, p1, Lcom/wsw/cospa/adapter/ComicSourceAdapter$SourceViewHolder;->checkbox:Landroid/widget/CheckBox;
@@ -1174,6 +1178,95 @@
 
     .line 1
     iput-object p1, p0, Lcom/wsw/cospa/adapter/ComicSourceAdapter;->do:Lcom/wsw/cospa/listener/OnItemClickListener;
+
+    return-void
+.end method
+
+.method private setStatus(Landroid/widget/TextView;Lcom/wsw/cospa/bean/ComicSourceBean;)V
+    .locals 6
+
+    invoke-static {}, Lcom/wsw/cospa/CartoonApplication;->for()Landroid/content/SharedPreferences;
+
+    move-result-object v0
+
+    const/4 v1, 0x0
+
+    invoke-virtual {p2}, Lcom/wsw/cospa/bean/ComicSourceBean;->getBookSourceUrl()Ljava/lang/String;
+
+    move-result-object v2
+
+    if-nez v2, :cond_0
+
+    const/4 v0, 0x0
+
+    goto :goto_0
+
+    :cond_0
+    new-instance v3, Ljava/lang/StringBuilder;
+
+    invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v4, "src_status_"
+
+    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v2}, Ljava/lang/String;->hashCode()I
+
+    move-result v2
+
+    invoke-virtual {v3, v2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-interface {v0, v2, v1}, Landroid/content/SharedPreferences;->getInt(Ljava/lang/String;I)I
+
+    move-result v0
+
+    :goto_0
+    const/4 v1, 0x2
+
+    if-ne v0, v1, :cond_1
+
+    const v1, -0x18b3c4
+
+    goto :goto_1
+
+    :cond_1
+    const/4 v1, 0x1
+
+    if-ne v0, v1, :cond_2
+
+    const v1, -0xd1388f
+
+    goto :goto_1
+
+    :cond_2
+    const v1, -0xe3bf1
+
+    :goto_1
+    new-instance v2, Landroid/graphics/drawable/GradientDrawable;
+
+    invoke-direct {v2}, Landroid/graphics/drawable/GradientDrawable;-><init>()V
+
+    const/4 v3, 0x1
+
+    invoke-virtual {v2, v3}, Landroid/graphics/drawable/GradientDrawable;->setShape(I)V
+
+    invoke-virtual {v2, v1}, Landroid/graphics/drawable/GradientDrawable;->setColor(I)V
+
+    const/16 v3, 0x16
+
+    invoke-virtual {v2, v3, v3}, Landroid/graphics/drawable/GradientDrawable;->setSize(II)V
+
+    const/4 v3, 0x0
+
+    invoke-virtual {p1, v2, v3, v3, v3}, Landroid/widget/TextView;->setCompoundDrawablesWithIntrinsicBounds(Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;)V
+
+    const/16 v2, 0x12
+
+    invoke-virtual {p1, v2}, Landroid/widget/TextView;->setCompoundDrawablePadding(I)V
 
     return-void
 .end method

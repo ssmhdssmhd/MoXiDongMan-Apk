@@ -224,7 +224,7 @@
     <color name="APKTOOL_DUPLICATE_color_0x7f0600f1">#ff7fff00</color>
     <color name="APKTOOL_DUPLICATE_color_0x7f0600f3">#ffd2691e</color>
     <color name="APKTOOL_DUPLICATE_color_0x7f0600f4">@color/APKTOOL_DUPLICATE_color_0x7f06008d</color>
-    <color name="APKTOOL_DUPLICATE_color_0x7f0600f8">#f0f4faff</color>
+    <color name="APKTOOL_DUPLICATE_color_0x7f0600f8">#00000000</color>
     <color name="APKTOOL_DUPLICATE_color_0x7f0600f9">@color/APKTOOL_DUPLICATE_color_0x7f060316</color>
     <color name="APKTOOL_DUPLICATE_color_0x7f0600fa">#ffffffff</color>
     <color name="APKTOOL_DUPLICATE_color_0x7f0600fb">#ffffffff</color>

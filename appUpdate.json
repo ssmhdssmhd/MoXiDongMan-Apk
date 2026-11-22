@@ -1,11 +1,11 @@
 {
   "appName": "沫兮动漫",
   "appPackage": "com.moxidx.app",
-  "appVersionName": "2.4.13",
-  "appVersionCode": 124,
+  "appVersionName": "2.4.14",
+  "appVersionCode": 125,
   "appSize": 0,
   "forceUpdate": 0,
   "showUpdate": true,
-  "appChangeLog": "1. 修复设置页版本行点击无反应，现在点击会立即检测更新并提示结果<br>2. 版本信息获取改为 ghfast 实时通道优先并加时间戳，避免读到 CDN 缓存的旧版本<br>3. 图源「网络导入」改为一键自动从 lin686/legado-comic-sources 获取 104 条图源<br>4. 保留「从 GitHub 同步」入口，可同步本仓库内置图源<br>5. 版本更新至 v2.4.13",
-  "appUrl": "https://ghfast.top/https://github.com/ssmhdssmhd/MoXiDongMan-Apk/releases/download/v2.4.13/moxi.dongman.v2.4.13.apk"
+  "appChangeLog": "1. 启动自动检测更新：发现新版本自动弹出更新弹窗，已是最新时不再打扰<br>2. 图源列表新增红绿灯状态：绿=校验可用，红=校验失效，黄=待维护/未校验（基于本地校验记录）<br>3. 图源「网络导入」连续点击 4 次可打开自定义 URL 导入，支持任意图源 JSON 直链<br>4. 全局液体玻璃主题：页面、工具栏、弹窗均为半透明磨砂质感<br>5. 书架、历史、图源等列表改为玻璃卡片布局<br>6. 版本更新至 v2.4.14",
+  "appUrl": "https://ghfast.top/https://github.com/ssmhdssmhd/MoXiDongMan-Apk/releases/download/v2.4.14/moxi.dongman.v2.4.14.apk"
 }

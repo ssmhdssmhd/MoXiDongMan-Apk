@@ -62,6 +62,10 @@
 
 .field private final super:I
 
+.field private tapCount:I
+
+.field private tapTime:J
+
 .field private this:Lcom/google/android/material/snackbar/Snackbar;
 
 .field private throw:Lcom/tbruyelle/rxpermissions2/RxPermissions;
@@ -816,6 +820,97 @@
     const-string v1, "https://cdn.jsdelivr.net/gh/lin686/legado-comic-sources@main/legado-comic-sources-merged.json"
 
     invoke-virtual {p0, v0, v1}, Lcom/wsw/cospa/activity/ComicManagerActivity;->b(Ljava/lang/String;Ljava/lang/String;)V
+
+    return-void
+.end method
+
+.method private netTap()V
+    .locals 6
+
+    invoke-static {}, Landroid/os/SystemClock;->elapsedRealtime()J
+
+    move-result-wide v0
+
+    iget-wide v2, p0, Lcom/wsw/cospa/activity/ComicManagerActivity;->tapTime:J
+
+    sub-long v2, v0, v2
+
+    const-wide/16 v4, 0x320
+
+    cmp-long v2, v2, v4
+
+    if-lez v2, :cond_0
+
+    const/4 v2, 0x0
+
+    iput v2, p0, Lcom/wsw/cospa/activity/ComicManagerActivity;->tapCount:I
+
+    :cond_0
+    iget v2, p0, Lcom/wsw/cospa/activity/ComicManagerActivity;->tapCount:I
+
+    add-int/lit8 v2, v2, 0x1
+
+    const/4 v3, 0x4
+
+    if-lt v2, v3, :cond_1
+
+    const/4 v2, 0x0
+
+    iput v2, p0, Lcom/wsw/cospa/activity/ComicManagerActivity;->tapCount:I
+
+    iput-wide v0, p0, Lcom/wsw/cospa/activity/ComicManagerActivity;->tapTime:J
+
+    invoke-direct {p0}, Lcom/wsw/cospa/activity/ComicManagerActivity;->showNetImportDialog()V
+
+    return-void
+
+    :cond_1
+    iput v2, p0, Lcom/wsw/cospa/activity/ComicManagerActivity;->tapCount:I
+
+    iput-wide v0, p0, Lcom/wsw/cospa/activity/ComicManagerActivity;->tapTime:J
+
+    const/4 v3, 0x1
+
+    if-ne v2, v3, :cond_2
+
+    invoke-direct {p0}, Lcom/wsw/cospa/activity/ComicManagerActivity;->interface()V
+
+    :cond_2
+    return-void
+.end method
+
+.method private showNetImportDialog()V
+    .locals 8
+
+    new-instance v3, Lcom/wsw/cospa/utils/DialogTool$new;
+
+    const-string v0, "自定义网络导入"
+
+    const-string v1, "输入图源 JSON 直链（http / https），确定后立即导入"
+
+    const/4 v4, 0x0
+
+    invoke-direct {v3, v0, v4, v1}, Lcom/wsw/cospa/utils/DialogTool$new;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+
+    new-instance v4, Lcom/wsw/cospa/utils/DialogTool$try;
+
+    const-string v0, "导入"
+
+    const-string v1, "取消"
+
+    invoke-direct {v4, v0, v1}, Lcom/wsw/cospa/utils/DialogTool$try;-><init>(Ljava/lang/String;Ljava/lang/String;)V
+
+    const-string v5, ""
+
+    const-string v6, "https://example.com/sources.json"
+
+    new-instance v7, Lcom/wsw/cospa/activity/NetImportCallback;
+
+    invoke-direct {v7, p0}, Lcom/wsw/cospa/activity/NetImportCallback;-><init>(Lcom/wsw/cospa/activity/ComicManagerActivity;)V
+
+    move-object v2, p0
+
+    invoke-static/range {v2 .. v7}, Lcom/wsw/cospa/utils/DialogTool;->s(Landroid/app/Activity;Lcom/wsw/cospa/utils/DialogTool$new;Lcom/wsw/cospa/utils/DialogTool$try;Ljava/lang/String;Ljava/lang/String;Lcom/wsw/cospa/utils/DialogTool$EditDialogOptcb;)V
 
     return-void
 .end method
@@ -2976,7 +3071,7 @@
 
     .line 29
     :sswitch_6
-    invoke-direct {p0}, Lcom/wsw/cospa/activity/ComicManagerActivity;->interface()V
+    invoke-direct {p0}, Lcom/wsw/cospa/activity/ComicManagerActivity;->netTap()V
 
     goto :goto_2
 

@@ -4302,7 +4302,9 @@
     if-nez v0, :cond_1
 
     .line 30
-    invoke-static {p0, v1}, Lcom/wsw/cospa/utils/else;->try(Landroid/content/Context;Z)V
+    const/4 v0, 0x1
+
+    invoke-static {p0, v0}, Lcom/wsw/cospa/utils/else;->try(Landroid/content/Context;Z)V
 
     .line 31
     iget-object v0, p0, Lcom/wsw/cospa/activity/HomeActivity;->ll_version:Landroid/widget/LinearLayout;
