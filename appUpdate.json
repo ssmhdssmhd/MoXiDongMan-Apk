@@ -1,12 +1,12 @@
 {
   "appName": "沫兮动漫",
   "appPackage": "com.moxidx.app",
-  "appVersionName": "2.4.24",
-  "appVersionCode": 135,
+  "appVersionName": "2.4.25",
+  "appVersionCode": 136,
   "appSize": 24300000,
   "forceUpdate": 0,
   "showUpdate": true,
-  "appChangeLog": "1. 全新「石榴红 × 奶杏白」配色：主色 #B5485D，辅色 #F3E2D1<br>2. 顶部与状态栏改为石榴红玻璃渐变，搜索框改为半透明奶杏白胶囊<br>3. 页面背景改为奶杏白暖色渐变 + 石榴红/奶油双光晕<br>4. 卡片、侧边栏、底部导航改为奶油玻璃质感，描边统一石榴红<br>5. 全局强调色（选中态/图标/链接）由紫色切换为石榴红<br>6. 版本更新至 v2.4.24",
-  "appUrl": "https://ghfast.top/https://github.com/ssmhdssmhd/MoXiDongMan-Apk/releases/download/v2.4.24/moxi.dongman.v2.4.24.apk",
-  "appUrlBackup": "https://github.com/ssmhdssmhd/MoXiDongMan-Apk/releases/download/v2.4.24/moxi.dongman.v2.4.24.apk"
+  "appChangeLog": "1. 更新方式重写：改为系统 DownloadManager 后台下载，支持断点续传、自动重试、跟随镜像重定向<br>2. 通知栏显示真实下载进度，下载完成后点击通知即可安装<br>3. 移除自建下载链路，不再出现进度不走、文件已存在、点击闪退等问题<br>4. 版本更新至 v2.4.25",
+  "appUrl": "https://ghfast.top/https://github.com/ssmhdssmhd/MoXiDongMan-Apk/releases/download/v2.4.25/moxi.dongman.v2.4.25.apk",
+  "appUrlBackup": "https://github.com/ssmhdssmhd/MoXiDongMan-Apk/releases/download/v2.4.25/moxi.dongman.v2.4.25.apk"
 }

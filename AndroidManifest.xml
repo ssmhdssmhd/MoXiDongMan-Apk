@@ -27,6 +27,11 @@
         <provider android:authorities="com.moxidx.app.fileprovider" android:exported="false" android:grantUriPermissions="true" android:name="androidx.core.content.FileProvider">
             <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/arg"/>
         </provider>
+        <receiver android:name="com.moxi.update.UpdateReceiver" android:exported="false">
+            <intent-filter>
+                <action android:name="android.intent.action.DOWNLOAD_COMPLETE"/>
+            </intent-filter>
+        </receiver>
         <activity android:name="com.wsw.cospa.SplashActivity" android:theme="@style/APKTOOL_DUPLICATE_style_0x7f120195">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>

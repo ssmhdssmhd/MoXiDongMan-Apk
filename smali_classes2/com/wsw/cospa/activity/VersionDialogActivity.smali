@@ -751,6 +751,12 @@
 .method public break(Landroid/content/Context;Lcom/wsw/cospa/bean/AppUpdateInfo;)V
     .locals 7
 
+    invoke-static {p0, p2}, Lcom/moxi/update/UpdateDownloader;->start(Landroid/content/Context;Lcom/wsw/cospa/bean/AppUpdateInfo;)V
+
+    invoke-virtual {p0}, Landroid/app/Activity;->finish()V
+
+    return-void
+
     .line 1
     iget-object v0, p0, Lcom/wsw/cospa/activity/VersionDialogActivity;->if:Landroid/widget/Button;
 

@@ -4,10 +4,22 @@
 
 - 仓库地址：https://github.com/ssmhdssmhd/MoXiDongMan-Apk
 - 包名：`com.moxidx.app`
-- 当前版本：**v2.4.24(135)**
+- 当前版本：**v2.4.25(136)**
 - 下载地址：https://github.com/ssmhdssmhd/MoXiDongMan-Apk/releases
 
 ## 版本更新日志
+
+### v2.4.25(136) — 更新机制重写（DownloadManager）
+
+- **更新时间**：2026-11-23
+- **APK 版本**：v2.4.25(136)
+- **更新内容**：
+  - 放弃自建 OkHttp 下载链路（历史问题来源：进度除零、文件名冲突、代理跳转失败）
+  - 点击更新改为交给系统 `DownloadManager`：自动断点续传、失败重试、跟随 302 重定向、通知栏展示真实进度
+  - 下载落地路径 `Android/data/com.moxidx.app/files/update/moxi_update.apk`
+  - 新增 `UpdateReceiver` 监听 `DOWNLOAD_COMPLETE`，成功后经 FileProvider 拉起安装器
+  - 下载失败不会再崩溃/误报“文件已存在”，由系统通知栏提示
+  - versionCode: 135 → 136，versionName: 2.4.24 → 2.4.25
 
 ### v2.4.24(135) — 石榴红 × 奶杏白 配色重制
 
@@ -291,7 +303,7 @@ MoXiDongMan-Apk/
 |------|------|
 | 应用名称 | 沫兮动漫 |
 | 包名 | com.moxidx.app |
-| 版本号 | v2.4.24(135) |
+| 版本号 | v2.4.25(136) |
 | 最低版本 | Android 4.4 (API 19) |
 | 目标版本 | Android 11 (API 30) |
 | 用户界面语言 | 简体中文 |
@@ -402,9 +414,9 @@ APK 内置 `assets/sources.json`，包含 26 个经实测可用的漫画图源�
 2. zipalign 对齐
 3. apksigner 签名（使用仓库 Secrets 中的固定签名密钥）
 4. 上传构建产物 Artifact
-5. 创建/更新 GitHub Release，发布 `moxi.dongman.v2.4.24.apk`
+5. 创建/更新 GitHub Release，发布 `moxi.dongman.v2.4.25.apk`
 
-产物文件名格式：`沫兮动漫.v2.4.24_YYYYMMDDHHMM.apk`
+产物文件名格式：`沫兮动漫.v2.4.25_YYYYMMDDHHMM.apk`
 
 签名相关 Secrets：
 

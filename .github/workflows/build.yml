@@ -54,9 +54,9 @@ jobs:
           # 对齐
           "$BUILD_TOOLS/zipalign" -f -p 4 app-unsigned.apk app-aligned.apk
 
-          # 生成时间戳 文件名: 沫兮动漫.v2.4.24_YYYYMMDDHHMM.apk
+          # 生成时间戳 文件名: 沫兮动漫.v2.4.25_YYYYMMDDHHMM.apk
           TIMESTAMP=$(date +%Y%m%d%H%M)
-          APK_NAME="沫兮动漫.v2.4.24_${TIMESTAMP}.apk"
+          APK_NAME="沫兮动漫.v2.4.25_${TIMESTAMP}.apk"
 
           # 签名
           "$BUILD_TOOLS/apksigner" sign \
@@ -81,20 +81,20 @@ jobs:
 
       - name: Prepare release asset
         run: |
-          cp "$APK_NAME" "moxi.dongman.v2.4.24.apk"
-          ls -la moxi.dongman.v2.4.24.apk
+          cp "$APK_NAME" "moxi.dongman.v2.4.25.apk"
+          ls -la moxi.dongman.v2.4.25.apk
 
       - name: Create Release
         uses: softprops/action-gh-release@v2
         with:
-          tag_name: v2.4.24
-          name: 沫兮动漫 v2.4.24
+          tag_name: v2.4.25
+          name: 沫兮动漫 v2.4.25
           body: |
-            ## 沫兮动漫 v2.4.24
+            ## 沫兮动漫 v2.4.25
 
-            - 全新「石榴红 × 奶杏白」配色（主色 #B5485D，辅色 #F3E2D1）
-            - 顶部/状态栏石榴红玻璃，搜索框奶杏白胶囊，背景暖色渐变 + 双光晕
-            - 卡片/侧边栏/底部导航奶油玻璃质感，强调色全局切为石榴红
-            - versionCode 134 → 135，versionName 2.4.23 → 2.4.24
-          files: moxi.dongman.v2.4.24.apk
+            - 重写更新方式：改用系统 DownloadManager 后台下载，支持断点/重试/镜像重定向
+            - 下载完成后系统通知点击即可安装，不再依赖自建进度条
+            - 新增 DOWNLOAD_COMPLETE 接收器，自动调用安装器（FileProvider）
+            - versionCode 135 → 136，versionName 2.4.24 → 2.4.25
+          files: moxi.dongman.v2.4.25.apk
           token: ${{ secrets.GITHUB_TOKEN }}

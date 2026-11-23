@@ -252,6 +252,16 @@
     return-void
 .end method
 
+.method protected onResume()V
+    .locals 1
+
+    invoke-super {p0}, Lcom/wsw/cospa/base/BaseActivity;->onResume()V
+
+    invoke-static {p0}, Lcom/moxi/update/UpdateDownloader;->installIfReady(Landroid/content/Context;)V
+
+    return-void
+.end method
+
 .method private a(Landroid/view/ViewGroup;II)Landroid/animation/Animator;
     .locals 4
     .annotation build Landroidx/annotation/RequiresApi;
