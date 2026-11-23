@@ -54,9 +54,9 @@ jobs:
           # 对齐
           "$BUILD_TOOLS/zipalign" -f -p 4 app-unsigned.apk app-aligned.apk
 
-          # 生成时间戳 文件名: 沫兮动漫.v2.4.19_YYYYMMDDHHMM.apk
+          # 生成时间戳 文件名: 沫兮动漫.v2.4.20_YYYYMMDDHHMM.apk
           TIMESTAMP=$(date +%Y%m%d%H%M)
-          APK_NAME="沫兮动漫.v2.4.19_${TIMESTAMP}.apk"
+          APK_NAME="沫兮动漫.v2.4.20_${TIMESTAMP}.apk"
 
           # 签名
           "$BUILD_TOOLS/apksigner" sign \
@@ -81,20 +81,20 @@ jobs:
 
       - name: Prepare release asset
         run: |
-          cp "$APK_NAME" "moxi.dongman.v2.4.19.apk"
-          ls -la moxi.dongman.v2.4.19.apk
+          cp "$APK_NAME" "moxi.dongman.v2.4.20.apk"
+          ls -la moxi.dongman.v2.4.20.apk
 
       - name: Create Release
         uses: softprops/action-gh-release@v2
         with:
-          tag_name: v2.4.19
-          name: 沫兮动漫 v2.4.19
+          tag_name: v2.4.20
+          name: 沫兮动漫 v2.4.20
           body: |
-            ## 沫兮动漫 v2.4.19
+            ## 沫兮动漫 v2.4.20
 
-            - 修复更新下载进度卡在 0.00% 并报错中断的问题（缺失安装包大小导致进度除零）
-            - 进度计算在缺失大小时自动回退到服务器 Content-Length，并对 0 值兜底
-            - appUrl 改为 ghfast 镜像直链以兼容旧版本客户端，备用线路为 GitHub 官方直链
-            - versionCode 129 → 130，versionName 2.4.18 → 2.4.19
-          files: moxi.dongman.v2.4.19.apk
+            - 修复侧边栏背景透明、文字与页面内容重叠的问题，改为半透明玻璃面板 + 圆角
+            - 夜间模式侧边栏文字改为浅色，暗色玻璃底上清晰可读
+            - 顶部工具栏改为更轻盈的半透明玻璃，增加底部圆角与高光描边
+            - versionCode 130 → 131，versionName 2.4.19 → 2.4.20
+          files: moxi.dongman.v2.4.20.apk
           token: ${{ secrets.GITHUB_TOKEN }}
