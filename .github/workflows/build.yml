@@ -54,9 +54,9 @@ jobs:
           # 对齐
           "$BUILD_TOOLS/zipalign" -f -p 4 app-unsigned.apk app-aligned.apk
 
-          # 生成时间戳 文件名: 沫兮动漫.v2.4.16_YYYYMMDDHHMM.apk
+          # 生成时间戳 文件名: 沫兮动漫.v2.4.17_YYYYMMDDHHMM.apk
           TIMESTAMP=$(date +%Y%m%d%H%M)
-          APK_NAME="沫兮动漫.v2.4.16_${TIMESTAMP}.apk"
+          APK_NAME="沫兮动漫.v2.4.17_${TIMESTAMP}.apk"
 
           # 签名
           "$BUILD_TOOLS/apksigner" sign \
@@ -81,20 +81,20 @@ jobs:
 
       - name: Prepare release asset
         run: |
-          cp "$APK_NAME" "moxi.dongman.v2.4.16.apk"
-          ls -la moxi.dongman.v2.4.16.apk
+          cp "$APK_NAME" "moxi.dongman.v2.4.17.apk"
+          ls -la moxi.dongman.v2.4.17.apk
 
       - name: Create Release
         uses: softprops/action-gh-release@v2
         with:
-          tag_name: v2.4.16
-          name: 沫兮动漫 v2.4.16
+          tag_name: v2.4.17
+          name: 沫兮动漫 v2.4.17
           body: |
-            ## 沫兮动漫 v2.4.16
+            ## 沫兮动漫 v2.4.17
 
-            - 修复顶部工具栏在浅色玻璃下白字白底看不见的问题，恢复品牌紫玻璃并提升对比度
-            - 状态栏统一为半透明品牌紫，深色图标/文案清晰可见
-            - 底部导航栏改为玻璃质感，页面渐变光晕更明显
-            - versionCode 126 → 127，versionName 2.4.15 → 2.4.16
-          files: moxi.dongman.v2.4.16.apk
+            - 修复更新下载失败时误报「文件已存在」的问题
+            - 下载提示改为「更新包下载失败，请检查网络后重试」，并附带具体失败原因
+            - 更新包文件名改为「应用名-版本号.apk」，下载前自动清理同名旧包，避免安装冲突
+            - versionCode 127 → 128，versionName 2.4.16 → 2.4.17
+          files: moxi.dongman.v2.4.17.apk
           token: ${{ secrets.GITHUB_TOKEN }}

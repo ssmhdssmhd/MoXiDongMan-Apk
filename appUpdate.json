@@ -1,11 +1,11 @@
 {
   "appName": "沫兮动漫",
   "appPackage": "com.moxidx.app",
-  "appVersionName": "2.4.16",
-  "appVersionCode": 127,
+  "appVersionName": "2.4.17",
+  "appVersionCode": 128,
   "appSize": 0,
   "forceUpdate": 0,
   "showUpdate": true,
-  "appChangeLog": "1. 修复顶部工具栏白字白底看不见的问题，恢复品牌紫半透明玻璃并提升对比度<br>2. 状态栏统一为半透明品牌紫，图标与文案清晰可见<br>3. 底部导航栏改为玻璃质感背景（日间/夜间自适应）<br>4. 页面背景渐变光晕加深，液体玻璃质感更明显<br>5. 深色模式工具栏改为深紫玻璃，白字可读<br>6. 版本更新至 v2.4.16",
-  "appUrl": "https://ghfast.top/https://github.com/ssmhdssmhd/MoXiDongMan-Apk/releases/download/v2.4.16/moxi.dongman.v2.4.16.apk"
+  "appChangeLog": "1. 修复更新下载失败时一律提示「文件已存在」的误导性报错<br>2. 下载失败提示改为「更新包下载失败，请检查网络后重试」，并附带具体原因<br>3. 更新包文件名改为「应用名-版本号.apk」，下载前自动清理同名旧包，避免覆盖与安装冲突<br>4. 版本更新至 v2.4.17",
+  "appUrl": "https://ghfast.top/https://github.com/ssmhdssmhd/MoXiDongMan-Apk/releases/download/v2.4.17/moxi.dongman.v2.4.17.apk"
 }

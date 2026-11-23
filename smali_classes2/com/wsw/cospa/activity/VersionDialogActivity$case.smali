@@ -74,7 +74,7 @@
 .method private static synthetic new()V
     .locals 1
 
-    const-string v0, "\u6587\u4ef6\u5df2\u5b58\u5728"
+    const-string v0, "\u66f4\u65b0\u5305\u4e0b\u8f7d\u5931\u8d25\uff0c\u8bf7\u68c0\u67e5\u7f51\u7edc\u540e\u91cd\u8bd5"
 
     .line 1
     invoke-static {v0}, Landroid/support/v4/v72;->if(Ljava/lang/String;)V
@@ -85,7 +85,7 @@
 
 # virtual methods
 .method public onFailure(Lokhttp3/Call;Ljava/io/IOException;)V
-    .locals 0
+    .locals 2
 
     .line 1
     invoke-static {}, Landroid/os/Looper;->prepare()V
@@ -93,9 +93,23 @@
     .line 2
     invoke-virtual {p2}, Ljava/io/IOException;->getMessage()Ljava/lang/String;
 
-    move-result-object p1
+    move-result-object v0
 
-    invoke-static {p1}, Landroid/support/v4/v72;->if(Ljava/lang/String;)V
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string p2, "\u66f4\u65b0\u5305\u4e0b\u8f7d\u5931\u8d25\uff1a"
+
+    invoke-virtual {v1, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-static {v0}, Landroid/support/v4/v72;->if(Ljava/lang/String;)V
 
     .line 3
     invoke-static {}, Landroid/os/Looper;->loop()V
