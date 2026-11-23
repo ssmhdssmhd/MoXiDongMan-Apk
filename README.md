@@ -4,10 +4,23 @@
 
 - 仓库地址：https://github.com/ssmhdssmhd/MoXiDongMan-Apk
 - 包名：`com.moxidx.app`
-- 当前版本：**v2.4.23(134)**
+- 当前版本：**v2.4.24(135)**
 - 下载地址：https://github.com/ssmhdssmhd/MoXiDongMan-Apk/releases
 
 ## 版本更新日志
+
+### v2.4.24(135) — 石榴红 × 奶杏白 配色重制
+
+- **更新时间**：2026-11-23
+- **APK 版本**：v2.4.24(135)
+- **更新内容**：
+  - 主色 `#B5485D`（石榴红）、辅色 `#F3E2D1`（奶杏白），全局强调色由紫色切换为石榴红
+  - 状态栏 `#B5485D` 实色 + 顶部工具栏石榴红玻璃渐变，搜索框改为 `#5CF3E2D1` 奶杏白胶囊
+  - 页面背景 `#FBF4EC → #F7E9E0 → #EFD9D2` 暖色渐变，叠加石榴红与奶油色双径向光晕
+  - 卡片、侧边栏、底部导航统一奶油玻璃（`#D9FFF9F4` / `#E8FBF3EA` / `#F7FBF4EE`），描边 `#33B5485D`
+  - 文字主色调为暖调深棕 `#4A2D33`，次要文字 `#7A5F63`
+  - 夜间模式：酒红玻璃顶栏 + 深棕玻璃面板 + 浅玫瑰强调色 `#D98A9B`
+  - versionCode: 134 → 135，versionName: 2.4.23 → 2.4.24
 
 ### v2.4.23(134) — 顶部视觉重做 / 网络导入改版 / 校验自动清理
 
@@ -278,7 +291,7 @@ MoXiDongMan-Apk/
 |------|------|
 | 应用名称 | 沫兮动漫 |
 | 包名 | com.moxidx.app |
-| 版本号 | v2.4.23(134) |
+| 版本号 | v2.4.24(135) |
 | 最低版本 | Android 4.4 (API 19) |
 | 目标版本 | Android 11 (API 30) |
 | 用户界面语言 | 简体中文 |
@@ -389,9 +402,9 @@ APK 内置 `assets/sources.json`，包含 26 个经实测可用的漫画图源�
 2. zipalign 对齐
 3. apksigner 签名（使用仓库 Secrets 中的固定签名密钥）
 4. 上传构建产物 Artifact
-5. 创建/更新 GitHub Release，发布 `moxi.dongman.v2.4.23.apk`
+5. 创建/更新 GitHub Release，发布 `moxi.dongman.v2.4.24.apk`
 
-产物文件名格式：`沫兮动漫.v2.4.23_YYYYMMDDHHMM.apk`
+产物文件名格式：`沫兮动漫.v2.4.24_YYYYMMDDHHMM.apk`
 
 签名相关 Secrets：
 

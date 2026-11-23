@@ -4,47 +4,47 @@
         <shape android:shape="rectangle">
             <gradient
                 android:angle="135.0"
-                android:centerColor="#FFE7E1F9"
-                android:endColor="#FFE4EEFF"
-                android:startColor="#FFF4F0FF" />
+                android:centerColor="#FFF7E9E0"
+                android:endColor="#FFEFD9D2"
+                android:startColor="#FFFBF4EC" />
         </shape>
     </item>
     <item
-        android:bottom="320.0dip"
+        android:bottom="300.0dip"
         android:left="-140.0dip"
         android:right="140.0dip"
-        android:top="-180.0dip">
+        android:top="-160.0dip">
         <shape android:shape="oval">
             <gradient
-                android:endColor="#00A18CFF"
-                android:gradientRadius="260.0dip"
-                android:startColor="#6EA18CFF"
+                android:endColor="#00B5485D"
+                android:gradientRadius="280.0dip"
+                android:startColor="#4DB5485D"
                 android:type="radial" />
         </shape>
     </item>
     <item
-        android:bottom="-140.0dip"
-        android:left="140.0dip"
-        android:right="-140.0dip"
-        android:top="380.0dip">
-        <shape android:shape="oval">
-            <gradient
-                android:endColor="#007EC8FF"
-                android:gradientRadius="240.0dip"
-                android:startColor="#5C7EC8FF"
-                android:type="radial" />
-        </shape>
-    </item>
-    <item
-        android:bottom="180.0dip"
+        android:bottom="-120.0dip"
         android:left="120.0dip"
         android:right="-160.0dip"
-        android:top="520.0dip">
+        android:top="340.0dip">
         <shape android:shape="oval">
             <gradient
-                android:endColor="#00FF9EC4"
-                android:gradientRadius="200.0dip"
-                android:startColor="#52FF9EC4"
+                android:endColor="#00F3E2D1"
+                android:gradientRadius="260.0dip"
+                android:startColor="#80F3E2D1"
+                android:type="radial" />
+        </shape>
+    </item>
+    <item
+        android:bottom="200.0dip"
+        android:left="100.0dip"
+        android:right="-150.0dip"
+        android:top="560.0dip">
+        <shape android:shape="oval">
+            <gradient
+                android:endColor="#00D98BA0"
+                android:gradientRadius="220.0dip"
+                android:startColor="#40D98BA0"
                 android:type="radial" />
         </shape>
     </item>
