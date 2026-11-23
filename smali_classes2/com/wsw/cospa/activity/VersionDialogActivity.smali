@@ -882,6 +882,11 @@
 
     invoke-direct {v2, p0, v0, v1}, Lcom/wsw/cospa/activity/VersionDialogActivity$try;-><init>(Lcom/wsw/cospa/activity/VersionDialogActivity;J)V
 
+    .line 13
+    invoke-virtual {p2}, Lcom/wsw/cospa/bean/AppUpdateInfo;->getAppUrlBackup()Ljava/lang/String;
+
+    move-result-object v6
+
     .line 14
     new-instance v0, Lokhttp3/Request$Builder;
 
@@ -912,7 +917,7 @@
 
     new-instance v0, Lcom/wsw/cospa/activity/VersionDialogActivity$case;
 
-    invoke-direct {v0, p0, v4, p1}, Lcom/wsw/cospa/activity/VersionDialogActivity$case;-><init>(Lcom/wsw/cospa/activity/VersionDialogActivity;Ljava/io/File;Landroid/content/Context;)V
+    invoke-direct {v0, p0, v4, p1, v6}, Lcom/wsw/cospa/activity/VersionDialogActivity$case;-><init>(Lcom/wsw/cospa/activity/VersionDialogActivity;Ljava/io/File;Landroid/content/Context;Ljava/lang/String;)V
 
     invoke-interface {p2, v0}, Lokhttp3/Call;->enqueue(Lokhttp3/Callback;)V
 

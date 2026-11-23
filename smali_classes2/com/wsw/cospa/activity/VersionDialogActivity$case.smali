@@ -24,9 +24,11 @@
 
 .field public final synthetic if:Landroid/content/Context;
 
+.field public backup:Ljava/lang/String;
+
 
 # direct methods
-.method public constructor <init>(Lcom/wsw/cospa/activity/VersionDialogActivity;Ljava/io/File;Landroid/content/Context;)V
+.method public constructor <init>(Lcom/wsw/cospa/activity/VersionDialogActivity;Ljava/io/File;Landroid/content/Context;Ljava/lang/String;)V
     .locals 0
 
     .line 1
@@ -35,6 +37,8 @@
     iput-object p2, p0, Lcom/wsw/cospa/activity/VersionDialogActivity$case;->do:Ljava/io/File;
 
     iput-object p3, p0, Lcom/wsw/cospa/activity/VersionDialogActivity$case;->if:Landroid/content/Context;
+
+    iput-object p4, p0, Lcom/wsw/cospa/activity/VersionDialogActivity$case;->backup:Ljava/lang/String;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -85,12 +89,51 @@
 
 # virtual methods
 .method public onFailure(Lokhttp3/Call;Ljava/io/IOException;)V
-    .locals 2
+    .locals 3
 
     .line 1
-    invoke-static {}, Landroid/os/Looper;->prepare()V
+    iget-object v0, p0, Lcom/wsw/cospa/activity/VersionDialogActivity$case;->backup:Ljava/lang/String;
+
+    invoke-static {v0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
+
+    move-result v1
+
+    if-nez v1, :cond_1
 
     .line 2
+    const/4 v1, 0x0
+
+    iput-object v1, p0, Lcom/wsw/cospa/activity/VersionDialogActivity$case;->backup:Ljava/lang/String;
+
+    new-instance v1, Lokhttp3/Request$Builder;
+
+    invoke-direct {v1}, Lokhttp3/Request$Builder;-><init>()V
+
+    invoke-virtual {v1, v0}, Lokhttp3/Request$Builder;->url(Ljava/lang/String;)Lokhttp3/Request$Builder;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Lokhttp3/Request$Builder;->build()Lokhttp3/Request;
+
+    move-result-object v0
+
+    new-instance v1, Lokhttp3/OkHttpClient;
+
+    invoke-direct {v1}, Lokhttp3/OkHttpClient;-><init>()V
+
+    invoke-virtual {v1, v0}, Lokhttp3/OkHttpClient;->newCall(Lokhttp3/Request;)Lokhttp3/Call;
+
+    move-result-object v0
+
+    invoke-interface {v0, p0}, Lokhttp3/Call;->enqueue(Lokhttp3/Callback;)V
+
+    return-void
+
+    .line 3
+    :cond_1
+    invoke-static {}, Landroid/os/Looper;->prepare()V
+
+    .line 4
     invoke-virtual {p2}, Ljava/io/IOException;->getMessage()Ljava/lang/String;
 
     move-result-object v0
@@ -111,7 +154,7 @@
 
     invoke-static {v0}, Landroid/support/v4/v72;->if(Ljava/lang/String;)V
 
-    .line 3
+    .line 5
     invoke-static {}, Landroid/os/Looper;->loop()V
 
     return-void

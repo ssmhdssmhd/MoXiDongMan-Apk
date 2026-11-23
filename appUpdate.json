@@ -1,11 +1,12 @@
 {
   "appName": "沫兮动漫",
   "appPackage": "com.moxidx.app",
-  "appVersionName": "2.4.17",
-  "appVersionCode": 128,
+  "appVersionName": "2.4.18",
+  "appVersionCode": 129,
   "appSize": 0,
   "forceUpdate": 0,
   "showUpdate": true,
-  "appChangeLog": "1. 修复更新下载失败时一律提示「文件已存在」的误导性报错<br>2. 下载失败提示改为「更新包下载失败，请检查网络后重试」，并附带具体原因<br>3. 更新包文件名改为「应用名-版本号.apk」，下载前自动清理同名旧包，避免覆盖与安装冲突<br>4. 版本更新至 v2.4.17",
-  "appUrl": "https://ghfast.top/https://github.com/ssmhdssmhd/MoXiDongMan-Apk/releases/download/v2.4.17/moxi.dongman.v2.4.17.apk"
+  "appChangeLog": "1. 更新下载改为多线路：优先 GitHub 官方直链，失败自动切换 ghfast 镜像重试<br>2. 两条线路都失败时才提示「更新包下载失败」并给出具体原因<br>3. appUpdate.json 新增 appUrlBackup 字段，可随时更换备用下载线路<br>4. 版本更新至 v2.4.18",
+  "appUrl": "https://github.com/ssmhdssmhd/MoXiDongMan-Apk/releases/download/v2.4.18/moxi.dongman.v2.4.18.apk",
+  "appUrlBackup": "https://ghfast.top/https://github.com/ssmhdssmhd/MoXiDongMan-Apk/releases/download/v2.4.18/moxi.dongman.v2.4.18.apk"
 }

@@ -33,6 +33,8 @@
 
 .field private appUrl:Ljava/lang/String;
 
+.field private appUrlBackup:Ljava/lang/String;
+
 .field private appVersionCode:I
 
 .field private appVersionName:Ljava/lang/String;
@@ -150,6 +152,13 @@
 
     iput-object v0, p0, Lcom/wsw/cospa/bean/AppUpdateInfo;->topImage:Ljava/lang/String;
 
+    .line 15
+    invoke-virtual {p1}, Landroid/os/Parcel;->readString()Ljava/lang/String;
+
+    move-result-object v0
+
+    iput-object v0, p0, Lcom/wsw/cospa/bean/AppUpdateInfo;->appUrlBackup:Ljava/lang/String;
+
     .line 14
     invoke-virtual {p1}, Landroid/os/Parcel;->readByte()B
 
@@ -239,6 +248,14 @@
 
     .line 1
     iget-object v0, p0, Lcom/wsw/cospa/bean/AppUpdateInfo;->appUrl:Ljava/lang/String;
+
+    return-object v0
+.end method
+
+.method public getAppUrlBackup()Ljava/lang/String;
+    .locals 1
+
+    iget-object v0, p0, Lcom/wsw/cospa/bean/AppUpdateInfo;->appUrlBackup:Ljava/lang/String;
 
     return-object v0
 .end method
@@ -451,6 +468,11 @@
 
     .line 11
     iget-object p2, p0, Lcom/wsw/cospa/bean/AppUpdateInfo;->topImage:Ljava/lang/String;
+
+    invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V
+
+    .line 13
+    iget-object p2, p0, Lcom/wsw/cospa/bean/AppUpdateInfo;->appUrlBackup:Ljava/lang/String;
 
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V
 
