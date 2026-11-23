@@ -1,12 +1,12 @@
 {
   "appName": "沫兮动漫",
   "appPackage": "com.moxidx.app",
-  "appVersionName": "2.4.25",
-  "appVersionCode": 136,
-  "appSize": 24300000,
+  "appVersionName": "2.4.26",
+  "appVersionCode": 137,
+  "appSize": 23970000,
   "forceUpdate": 0,
   "showUpdate": true,
-  "appChangeLog": "1. 更新方式重写：改为系统 DownloadManager 后台下载，支持断点续传、自动重试、跟随镜像重定向<br>2. 通知栏显示真实下载进度，下载完成后点击通知即可安装<br>3. 移除自建下载链路，不再出现进度不走、文件已存在、点击闪退等问题<br>4. 版本更新至 v2.4.25",
-  "appUrl": "https://ghfast.top/https://github.com/ssmhdssmhd/MoXiDongMan-Apk/releases/download/v2.4.25/moxi.dongman.v2.4.25.apk",
-  "appUrlBackup": "https://github.com/ssmhdssmhd/MoXiDongMan-Apk/releases/download/v2.4.25/moxi.dongman.v2.4.25.apk"
+  "appChangeLog": "1. 图源校验提速：单源超时 60s → 20s，失效源不再长时间占用线程<br>2. 校验并发数默认 6 → 16，图源多时速度提升数倍<br>3. 校验判定逻辑与自动清理失效源保持不变<br>4. 版本更新至 v2.4.26",
+  "appUrl": "https://ghfast.top/https://github.com/ssmhdssmhd/MoXiDongMan-Apk/releases/download/v2.4.26/moxi.dongman.v2.4.26.apk",
+  "appUrlBackup": "https://github.com/ssmhdssmhd/MoXiDongMan-Apk/releases/download/v2.4.26/moxi.dongman.v2.4.26.apk"
 }

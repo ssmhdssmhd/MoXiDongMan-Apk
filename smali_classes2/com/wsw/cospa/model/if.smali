@@ -330,7 +330,7 @@
 
     move-result-object v0
 
-    const-wide/16 v1, 0x3c
+    const-wide/16 v1, 0x14
 
     sget-object v3, Ljava/util/concurrent/TimeUnit;->SECONDS:Ljava/util/concurrent/TimeUnit;
 
@@ -685,7 +685,7 @@
 
     move-result-object v0
 
-    const-wide/16 v1, 0x3c
+    const-wide/16 v1, 0x14
 
     sget-object v3, Ljava/util/concurrent/TimeUnit;->SECONDS:Ljava/util/concurrent/TimeUnit;
 

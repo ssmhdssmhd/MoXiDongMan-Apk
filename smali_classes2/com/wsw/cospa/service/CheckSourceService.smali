@@ -611,7 +611,7 @@
 
     const-string v1, "search_thread_num"
 
-    const/4 v2, 0x6
+    const/16 v2, 0x10
 
     invoke-virtual {v0, v1, v2}, Landroid/support/v4/v02;->for(Ljava/lang/String;I)I
 

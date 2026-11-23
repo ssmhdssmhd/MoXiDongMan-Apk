@@ -4,10 +4,21 @@
 
 - 仓库地址：https://github.com/ssmhdssmhd/MoXiDongMan-Apk
 - 包名：`com.moxidx.app`
-- 当前版本：**v2.4.25(136)**
+- 当前版本：**v2.4.26(137)**
 - 下载地址：https://github.com/ssmhdssmhd/MoXiDongMan-Apk/releases
 
 ## 版本更新日志
+
+### v2.4.26(137) — 图源校验提速
+
+- **更新时间**：2026-11-23
+- **APK 版本**：v2.4.26(137)
+- **更新内容**：
+  - 单源校验超时由 60 秒缩短为 20 秒，响应慢/已失效的图源不再长时间占用线程
+  - 校验并发线程默认值由 6 提升到 16（仍遵循「设置 → 搜索线程数」中的用户配置）
+  - 失效判定、自动删除失效图源、通知栏进度等逻辑保持不变
+  - 图源数量较多时，整体校验耗时由数分钟级降至几十秒级
+  - versionCode: 136 → 137，versionName: 2.4.25 → 2.4.26
 
 ### v2.4.25(136) — 更新机制重写（DownloadManager）
 
@@ -303,7 +314,7 @@ MoXiDongMan-Apk/
 |------|------|
 | 应用名称 | 沫兮动漫 |
 | 包名 | com.moxidx.app |
-| 版本号 | v2.4.25(136) |
+| 版本号 | v2.4.26(137) |
 | 最低版本 | Android 4.4 (API 19) |
 | 目标版本 | Android 11 (API 30) |
 | 用户界面语言 | 简体中文 |
@@ -414,9 +425,9 @@ APK 内置 `assets/sources.json`，包含 26 个经实测可用的漫画图源�
 2. zipalign 对齐
 3. apksigner 签名（使用仓库 Secrets 中的固定签名密钥）
 4. 上传构建产物 Artifact
-5. 创建/更新 GitHub Release，发布 `moxi.dongman.v2.4.25.apk`
+5. 创建/更新 GitHub Release，发布 `moxi.dongman.v2.4.26.apk`
 
-产物文件名格式：`沫兮动漫.v2.4.25_YYYYMMDDHHMM.apk`
+产物文件名格式：`沫兮动漫.v2.4.26_YYYYMMDDHHMM.apk`
 
 签名相关 Secrets：
 
