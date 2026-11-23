@@ -184,24 +184,22 @@
 
     if-le p2, v0, :clamp
 
-    goto :no_clamp
+    goto :clamp_low
 
     :clamp
     move p2, v0
 
+    :clamp_low
+    if-ltz p2, :no_clamp
+
+    const/4 p2, 0x0
+
     :no_clamp
+    const/16 v1, 0x64
+
+    invoke-virtual {p3, v1}, Lcom/wsw/cospa/widget/view/NumberProgressBar;->setMax(I)V
+
     invoke-virtual {p3, p2}, Lcom/wsw/cospa/widget/view/NumberProgressBar;->setProgress(I)V
-
-    .line 8
-    iget-object p1, p0, Lcom/wsw/cospa/activity/VersionDialogActivity$try;->new:Lcom/wsw/cospa/activity/VersionDialogActivity;
-
-    invoke-static {p1}, Lcom/wsw/cospa/activity/VersionDialogActivity;->try(Lcom/wsw/cospa/activity/VersionDialogActivity;)Lcom/wsw/cospa/widget/view/NumberProgressBar;
-
-    move-result-object p1
-
-    const/16 p2, 0x64
-
-    invoke-virtual {p1, p2}, Lcom/wsw/cospa/widget/view/NumberProgressBar;->setMax(I)V
 
     goto :goto_0
 

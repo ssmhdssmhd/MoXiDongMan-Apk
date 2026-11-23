@@ -1,12 +1,12 @@
 {
   "appName": "沫兮动漫",
   "appPackage": "com.moxidx.app",
-  "appVersionName": "2.4.21",
-  "appVersionCode": 132,
+  "appVersionName": "2.4.22",
+  "appVersionCode": 133,
   "appSize": 24300000,
   "forceUpdate": 0,
   "showUpdate": true,
-  "appChangeLog": "1. 修复点击更新闪退的问题：进度计算在安装包大小缺失时除零崩溃<br>2. 进度分母优先使用 JSON 中的 appSize，缺失时回退服务器 Content-Length，都无效则跳过进度更新<br>3. 进度值上限钳制到 100，避免异常数值<br>4. 下载失败提示改为主线程安全弹出，避免后台线程弹 Toast 导致崩溃<br>5. 版本更新至 v2.4.21",
-  "appUrl": "https://ghfast.top/https://github.com/ssmhdssmhd/MoXiDongMan-Apk/releases/download/v2.4.21/moxi.dongman.v2.4.21.apk",
-  "appUrlBackup": "https://github.com/ssmhdssmhd/MoXiDongMan-Apk/releases/download/v2.4.21/moxi.dongman.v2.4.21.apk"
+  "appChangeLog": "1. 进度回调除零防护加固：分母无效时直接跳过进度更新，绝不执行除法<br>2. 进度值双向钳制到 0~100，避免溢出成负数<br>3. 先设置进度条最大值再设置进度，消除绘制阶段除零风险<br>4. 版本更新至 v2.4.22",
+  "appUrl": "https://ghfast.top/https://github.com/ssmhdssmhd/MoXiDongMan-Apk/releases/download/v2.4.22/moxi.dongman.v2.4.22.apk",
+  "appUrlBackup": "https://github.com/ssmhdssmhd/MoXiDongMan-Apk/releases/download/v2.4.22/moxi.dongman.v2.4.22.apk"
 }
