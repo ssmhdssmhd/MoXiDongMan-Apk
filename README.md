@@ -4,10 +4,22 @@
 
 - 仓库地址：https://github.com/ssmhdssmhd/MoXiDongMan-Apk
 - 包名：`com.moxidx.app`
-- 当前版本：**v2.4.27(138)**
+- 当前版本：**v2.4.28(139)**
 - 下载地址：https://github.com/ssmhdssmhd/MoXiDongMan-Apk/releases
 
 ## 版本更新日志
+
+### v2.4.28(139) — 更新线路多镜像自动切换
+
+- **更新时间**：2026-11-23
+- **APK 版本**：v2.4.28(139)
+- **更新内容**：
+  - 修复国内网络下 ghfast / jsDelivr 不可达导致检测不到更新、下载失败的问题
+  - 更新清单检测改为 5 条线路依次自动切换：`ghfast.top` → `gh-proxy.com` → `ghproxy.net` → `cdn.jsdelivr.net` → `fastly.jsdelivr.net`
+  - 下载前在后台线程逐条探测线路（Range 请求，连接/读取超时各 6s），命中第一条可用线路再交给 DownloadManager
+  - 全部线路不可用时给出「所有更新线路均不可用，请检查网络后重试」提示，不再静默失败
+  - 新增 `UpdateProbe` / `UpdateEnqueue`，放在 `smali_classes2`，避免主 dex 触发 64K 方法/字段引用上限
+  - versionCode: 138 → 139，versionName: 2.4.27 → 2.4.28
 
 ### v2.4.27(138) — 修复切换图源时的显示问题
 
@@ -324,7 +336,7 @@ MoXiDongMan-Apk/
 |------|------|
 | 应用名称 | 沫兮动漫 |
 | 包名 | com.moxidx.app |
-| 版本号 | v2.4.27(138) |
+| 版本号 | v2.4.28(139) |
 | 最低版本 | Android 4.4 (API 19) |
 | 目标版本 | Android 11 (API 30) |
 | 用户界面语言 | 简体中文 |
@@ -435,9 +447,9 @@ APK 内置 `assets/sources.json`，包含 26 个经实测可用的漫画图源�
 2. zipalign 对齐
 3. apksigner 签名（使用仓库 Secrets 中的固定签名密钥）
 4. 上传构建产物 Artifact
-5. 创建/更新 GitHub Release，发布 `moxi.dongman.v2.4.27.apk`
+5. 创建/更新 GitHub Release，发布 `moxi.dongman.v2.4.28.apk`
 
-产物文件名格式：`沫兮动漫.v2.4.27_YYYYMMDDHHMM.apk`
+产物文件名格式：`沫兮动漫.v2.4.28_YYYYMMDDHHMM.apk`
 
 签名相关 Secrets：
 

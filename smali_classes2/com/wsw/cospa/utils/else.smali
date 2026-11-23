@@ -455,7 +455,7 @@
 .end method
 
 .method public static try(Landroid/content/Context;Z)V
-    .locals 3
+    .locals 4
 
     .line 1
     const-string v0, "https://ghfast.top/https://raw.githubusercontent.com/ssmhdssmhd/MoXiDongMan-Apk/main/appUpdate.json"
@@ -468,6 +468,34 @@
 
     move-result-object v0
 
+    const-string v1, "https://gh-proxy.com/https://raw.githubusercontent.com/ssmhdssmhd/MoXiDongMan-Apk/main/appUpdate.json"
+
+    invoke-static {v1}, Lcom/wsw/cospa/utils/else;->throws(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-static {v1}, Lcom/wsw/cospa/utils/else;->for(Ljava/lang/String;)Lio/reactivex/new;
+
+    move-result-object v1
+
+    invoke-virtual {v0, v1}, Lio/reactivex/new;->onErrorResumeNext(Lio/reactivex/ObservableSource;)Lio/reactivex/new;
+
+    move-result-object v0
+
+    const-string v1, "https://ghproxy.net/https://raw.githubusercontent.com/ssmhdssmhd/MoXiDongMan-Apk/main/appUpdate.json"
+
+    invoke-static {v1}, Lcom/wsw/cospa/utils/else;->throws(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-static {v1}, Lcom/wsw/cospa/utils/else;->for(Ljava/lang/String;)Lio/reactivex/new;
+
+    move-result-object v1
+
+    invoke-virtual {v0, v1}, Lio/reactivex/new;->onErrorResumeNext(Lio/reactivex/ObservableSource;)Lio/reactivex/new;
+
+    move-result-object v0
+
     const-string v1, "https://cdn.jsdelivr.net/gh/ssmhdssmhd/MoXiDongMan-Apk@main/appUpdate.json"
 
     invoke-static {v1}, Lcom/wsw/cospa/utils/else;->throws(Ljava/lang/String;)Ljava/lang/String;
@@ -475,6 +503,20 @@
     move-result-object v1
 
     .line 2
+    invoke-static {v1}, Lcom/wsw/cospa/utils/else;->for(Ljava/lang/String;)Lio/reactivex/new;
+
+    move-result-object v1
+
+    invoke-virtual {v0, v1}, Lio/reactivex/new;->onErrorResumeNext(Lio/reactivex/ObservableSource;)Lio/reactivex/new;
+
+    move-result-object v0
+
+    const-string v1, "https://fastly.jsdelivr.net/gh/ssmhdssmhd/MoXiDongMan-Apk@main/appUpdate.json"
+
+    invoke-static {v1}, Lcom/wsw/cospa/utils/else;->throws(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v1
+
     invoke-static {v1}, Lcom/wsw/cospa/utils/else;->for(Ljava/lang/String;)Lio/reactivex/new;
 
     move-result-object v1
