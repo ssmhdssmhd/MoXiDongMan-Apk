@@ -1,12 +1,12 @@
 {
   "appName": "沫兮动漫",
   "appPackage": "com.moxidx.app",
-  "appVersionName": "2.4.22",
-  "appVersionCode": 133,
+  "appVersionName": "2.4.23",
+  "appVersionCode": 134,
   "appSize": 24300000,
   "forceUpdate": 0,
   "showUpdate": true,
-  "appChangeLog": "1. 进度回调除零防护加固：分母无效时直接跳过进度更新，绝不执行除法<br>2. 进度值双向钳制到 0~100，避免溢出成负数<br>3. 先设置进度条最大值再设置进度，消除绘制阶段除零风险<br>4. 版本更新至 v2.4.22",
-  "appUrl": "https://ghfast.top/https://github.com/ssmhdssmhd/MoXiDongMan-Apk/releases/download/v2.4.22/moxi.dongman.v2.4.22.apk",
-  "appUrlBackup": "https://github.com/ssmhdssmhd/MoXiDongMan-Apk/releases/download/v2.4.22/moxi.dongman.v2.4.22.apk"
+  "appChangeLog": "1. 顶部视觉重做：去掉分层圆角与描边，状态栏与工具栏同色连续，整体更干净<br>2. 图源管理菜单：「网络导入」改为「自动同步」，「从 GitHub 同步」改为「网络导入（URL）」，点击直接输入图源链接导入<br>3. 校验图源时自动删除失效图源，不再保留不可用条目<br>4. 下载进度在完成时强制显示 100%<br>5. 版本更新至 v2.4.23",
+  "appUrl": "https://ghfast.top/https://github.com/ssmhdssmhd/MoXiDongMan-Apk/releases/download/v2.4.23/moxi.dongman.v2.4.23.apk",
+  "appUrlBackup": "https://github.com/ssmhdssmhd/MoXiDongMan-Apk/releases/download/v2.4.23/moxi.dongman.v2.4.23.apk"
 }

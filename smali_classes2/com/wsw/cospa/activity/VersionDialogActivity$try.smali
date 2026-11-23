@@ -41,6 +41,8 @@
 
     move-wide v6, p3
 
+    move v7, p5
+
     .line 1
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -195,6 +197,11 @@
     const/4 p2, 0x0
 
     :no_clamp
+    if-eqz v7, :not_done
+
+    const/16 p2, 0x64
+
+    :not_done
     const/16 v1, 0x64
 
     invoke-virtual {p3, v1}, Lcom/wsw/cospa/widget/view/NumberProgressBar;->setMax(I)V

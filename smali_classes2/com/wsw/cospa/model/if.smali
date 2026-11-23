@@ -175,7 +175,7 @@
 
     iget-object v1, p0, Lcom/wsw/cospa/model/if;->do:Lcom/wsw/cospa/bean/ComicSourceBean;
 
-    invoke-virtual {v0, v1}, Lorg/greenrobot/greendao/AbstractDao;->insertOrReplace(Ljava/lang/Object;)J
+    invoke-virtual {v0, v1}, Lorg/greenrobot/greendao/AbstractDao;->delete(Ljava/lang/Object;)V
 
     .line 5
     iget-object v0, p0, Lcom/wsw/cospa/model/if;->for:Lcom/wsw/cospa/service/CheckSourceService$CheckSourceListener;

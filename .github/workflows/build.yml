@@ -54,9 +54,9 @@ jobs:
           # 对齐
           "$BUILD_TOOLS/zipalign" -f -p 4 app-unsigned.apk app-aligned.apk
 
-          # 生成时间戳 文件名: 沫兮动漫.v2.4.22_YYYYMMDDHHMM.apk
+          # 生成时间戳 文件名: 沫兮动漫.v2.4.23_YYYYMMDDHHMM.apk
           TIMESTAMP=$(date +%Y%m%d%H%M)
-          APK_NAME="沫兮动漫.v2.4.22_${TIMESTAMP}.apk"
+          APK_NAME="沫兮动漫.v2.4.23_${TIMESTAMP}.apk"
 
           # 签名
           "$BUILD_TOOLS/apksigner" sign \
@@ -81,20 +81,20 @@ jobs:
 
       - name: Prepare release asset
         run: |
-          cp "$APK_NAME" "moxi.dongman.v2.4.22.apk"
-          ls -la moxi.dongman.v2.4.22.apk
+          cp "$APK_NAME" "moxi.dongman.v2.4.23.apk"
+          ls -la moxi.dongman.v2.4.23.apk
 
       - name: Create Release
         uses: softprops/action-gh-release@v2
         with:
-          tag_name: v2.4.22
-          name: 沫兮动漫 v2.4.22
+          tag_name: v2.4.23
+          name: 沫兮动漫 v2.4.23
           body: |
-            ## 沫兮动漫 v2.4.22
+            ## 沫兮动漫 v2.4.23
 
-            - 进度回调除零防护加固：分母无效时跳过本轮回调，绝不执行除法
-            - 进度值双向钳制到 0~100，避免 long 转 int 溢出为负数
-            - 先 setMax(100) 再 setProgress，消除进度条绘制阶段的除零风险
-            - versionCode 132 → 133，versionName 2.4.21 → 2.4.22
-          files: moxi.dongman.v2.4.22.apk
+            - 顶部视觉重做：去掉分层圆角与描边，状态栏与工具栏连续同色
+            - 图源管理菜单改为「自动同步」+「网络导入（URL）」，URL 导入直接可用
+            - 校验图源自动删除失效图源；下载完成时进度显示 100%
+            - versionCode 133 → 134，versionName 2.4.22 → 2.4.23
+          files: moxi.dongman.v2.4.23.apk
           token: ${{ secrets.GITHUB_TOKEN }}

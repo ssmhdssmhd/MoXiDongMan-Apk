@@ -3140,11 +3140,7 @@
 
     .line 40
     :sswitch_d
-    const-string v0, "https://cdn.jsdelivr.net/gh/ssmhdssmhd/MoXiDongMan-Apk@main/sources/all_sources.json"
-
-    const-string v1, "https://ghfast.top/https://raw.githubusercontent.com/ssmhdssmhd/MoXiDongMan-Apk/main/sources/all_sources.json"
-
-    invoke-virtual {p0, v0, v1}, Lcom/wsw/cospa/activity/ComicManagerActivity;->b(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-direct {p0}, Lcom/wsw/cospa/activity/ComicManagerActivity;->showNetImportDialog()V
 
     goto/16 :goto_2
 
