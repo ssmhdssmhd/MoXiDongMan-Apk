@@ -19,7 +19,9 @@
 
 .field private case:Landroid/widget/LinearLayout;
 
-.field private catch:Lcom/wsw/cospa/bean/AppUpdateInfo;
+.field public catch:Lcom/wsw/cospa/bean/AppUpdateInfo;
+
+.field public updateListener:Lcom/wsw/cospa/utils/download/ProgressResponseListener;
 
 .field private class:Lcom/tbruyelle/rxpermissions2/RxPermissions;
 
@@ -881,6 +883,8 @@
     new-instance v2, Lcom/wsw/cospa/activity/VersionDialogActivity$try;
 
     invoke-direct {v2, p0, v0, v1}, Lcom/wsw/cospa/activity/VersionDialogActivity$try;-><init>(Lcom/wsw/cospa/activity/VersionDialogActivity;J)V
+
+    iput-object v2, p0, Lcom/wsw/cospa/activity/VersionDialogActivity;->updateListener:Lcom/wsw/cospa/utils/download/ProgressResponseListener;
 
     .line 13
     invoke-virtual {p2}, Lcom/wsw/cospa/bean/AppUpdateInfo;->getAppUrlBackup()Ljava/lang/String;

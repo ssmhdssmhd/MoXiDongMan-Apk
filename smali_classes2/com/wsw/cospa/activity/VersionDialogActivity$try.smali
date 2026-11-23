@@ -37,7 +37,9 @@
 
 # virtual methods
 .method public do(JJZ)V
-    .locals 6
+    .locals 8
+
+    move-wide v6, p3
 
     .line 1
     new-instance v0, Ljava/lang/StringBuilder;
@@ -98,14 +100,13 @@
 
     if-lez p5, :cond_1
 
-    const-wide/16 v2, -0x1
+    const-wide/16 v2, 0x0
 
     const-wide/16 v4, 0x64
 
     cmp-long p5, p3, v2
 
-    if-eqz p5, :cond_0
-
+    if-lez p5, :cond_0
     .line 4
     new-instance p5, Ljava/lang/StringBuilder;
 
@@ -151,10 +152,29 @@
 
     mul-long p1, p1, v4
 
-    iget-wide p4, p0, Lcom/wsw/cospa/activity/VersionDialogActivity$try;->for:J
+    iget-wide v2, p0, Lcom/wsw/cospa/activity/VersionDialogActivity$try;->for:J
 
-    div-long/2addr p1, p4
+    const-wide/16 v4, 0x0
 
+    cmp-long v5, v2, v4
+
+    if-lez v5, :div_ready
+
+    move-wide v2, v6
+
+    cmp-long v5, v2, v4
+
+    if-gtz v5, :safe_div
+
+    :div_ready
+    div-long/2addr p1, v2
+
+    goto :after_div
+
+    :safe_div
+    const-wide/16 p1, 0x0
+
+    :after_div
     long-to-int p2, p1
 
     invoke-virtual {p3, p2}, Lcom/wsw/cospa/widget/view/NumberProgressBar;->setProgress(I)V

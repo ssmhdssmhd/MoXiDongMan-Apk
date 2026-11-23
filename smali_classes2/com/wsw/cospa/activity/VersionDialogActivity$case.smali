@@ -117,10 +117,24 @@
 
     move-result-object v0
 
+    iget-object v1, p0, Lcom/wsw/cospa/activity/VersionDialogActivity$case;->for:Lcom/wsw/cospa/activity/VersionDialogActivity;
+
+    iget-object v1, v1, Lcom/wsw/cospa/activity/VersionDialogActivity;->updateListener:Lcom/wsw/cospa/utils/download/ProgressResponseListener;
+
+    if-eqz v1, :cond_2
+
+    invoke-static {v1}, Lcom/wsw/cospa/utils/download/do;->if(Lcom/wsw/cospa/utils/download/ProgressResponseListener;)Lokhttp3/OkHttpClient;
+
+    move-result-object v1
+
+    goto :goto_client
+
+    :cond_2
     new-instance v1, Lokhttp3/OkHttpClient;
 
     invoke-direct {v1}, Lokhttp3/OkHttpClient;-><init>()V
 
+    :goto_client
     invoke-virtual {v1, v0}, Lokhttp3/OkHttpClient;->newCall(Lokhttp3/Request;)Lokhttp3/Call;
 
     move-result-object v0

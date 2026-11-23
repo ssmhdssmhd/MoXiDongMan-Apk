@@ -54,9 +54,9 @@ jobs:
           # 对齐
           "$BUILD_TOOLS/zipalign" -f -p 4 app-unsigned.apk app-aligned.apk
 
-          # 生成时间戳 文件名: 沫兮动漫.v2.4.18_YYYYMMDDHHMM.apk
+          # 生成时间戳 文件名: 沫兮动漫.v2.4.19_YYYYMMDDHHMM.apk
           TIMESTAMP=$(date +%Y%m%d%H%M)
-          APK_NAME="沫兮动漫.v2.4.18_${TIMESTAMP}.apk"
+          APK_NAME="沫兮动漫.v2.4.19_${TIMESTAMP}.apk"
 
           # 签名
           "$BUILD_TOOLS/apksigner" sign \
@@ -81,20 +81,20 @@ jobs:
 
       - name: Prepare release asset
         run: |
-          cp "$APK_NAME" "moxi.dongman.v2.4.18.apk"
-          ls -la moxi.dongman.v2.4.18.apk
+          cp "$APK_NAME" "moxi.dongman.v2.4.19.apk"
+          ls -la moxi.dongman.v2.4.19.apk
 
       - name: Create Release
         uses: softprops/action-gh-release@v2
         with:
-          tag_name: v2.4.18
-          name: 沫兮动漫 v2.4.18
+          tag_name: v2.4.19
+          name: 沫兮动漫 v2.4.19
           body: |
-            ## 沫兮动漫 v2.4.18
+            ## 沫兮动漫 v2.4.19
 
-            - 更新下载改为多线路：优先 GitHub 官方直链，失败自动切换 ghfast 镜像重试
-            - 新增 appUrlBackup 备用下载字段，两条线路都失败才提示下载失败
-            - 保留「应用名-版本号.apk」命名与旧包自动清理
-            - versionCode 128 → 129，versionName 2.4.17 → 2.4.18
-          files: moxi.dongman.v2.4.18.apk
+            - 修复更新下载进度卡在 0.00% 并报错中断的问题（缺失安装包大小导致进度除零）
+            - 进度计算在缺失大小时自动回退到服务器 Content-Length，并对 0 值兜底
+            - appUrl 改为 ghfast 镜像直链以兼容旧版本客户端，备用线路为 GitHub 官方直链
+            - versionCode 129 → 130，versionName 2.4.18 → 2.4.19
+          files: moxi.dongman.v2.4.19.apk
           token: ${{ secrets.GITHUB_TOKEN }}
