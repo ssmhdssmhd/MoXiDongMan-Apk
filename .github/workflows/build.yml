@@ -54,9 +54,9 @@ jobs:
           # 对齐
           "$BUILD_TOOLS/zipalign" -f -p 4 app-unsigned.apk app-aligned.apk
 
-          # 生成时间戳 文件名: 沫兮动漫.v2.4.20_YYYYMMDDHHMM.apk
+          # 生成时间戳 文件名: 沫兮动漫.v2.4.21_YYYYMMDDHHMM.apk
           TIMESTAMP=$(date +%Y%m%d%H%M)
-          APK_NAME="沫兮动漫.v2.4.20_${TIMESTAMP}.apk"
+          APK_NAME="沫兮动漫.v2.4.21_${TIMESTAMP}.apk"
 
           # 签名
           "$BUILD_TOOLS/apksigner" sign \
@@ -81,20 +81,20 @@ jobs:
 
       - name: Prepare release asset
         run: |
-          cp "$APK_NAME" "moxi.dongman.v2.4.20.apk"
-          ls -la moxi.dongman.v2.4.20.apk
+          cp "$APK_NAME" "moxi.dongman.v2.4.21.apk"
+          ls -la moxi.dongman.v2.4.21.apk
 
       - name: Create Release
         uses: softprops/action-gh-release@v2
         with:
-          tag_name: v2.4.20
-          name: 沫兮动漫 v2.4.20
+          tag_name: v2.4.21
+          name: 沫兮动漫 v2.4.21
           body: |
-            ## 沫兮动漫 v2.4.20
+            ## 沫兮动漫 v2.4.21
 
-            - 修复侧边栏背景透明、文字与页面内容重叠的问题，改为半透明玻璃面板 + 圆角
-            - 夜间模式侧边栏文字改为浅色，暗色玻璃底上清晰可读
-            - 顶部工具栏改为更轻盈的半透明玻璃，增加底部圆角与高光描边
-            - versionCode 130 → 131，versionName 2.4.19 → 2.4.20
-          files: moxi.dongman.v2.4.20.apk
+            - 修复点击更新闪退：进度计算在安装包大小缺失时除零崩溃
+            - 进度分母优先用 appSize，缺失时回退 Content-Length，都无效则跳过更新进度
+            - 下载失败提示改为主线程安全弹出，避免后台线程 Toast 崩溃
+            - versionCode 131 → 132，versionName 2.4.20 → 2.4.21
+          files: moxi.dongman.v2.4.21.apk
           token: ${{ secrets.GITHUB_TOKEN }}

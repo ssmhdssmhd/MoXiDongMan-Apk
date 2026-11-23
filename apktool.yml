@@ -12,8 +12,8 @@ packageInfo:
   forcedPackageId: 127
   renameManifestPackage: com.moxidx.app
 versionInfo:
-  versionCode: 131
-  versionName: 2.4.20
+  versionCode: 132
+  versionName: 2.4.21
 sharedLibrary: false
 sparseResources: false
 compactEntries: false

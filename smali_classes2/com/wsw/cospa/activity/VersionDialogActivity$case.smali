@@ -145,9 +145,6 @@
 
     .line 3
     :cond_1
-    invoke-static {}, Landroid/os/Looper;->prepare()V
-
-    .line 4
     invoke-virtual {p2}, Ljava/io/IOException;->getMessage()Ljava/lang/String;
 
     move-result-object v0
@@ -166,10 +163,11 @@
 
     move-result-object v0
 
-    invoke-static {v0}, Landroid/support/v4/v72;->if(Ljava/lang/String;)V
+    new-instance v1, Lcom/wsw/cospa/activity/VersionDialogActivity$case$new;
 
-    .line 5
-    invoke-static {}, Landroid/os/Looper;->loop()V
+    invoke-direct {v1, v0}, Lcom/wsw/cospa/activity/VersionDialogActivity$case$new;-><init>(Ljava/lang/String;)V
+
+    invoke-static {v1}, Landroid/support/v4/wi0;->try(Ljava/lang/Runnable;)V
 
     return-void
 .end method

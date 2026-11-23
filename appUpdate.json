@@ -1,12 +1,12 @@
 {
   "appName": "沫兮动漫",
   "appPackage": "com.moxidx.app",
-  "appVersionName": "2.4.20",
-  "appVersionCode": 131,
+  "appVersionName": "2.4.21",
+  "appVersionCode": 132,
   "appSize": 24300000,
   "forceUpdate": 0,
   "showUpdate": true,
-  "appChangeLog": "1. 修复侧边栏（抽屉）背景透明、文字与页面内容重叠看不清的问题，改为半透明玻璃面板并加圆角<br>2. 夜间模式侧边栏文字改为浅色，暗色玻璃底上清晰可读<br>3. 顶部工具栏改为更轻盈的半透明玻璃：降低不透明度、增加底部圆角与高光描边<br>4. 版本更新至 v2.4.20",
-  "appUrl": "https://ghfast.top/https://github.com/ssmhdssmhd/MoXiDongMan-Apk/releases/download/v2.4.20/moxi.dongman.v2.4.20.apk",
-  "appUrlBackup": "https://github.com/ssmhdssmhd/MoXiDongMan-Apk/releases/download/v2.4.20/moxi.dongman.v2.4.20.apk"
+  "appChangeLog": "1. 修复点击更新闪退的问题：进度计算在安装包大小缺失时除零崩溃<br>2. 进度分母优先使用 JSON 中的 appSize，缺失时回退服务器 Content-Length，都无效则跳过进度更新<br>3. 进度值上限钳制到 100，避免异常数值<br>4. 下载失败提示改为主线程安全弹出，避免后台线程弹 Toast 导致崩溃<br>5. 版本更新至 v2.4.21",
+  "appUrl": "https://ghfast.top/https://github.com/ssmhdssmhd/MoXiDongMan-Apk/releases/download/v2.4.21/moxi.dongman.v2.4.21.apk",
+  "appUrlBackup": "https://github.com/ssmhdssmhd/MoXiDongMan-Apk/releases/download/v2.4.21/moxi.dongman.v2.4.21.apk"
 }

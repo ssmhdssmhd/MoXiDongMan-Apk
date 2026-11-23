@@ -158,8 +158,11 @@
 
     cmp-long v5, v2, v4
 
-    if-lez v5, :div_ready
+    if-gtz v5, :use_content_length
 
+    goto :div_ready
+
+    :use_content_length
     move-wide v2, v6
 
     cmp-long v5, v2, v4
@@ -177,6 +180,16 @@
     :after_div
     long-to-int p2, p1
 
+    const/16 v0, 0x64
+
+    if-le p2, v0, :clamp
+
+    goto :no_clamp
+
+    :clamp
+    move p2, v0
+
+    :no_clamp
     invoke-virtual {p3, p2}, Lcom/wsw/cospa/widget/view/NumberProgressBar;->setProgress(I)V
 
     .line 8
