@@ -1,12 +1,12 @@
 {
   "appName": "沫兮动漫",
   "appPackage": "com.moxidx.app",
-  "appVersionName": "2.4.26",
-  "appVersionCode": 137,
-  "appSize": 23970000,
+  "appVersionName": "2.4.27",
+  "appVersionCode": 138,
+  "appSize": 23980000,
   "forceUpdate": 0,
   "showUpdate": true,
-  "appChangeLog": "1. 图源校验提速：单源超时 60s → 20s，失效源不再长时间占用线程<br>2. 校验并发数默认 6 → 16，图源多时速度提升数倍<br>3. 校验判定逻辑与自动清理失效源保持不变<br>4. 版本更新至 v2.4.26",
-  "appUrl": "https://ghfast.top/https://github.com/ssmhdssmhd/MoXiDongMan-Apk/releases/download/v2.4.26/moxi.dongman.v2.4.26.apk",
-  "appUrlBackup": "https://github.com/ssmhdssmhd/MoXiDongMan-Apk/releases/download/v2.4.26/moxi.dongman.v2.4.26.apk"
+  "appChangeLog": "1. 修复切换图源时弹窗背景透明、与背后内容重叠看不清的问题<br>2. 图源选择面板改为实色奶杏白（夜间为深色），底部圆角<br>3. 修复「搜索」按钮、滚动条等仍为旧紫色的问题，统一为石榴红<br>4. 版本更新至 v2.4.27",
+  "appUrl": "https://ghfast.top/https://github.com/ssmhdssmhd/MoXiDongMan-Apk/releases/download/v2.4.27/moxi.dongman.v2.4.27.apk",
+  "appUrlBackup": "https://github.com/ssmhdssmhd/MoXiDongMan-Apk/releases/download/v2.4.27/moxi.dongman.v2.4.27.apk"
 }

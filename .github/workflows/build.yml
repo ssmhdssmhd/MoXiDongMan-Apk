@@ -54,9 +54,9 @@ jobs:
           # 对齐
           "$BUILD_TOOLS/zipalign" -f -p 4 app-unsigned.apk app-aligned.apk
 
-          # 生成时间戳 文件名: 沫兮动漫.v2.4.26_YYYYMMDDHHMM.apk
+          # 生成时间戳 文件名: 沫兮动漫.v2.4.27_YYYYMMDDHHMM.apk
           TIMESTAMP=$(date +%Y%m%d%H%M)
-          APK_NAME="沫兮动漫.v2.4.26_${TIMESTAMP}.apk"
+          APK_NAME="沫兮动漫.v2.4.27_${TIMESTAMP}.apk"
 
           # 签名
           "$BUILD_TOOLS/apksigner" sign \
@@ -81,20 +81,20 @@ jobs:
 
       - name: Prepare release asset
         run: |
-          cp "$APK_NAME" "moxi.dongman.v2.4.26.apk"
-          ls -la moxi.dongman.v2.4.26.apk
+          cp "$APK_NAME" "moxi.dongman.v2.4.27.apk"
+          ls -la moxi.dongman.v2.4.27.apk
 
       - name: Create Release
         uses: softprops/action-gh-release@v2
         with:
-          tag_name: v2.4.26
-          name: 沫兮动漫 v2.4.26
+          tag_name: v2.4.27
+          name: 沫兮动漫 v2.4.27
           body: |
-            ## 沫兮动漫 v2.4.26
+            ## 沫兮动漫 v2.4.27
 
-            - 图源校验提速：单源超时 60s → 20s，失效源不再长时间占用线程
-            - 校验并发数默认 6 → 16，图源较多时整体耗时下降数倍
-            - 失效判定与自动清理逻辑保持不变
-            - versionCode 136 → 137，versionName 2.4.25 → 2.4.26
-          files: moxi.dongman.v2.4.26.apk
+            - 修复切换图源弹窗背景透明、与背后内容重叠看不清的问题
+            - 图源选择面板改为实色奶杏白（夜间深色），底部圆角
+            - 修复「搜索」按钮、滚动条等仍为旧紫色的问题，统一为石榴红
+            - versionCode 137 → 138，versionName 2.4.26 → 2.4.27
+          files: moxi.dongman.v2.4.27.apk
           token: ${{ secrets.GITHUB_TOKEN }}
